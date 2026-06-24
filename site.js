@@ -1,18 +1,19 @@
-// nav toggle (mobile)
+// enable mandatory snap on html (desktop only via CSS media query)
+document.documentElement.classList.add('snap');
+
 document.addEventListener('click',function(e){
+  // mobile nav toggle
   var t=e.target.closest('.nav-toggle');
-  if(t){var r=document.querySelector('.nav-right');if(r)r.classList.toggle('open');}
-});
-// chevron: jump to next panel
-document.addEventListener('click',function(e){
+  if(t){var r=document.querySelector('.nav-right');if(r)r.classList.toggle('open');return;}
+  // chevron -> next panel
   var c=e.target.closest('.chevron');
-  if(!c)return;
-  var panels=Array.prototype.slice.call(document.querySelectorAll('.panel'));
-  var cur=c.closest('.panel');
-  var i=panels.indexOf(cur);
-  if(i>-1&&i<panels.length-1){panels[i+1].scrollIntoView({behavior:'smooth',block:'start'});}
+  if(c){
+    var panels=Array.prototype.slice.call(document.querySelectorAll('.panel,.footer-panel'));
+    var cur=c.closest('.panel');
+    var i=panels.indexOf(cur);
+    if(i>-1&&i<panels.length-1){panels[i+1].scrollIntoView({behavior:'smooth',block:'start'});}
+  }
 });
-// year
 document.addEventListener('DOMContentLoaded',function(){
   var y=document.getElementById('yr');if(y)y.textContent=new Date().getFullYear();
 });
