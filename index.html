@@ -1,12 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First GitHub Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MICRO Group, LLC — A measured approach to your goals</title>
+<meta name="description" content="MICRO Group, LLC is a strategic, research-driven consultancy serving nonprofit, education, and government institutions across Texas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;0,600;1,500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>My website is officially live on GitHub Pages.</p>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="wordmark" href="index.html">MICRO Group</a>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="index.html#expertise">Services</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <img class="logo" src="assets/micro-logo.png" alt="MICRO Group, LLC logo">
+      <h1>A measured approach to <span class="em">your goals.</span></h1>
+      <p class="lede">A multi-service strategic and research-driven consultancy, dedicated to serving nonprofit, education, and government institutions through expertise in Management, Integration, Culture, Research, and Operations.</p>
+      <hr class="rule-gold">
+      <a class="btn btn-gold" href="about.html">Meet the founder</a>
+    </div>
+  </section>
+
+  <!-- MISSION / VISION / VALUES -->
+  <section class="section mvv">
+    <div class="wrap">
+      <div class="grid">
+        <div class="item">
+          <h3>Mission<span class="dot">.</span></h3>
+          <p>To provide strategic, research-driven consultative solutions.</p>
+        </div>
+        <div class="item">
+          <h3>Vision<span class="dot">.</span></h3>
+          <p>To become a trusted partner in guiding institutions toward excellence and sustainability.</p>
+        </div>
+        <div class="item">
+          <h3>Values<span class="dot">.</span></h3>
+          <p>A client-centric institution committed to integrity, innovation, and collaboration.</p>
+        </div>
+        <div class="item">
+          <h3>Approach<span class="dot">.</span></h3>
+          <p>We tailor our work to the unique needs and goals of your organization, building lasting impact on your mission-focused objectives.</p>
+        </div>
+        <p class="slogan">“A measured approach to your goals.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section class="section expertise" id="expertise">
+    <div class="wrap">
+      <span class="eyebrow">Our practice</span>
+      <h2>Core subjects of expertise</h2>
+      <p class="intro">MICRO stands for the five focuses that guide every engagement. Each is offered on its own or woven together into a tailored solution.</p>
+
+      <div class="acc">
+        <details open>
+          <summary>Management <span class="sign">+</span></summary>
+          <div class="body">Strategic management and planning, executive leadership development, organizational strategy formulation, and interim director services. We ensure your institution is guided by effective leadership and management practices that align with your mission and vision.</div>
+        </details>
+        <details>
+          <summary>Integration <span class="sign">+</span></summary>
+          <div class="body">Programmatic and organizational integration, software implementation, and organization-wide training. We streamline operations, improve data management, and prepare your staff to leverage new systems and processes.</div>
+        </details>
+        <details>
+          <summary>Culture <span class="sign">+</span></summary>
+          <div class="body">Organizational culture development, team building, and employee engagement. We help define and cultivate a culture that aligns with your values and strengthens collaboration, communication, and cohesion across your organization.</div>
+        </details>
+        <details>
+          <summary>Research <span class="sign">+</span></summary>
+          <div class="body">Organizational research services including employee pay analysis, market analyses, and policy impact studies. We equip you with the data necessary to make informed, evidence-based decisions that move your organization forward.</div>
+        </details>
+        <details>
+          <summary>Operations <span class="sign">+</span></summary>
+          <div class="body">Advanced operational management solutions that increase productivity, optimize resource allocation, and enhance overall institutional effectiveness, allowing you to meet your specific objectives with the resources you have.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="frow">
+      <div class="fcol">
+        <div class="fmark">MICRO Group, LLC</div>
+        <div class="ftag">A measured approach to your goals.</div>
+      </div>
+      <div class="fcol">
+        <h4>Location</h4>
+        <p>1801 E 51st St., STE 365, PMB 354<br>Austin, Texas</p>
+      </div>
+      <div class="fcol">
+        <h4>Connect</h4>
+        <a href="mailto:jonathanlindavis@gmail.com">jonathanlindavis@gmail.com</a>
+        <a href="https://www.linkedin.com/in/jonathanlindavis/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://jonathanlindavis.substack.com/" target="_blank" rel="noopener">Substack</a>
+      </div>
+    </div>
+    <div class="legal">© <span id="yr"></span> MICRO Group, LLC. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
 </body>
 </html>
-
-Create index.html
