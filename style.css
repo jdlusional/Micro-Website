@@ -177,10 +177,16 @@ html.snap{scroll-snap-type:y proximity}
 /* ---------- CONSULTING / MICRO ---------- */
 .consult-hero{text-align:center;margin-bottom:40px}
 .consult-hero .logo{width:clamp(320px,42vw,520px);height:auto;margin:0 auto;display:block}
+.coi-notice{max-width:760px;margin:30px auto 0;border:2px solid var(--gold);background:rgba(241,196,0,.06);border-radius:8px;padding:22px 26px}
+.coi-notice .coi-label{display:block;font-family:var(--f-eyebrow);text-transform:uppercase;letter-spacing:.16em;font-size:.74rem;font-weight:600;color:var(--gold);margin-bottom:10px}
+.coi-notice p{color:var(--muted-light);font-size:.95rem;line-height:1.6;margin:0}
+.page-footnote{max-width:760px;margin:46px auto 0;padding-top:16px;border-top:1px solid var(--line-navy)}
+.page-footnote p{color:#8893b5;font-size:.8rem;line-height:1.5;margin:0}
+.page-footnote sup{color:var(--gold);font-weight:600}
 .consult-hero .eyebrow{margin-bottom:14px;font-size:.9rem;letter-spacing:.24em}
 .consult-hero h1{color:var(--paper);font-family:var(--f-head);font-size:clamp(2.6rem,5.4vw,4rem);line-height:1.02;max-width:15ch;margin:0 auto;font-weight:600}
 .consult-hero h1 .em{color:var(--gold);font-style:italic;text-decoration:underline;text-decoration-thickness:.05em;text-underline-offset:.08em}
-.consult-hero .lede{max-width:62ch;margin:20px auto 0;color:var(--muted-light);font-size:var(--t-lead)}
+.consult-hero .lede{max-width:62ch;margin:6px auto 0;color:var(--muted-light);font-size:var(--t-lead)}
 
 .engage{max-width:720px;margin:0 auto 40px;text-align:center;border-top:1px solid var(--line-navy);border-bottom:1px solid var(--line-navy);padding:26px 24px}
 .engage h2{font-family:var(--f-head);color:var(--paper);font-size:clamp(1.6rem,3vw,2.1rem);font-weight:600;margin-bottom:10px;line-height:1.05}
