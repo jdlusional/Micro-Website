@@ -352,3 +352,42 @@ html.snap{scroll-snap-type:y proximity}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* ============================================================
+   PROJECTS: Active / Pending sections + CTA
+   ============================================================ */
+.projects-section{max-width:760px;margin:0 auto 40px}
+.projects-subhead{font-family:var(--f-head);color:var(--paper);font-size:clamp(1.5rem,2.6vw,1.9rem);font-weight:600;text-align:center;margin:0 0 18px;padding-bottom:10px;border-bottom:1px solid var(--line-navy)}
+.projects-empty{color:var(--muted-light);text-align:center;font-size:1.02rem;margin:0;opacity:.78}
+.projects-cta{max-width:760px;margin:8px auto 0;text-align:center}
+
+/* ============================================================
+   NEWSLETTER SIGNUP FORM
+   ============================================================ */
+.signup-form{max-width:620px;margin:0 auto;display:grid;gap:20px;text-align:left}
+.signup-form .form-row{display:grid;gap:8px}
+.signup-form label{font-family:var(--f-eyebrow);text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:600;color:var(--gold)}
+.signup-form label .opt-tag{text-transform:none;letter-spacing:.02em;font-weight:500;color:var(--muted-light);opacity:.7;font-size:.72rem;margin-left:6px}
+.signup-form input,.signup-form select{font-family:var(--f-body);font-size:1rem;color:var(--paper);background:var(--navy-card);border:1px solid var(--line-navy);border-radius:8px;padding:13px 14px;width:100%;transition:border-color .16s ease,box-shadow .16s ease}
+.signup-form input::placeholder{color:var(--muted-light);opacity:.5}
+.signup-form input:focus,.signup-form select:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(241,196,0,.18)}
+.signup-form select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f1c400' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:18px;padding-right:42px;cursor:pointer}
+.signup-form select option{color:#1a1f2b;background:#fff}
+.signup-form .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.signup-form input.invalid,.signup-form select.invalid{border-color:#e2554f;box-shadow:0 0 0 3px rgba(226,85,79,.18)}
+.signup-form .form-actions{margin-top:4px;text-align:center}
+.signup-form .form-actions .btn{cursor:pointer;font-family:var(--f-eyebrow)}
+.signup-form .form-actions .btn[disabled]{opacity:.55;cursor:not-allowed;transform:none;box-shadow:none}
+.signup-form .form-privacy{font-size:.82rem;line-height:1.5;color:var(--muted-light);opacity:.72;text-align:center;max-width:52ch;margin:14px auto 0}
+.signup-form .form-status{text-align:center;font-size:.95rem;margin:6px auto 0;min-height:1.2em}
+.signup-form .form-status.ok{color:var(--gold-soft)}
+.signup-form .form-status.err{color:#f0908b}
+.signup-form .hp-field{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media(max-width:640px){
+  .signup-form .form-grid{grid-template-columns:1fr}
+}
+
+/* ============================================================
+   FOOTER LICENSE LINE
+   ============================================================ */
+.footer-license{font-size:.84rem;color:#7e87a3;margin-bottom:6px}

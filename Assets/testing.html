@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Testing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Barlow+Semi+Condensed:wght@500;600&family=Marcellus&family=Cinzel:wght@500;600&family=Parisienne&family=Michroma&family=Libre+Franklin:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="Assets/micro-mark.svg">
+<link rel="stylesheet" href="style.css">
+<style>
+/* Testing-page tab interface (scoped, page-only) */
+.test-tabs{max-width:1080px;margin:0 auto;text-align:left}
+.test-tablist{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:26px;border-bottom:1px solid var(--line-navy);padding-bottom:0}
+.test-tab{font-family:var(--f-eyebrow);font-size:.96rem;letter-spacing:.04em;color:var(--muted-light);background:var(--navy-card);border:1px solid var(--line-navy);border-bottom:0;border-radius:8px 8px 0 0;padding:13px 26px;cursor:pointer;transition:color .16s ease,background .16s ease;position:relative;top:1px}
+.test-tab:hover{color:var(--gold-soft)}
+.test-tab[aria-selected="true"]{color:var(--navy);background:var(--gold);border-color:var(--gold);font-weight:600}
+.test-panel{display:none;animation:fade .35s ease}
+.test-panel.active{display:block}
+.test-frame{width:100%;height:1400px;border:1px solid var(--line-navy);border-radius:10px;background:var(--paper);display:block;box-shadow:0 18px 40px rgba(0,0,0,.32)}
+.test-empty{color:#8893b5;font-style:italic;text-align:center;padding:80px 0;border:1px dashed var(--line-navy);border-radius:10px}
+.npa-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.npa-cell{display:flex;flex-direction:column}
+.npa-cell .npa-label{font-family:var(--f-eyebrow);text-transform:uppercase;letter-spacing:.18em;font-size:.74rem;font-weight:600;color:var(--gold);margin-bottom:4px}
+.npa-cell .npa-desc{color:var(--muted-light);font-size:.92rem;line-height:1.45;margin-bottom:12px}
+.npa-cell .test-frame{height:760px}
+.npa-intro{color:var(--muted-light);font-size:1rem;line-height:1.55;max-width:70ch;margin:0 auto 26px;text-align:center}
+@media(max-width:820px){.npa-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="nav-name" href="index.html">Jonathan Lin Davis</a>
+    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About JD</a></li>
+        <li><a href="consulting.html">Consulting</a></li>
+        <li><a href="writing.html">Writing</a></li>
+        <li><a href="research.html">Projects</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://www.linkedin.com/in/jonathanlindavis/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="Assets/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://jonathanlindavis.substack.com/" target="_blank" rel="noopener" aria-label="Substack"><img src="Assets/substack.png" alt="Substack"></a>
+        <a href="mailto:jonathanlindavis@gmail.com" aria-label="Email"><img src="Assets/email.png" alt="Email"></a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- PANEL 1: testing canvas -->
+  <section class="panel navy chess">
+    <div class="wrap inner">
+      <div style="text-align:center">
+        <span class="eyebrow">Internal</span>
+        <h2 style="color:var(--paper);font-size:var(--t-h2);margin-bottom:14px">Testing</h2>
+        <p style="color:var(--muted-light);max-width:60ch;margin:0 auto 36px">This page is for testing artifacts and layouts. It is not linked anywhere on the site and is excluded from search engines.</p>
+      </div>
+
+      <!-- TEST AREA: tabbed -->
+      <div class="test-tabs">
+        <div class="test-tablist" role="tablist" aria-label="Test setups">
+          <button class="test-tab" role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true">House Rules</button>
+          <button class="test-tab" role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false">NPA Job Board</button>
+          <button class="test-tab" role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false">OpenFellow</button>
+        </div>
+
+        <div class="test-panel active" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
+          <iframe class="test-frame" src="ten_issues_90th_legislature_24.html" title="House Rules" loading="lazy"></iframe>
+        </div>
+
+        <div class="test-panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
+          <p class="npa-intro">Nonprofit Austin (NPA) job board prototype, four connected views. The frames are live and same-origin, so navigating within one frame works as it would on the real site.</p>
+          <div class="npa-grid">
+            <div class="npa-cell">
+              <span class="npa-label">Job Board</span>
+              <span class="npa-desc">The main public listing where visitors browse and filter open nonprofit roles.</span>
+              <iframe class="test-frame" src="npa-job-board.html" title="NPA Job Board" loading="lazy"></iframe>
+            </div>
+            <div class="npa-cell">
+              <span class="npa-label">Job Detail</span>
+              <span class="npa-desc">A single posting expanded, showing the full description and how to apply.</span>
+              <iframe class="test-frame" src="npa-job-detail.html" title="NPA Job Detail" loading="lazy"></iframe>
+            </div>
+            <div class="npa-cell">
+              <span class="npa-label">Post a Job</span>
+              <span class="npa-desc">The employer form for submitting a new role to the board.</span>
+              <iframe class="test-frame" src="npa-post-job.html" title="NPA Post a Job" loading="lazy"></iframe>
+            </div>
+            <div class="npa-cell">
+              <span class="npa-label">Admin Review</span>
+              <span class="npa-desc">The behind-the-scenes view for approving, editing, or removing submitted postings.</span>
+              <iframe class="test-frame" src="npa-job-board-admin.html" title="NPA Admin" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden>
+          <p class="npa-intro">OpenFellow, an open-data index of graduate and early-career fellowships. Free, no login, no paywall, with the full dataset downloadable as CSV or JSON. The frame below is the live front end seeded with 95 fellowships.</p>
+          <iframe class="test-frame" src="openfellow.html" title="OpenFellow — the open fellowship index" loading="lazy" style="height:1400px"></iframe>
+        </div>
+      </div>
+
+    </div>
+    <button class="chevron" aria-label="Scroll to footer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+  </section>
+
+  <!-- PANEL 2: footer -->
+  <section class="footer-panel">
+    <svg class="footer-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" role="img" aria-label="Jonathan Lin Davis — The business of thinking for a living">
+      <text x="450" y="128" text-anchor="middle" font-family="Parisienne, cursive" font-size="96" fill="#f1c400">Jonathan Lin Davis</text>
+      <line x1="62" y1="140" x2="838" y2="140" stroke="white" stroke-width="1.5"/>
+      <text y="174" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="36" font-weight="300" fill="#ffffff"><tspan x="450">The business of </tspan><tspan font-style="italic" fill="#f1c400" text-decoration="underline">thinking</tspan><tspan> for a living.</tspan></text>
+    </svg>
+    <a class="footer-email" href="mailto:jonathanlindavis@gmail.com">jonathanlindavis@gmail.com</a>
+    <div class="footer-credit">This website was created and is managed by Jonathan Lin Davis.</div>
+    <div class="footer-legal">© <span id="yr"></span> Jonathan Lin Davis. All rights reserved. Austin, Texas.</div>
+  </section>
+
+</main>
+
+<script src="site.js"></script>
+<script>
+(function(){
+  var tabs=document.querySelectorAll('.test-tab');
+  var panels=document.querySelectorAll('.test-panel');
+  function select(tab){
+    tabs.forEach(function(t){t.setAttribute('aria-selected', t===tab ? 'true':'false');});
+    panels.forEach(function(p){
+      var on = p.id === tab.getAttribute('aria-controls');
+      p.classList.toggle('active', on);
+      if(on){p.removeAttribute('hidden');}else{p.setAttribute('hidden','');}
+    });
+  }
+  tabs.forEach(function(t){t.addEventListener('click',function(){select(t);});});
+})();
+</script>
+</body>
+</html>
