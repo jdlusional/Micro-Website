@@ -391,3 +391,96 @@ html.snap{scroll-snap-type:y proximity}
    FOOTER LICENSE LINE
    ============================================================ */
 .footer-license{font-size:.84rem;color:#7e87a3;margin-bottom:6px}
+
+/* ============================================================
+   NEWSLETTER CHECKBOXES
+   ============================================================ */
+.signup-form .field-label{font-family:var(--f-eyebrow);text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:600;color:var(--gold);display:block}
+.checkbox-group{display:grid;gap:12px;margin-top:4px}
+.checkbox-group.invalid{outline:2px solid #e2554f;outline-offset:6px;border-radius:8px}
+.checkbox-opt{display:flex;align-items:flex-start;gap:12px;font-family:var(--f-body);color:var(--paper);font-size:1rem;cursor:pointer;padding:12px 14px;border:1px solid var(--line-navy);border-radius:8px;background:var(--navy-card);transition:border-color .16s ease,background .16s ease}
+.checkbox-opt:hover{border-color:var(--gold)}
+.checkbox-opt input{margin-top:3px;width:18px;height:18px;accent-color:var(--gold);flex-shrink:0;cursor:pointer}
+.checkbox-opt em{font-style:italic;color:var(--muted-light);opacity:.75;font-size:.9rem}
+.checkbox-opt.locked{opacity:.45;cursor:not-allowed}
+.checkbox-opt.locked input{cursor:not-allowed}
+.checkbox-all{border-top:2px solid var(--gold)}
+
+/* ============================================================
+   FLASHING SUCCESS CONFIRMATION
+   ============================================================ */
+.form-status.flash{
+  display:inline-block;
+  font-family:var(--f-eyebrow);
+  font-weight:600;
+  font-size:1.05rem;
+  color:#27d07a;
+  animation:status-pulse 1.6s ease-in-out infinite;
+}
+@keyframes status-pulse{
+  0%,100%{opacity:1;text-shadow:0 0 0 rgba(39,208,122,0)}
+  50%{opacity:.45;text-shadow:0 0 14px rgba(39,208,122,.7)}
+}
+@media(prefers-reduced-motion:reduce){
+  .form-status.flash{animation:none;opacity:1}
+}
+
+/* ============================================================
+   FOOTER CONTACT BUTTON
+   ============================================================ */
+.footer-contact-btn{
+  display:inline-block;
+  font-family:var(--f-eyebrow);
+  font-size:1rem;
+  letter-spacing:.04em;
+  text-decoration:none;
+  padding:12px 32px;
+  border-radius:999px;
+  background:var(--gold);
+  color:var(--navy);
+  border:1.5px solid var(--gold);
+  font-weight:600;
+  margin-bottom:14px;
+  transition:all .18s ease;
+}
+.footer-contact-btn:hover{
+  background:var(--gold-soft);
+  border-color:var(--gold-soft);
+  transform:translateY(-2px);
+  box-shadow:0 10px 26px rgba(241,196,0,.3);
+}
+
+/* ============================================================
+   CONTACT FORM DISCLOSURE CALLOUT
+   ============================================================ */
+.contact-disclosure{
+  max-width:620px;
+  margin:0 auto 28px;
+  padding:18px 22px;
+  border:1px solid var(--line-navy);
+  border-left:3px solid var(--gold);
+  border-radius:8px;
+  background:var(--navy-card);
+}
+.contact-disclosure .coi-label{
+  display:inline-block;
+  font-family:var(--f-eyebrow);
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:.72rem;
+  font-weight:600;
+  color:var(--gold);
+  margin-bottom:8px;
+}
+.contact-disclosure .frame-line{
+  color:var(--paper);
+  font-size:.95rem;
+  margin:0 0 8px;
+  font-weight:600;
+}
+.contact-disclosure p{
+  color:var(--muted-light);
+  font-size:.9rem;
+  line-height:1.55;
+  margin:0;
+}

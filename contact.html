@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us — Jonathan Lin Davis</title>
+<meta name="description" content="Contact Jonathan Lin Davis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Barlow+Semi+Condensed:wght@500;600&family=Marcellus&family=Cinzel:wght@500;600&family=Parisienne&family=Michroma&family=Libre+Franklin:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="Assets/micro-mark.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="nav-name" href="index.html">Jonathan Lin Davis</a>
+    <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About JD</a></li>
+        <li><a href="consulting.html">Consulting</a></li>
+        <li><a href="writing.html">Writing</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://www.linkedin.com/in/jonathanlindavis/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="Assets/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://jonathanlindavis.substack.com/" target="_blank" rel="noopener" aria-label="Substack"><img src="Assets/substack.png" alt="Substack"></a>
+        <a href="mailto:jonathanlindavis@gmail.com" aria-label="Email"><img src="Assets/email.png" alt="Email"></a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- PANEL 1: contact form -->
+  <section class="panel navy chess">
+    <div class="wrap inner">
+      <div class="shead" style="text-align:center">
+        <span class="eyebrow">Contact Us</span>
+        <h2>Get in Touch</h2>
+        <p class="intro" style="margin:0 auto">Tell me what you are reaching out about and I will get back to you.</p>
+      </div>
+
+      <div class="contact-disclosure" role="note">
+        <span class="coi-label">Notice</span>
+        <p class="frame-line">If your inquiry concerns government, legislative, or political consulting services, please note:</p>
+        <p>Pursuant to State standards of conduct and statutory provisions regarding conflicts of interest for legislative employees (Tex. Gov&#8217;t Code &#167; 572.051 and Tex. Penal Code &#167; 36.07), the practitioner&#8217;s capacity to engage in government, legislative, or related political consultancies is restricted. All such services are hereby suspended indefinitely to ensure compliance with the law and to prevent any appearance of professional impairment.</p>
+      </div>
+
+      <form id="contact-form" class="signup-form" novalidate>
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="first_name">First name</label>
+            <input type="text" id="first_name" name="first_name" autocomplete="given-name" required>
+          </div>
+          <div class="form-row">
+            <label for="last_name">Last name</label>
+            <input type="text" id="last_name" name="last_name" autocomplete="family-name" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone <span class="opt-tag">optional</span></label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+        </div>
+
+        <div class="form-row">
+          <label for="location">Location</label>
+          <select id="location" name="location" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="Outside of United States">Outside of United States</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Utah">Utah</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Washington">Washington</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>
+            <option value="District of Columbia">District of Columbia</option>
+            <option value="Puerto Rico">Puerto Rico</option>
+            <option value="Guam">Guam</option>
+            <option value="U.S. Virgin Islands">U.S. Virgin Islands</option>
+            <option value="American Samoa">American Samoa</option>
+            <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="purpose">Purpose for contact</label>
+          <input type="text" id="purpose" name="purpose" required>
+        </div>
+
+        <div class="form-row">
+          <label for="urgency">Urgency</label>
+          <select id="urgency" name="urgency" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="Immediate">Immediate</option>
+            <option value="Moderate">Moderate</option>
+            <option value="None">None</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="referral">How did you hear about us?</label>
+          <input type="text" id="referral" name="referral" required>
+        </div>
+
+        <!-- honeypot -->
+        <div class="hp-field" aria-hidden="true">
+          <label for="company_website">Company website</label>
+          <input type="text" id="company_website" name="company_website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <p class="form-status" id="contact-status" role="status" aria-live="polite"></p>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-solid" id="contact-submit">Send message</button>
+        </div>
+
+        <p class="form-privacy">We collect only what you enter here, and we use it only to respond to your message. We never sell or share it.</p>
+      </form>
+    </div>
+    <button class="chevron" aria-label="Scroll to footer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+  </section>
+
+  <!-- PANEL 2: footer -->
+  <section class="footer-panel">
+    <svg class="footer-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" role="img" aria-label="Jonathan Lin Davis — The business of thinking for a living">
+      <text x="450" y="128" text-anchor="middle" font-family="Parisienne, cursive" font-size="96" fill="#f1c400">Jonathan Lin Davis</text>
+      <line x1="62" y1="140" x2="838" y2="140" stroke="white" stroke-width="1.5"/>
+      <text y="174" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-size="36" font-weight="300" fill="#ffffff"><tspan x="450">The business of </tspan><tspan font-style="italic" fill="#f1c400" text-decoration="underline">thinking</tspan><tspan> for a living.</tspan></text>
+    </svg>
+    <a class="footer-contact-btn" href="contact.html">Contact Us</a>
+    <div class="footer-credit">This form was created and is managed by Jonathan Lin Davis.</div>
+    <div class="footer-license">CC BY 4.0 data, MIT code.</div>
+    <div class="footer-legal">© <span id="yr"></span> Jonathan Lin Davis. All rights reserved. Austin, Texas.</div>
+  </section>
+
+</main>
+
+<script src="site.js"></script>
+</body>
+</html>
