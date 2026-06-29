@@ -1,0 +1,189 @@
+{
+"groups": [
+{
+"label": "Closed loop to a controlled entity",
+"orgs": [
+{
+"name": "Blue Bird Foundation",
+"reason": "reachability, closed loop to own a"
+},
+{
+"name": "Buckner Foundation",
+"reason": "reachability, closed loop to own m"
+},
+{
+"name": "Houston Ballet Guild Inc",
+"reason": "reachability, closed loop to paren"
+},
+{
+"name": "Ips Enterprises Inc",
+"reason": "reachability, operates own charter"
+},
+{
+"name": "Lc Fund For Priesty Formation",
+"reason": "reachability, closed loop to own r"
+},
+{
+"name": "National Boy Scouts Of America Foundation",
+"reason": "reachability, closed loop to Scout"
+},
+{
+"name": "New Gate To Peace Foundation",
+"reason": "reachability, closed loop to affil"
+},
+{
+"name": "Parks And Wildlife Foundation Of Texas Inc",
+"reason": "reachability, closed loop to paren"
+},
+{
+"name": "Southwestern Medical Foundation",
+"reason": "reachability, closed loop to own u"
+},
+{
+"name": "Swmf Properties Inc",
+"reason": "reachability, closed loop to paren"
+},
+{
+"name": "Texas A&M Foundation",
+"reason": "reachability, closed loop to own u"
+},
+{
+"name": "Texas Tech Foundation Inc",
+"reason": "reachability, closed loop to own u"
+},
+{
+"name": "The Lifespace Foundation",
+"reason": "reachability, closed loop to paren"
+},
+{
+"name": "Trinity Christian Academy",
+"reason": "reachability and cash, closed loop"
+},
+{
+"name": "Trinity Christian Academy Foundation",
+"reason": "reachability, closed loop to own a"
+}
+]
+},
+{
+"label": "Closed certified or membership network",
+"orgs": [
+{
+"name": "Childrens Advocacy Centers Of Texas Inc",
+"reason": "closed network, certified members "
+},
+{
+"name": "Coastal Bend Regional Advisory Council On Trauma Service Area U",
+"reason": "closed network, certified trauma m"
+},
+{
+"name": "Texas Access To Justice Foundation",
+"reason": "closed network, legal aid provider"
+},
+{
+"name": "Texas Association Of Community Action Agencies Inc",
+"reason": "closed network, member agencies on"
+},
+{
+"name": "Texas Casa Inc",
+"reason": "closed network, certified members "
+}
+]
+},
+{
+"label": "Operator or conduit",
+"orgs": [
+{
+"name": "Christus Foundation For Healthcare",
+"reason": "discretion, operates own clinics"
+},
+{
+"name": "Circuit Events Local Organizing Committee",
+"reason": "discretion, event artifact"
+},
+{
+"name": "Donatestock Charitable Inc",
+"reason": "discretion, stock donation conduit"
+},
+{
+"name": "Girtys Place Animal Rescue And Sanctuary",
+"reason": "discretion, operating animal sanct"
+},
+{
+"name": "Gracewood Inc",
+"reason": "discretion, direct service operato"
+},
+{
+"name": "Lady Lex Museum On The Bay Association",
+"reason": "discretion, operates own museum"
+},
+{
+"name": "Mercury One Inc",
+"reason": "discretion, operating charity not "
+},
+{
+"name": "Omega Charitable Developers Inc",
+"reason": "discretion, conduit shell"
+},
+{
+"name": "The Onestar Foundation",
+"reason": "discretion, AmeriCorps administrat"
+}
+]
+},
+{
+"label": "In kind rather than cash",
+"orgs": [
+{
+"name": "Charter For Charity Inc",
+"reason": "cash, in kind flight hours"
+},
+{
+"name": "Crossroads Community Services Inc",
+"reason": "cash, noncash food distributor"
+},
+{
+"name": "Feeding Texas",
+"reason": "cash and closed network, commoditi"
+},
+{
+"name": "Fp Assistance Inc",
+"reason": "cash and closed network, USDA food"
+},
+{
+"name": "Geo-Son Child Care Services Inc",
+"reason": "cash and closed network, USDA food"
+},
+{
+"name": "Hype Foundation Inc",
+"reason": "cash and closed network, USDA food"
+},
+{
+"name": "Nar Incorporated",
+"reason": "cash and closed network, USDA food"
+},
+{
+"name": "Trusted World Foundation Inc",
+"reason": "cash, in kind goods distributor"
+}
+]
+},
+{
+"label": "No researchable public identity",
+"orgs": [
+{
+"name": "Dare 2",
+"reason": "transparency, no public identity"
+},
+{
+"name": "Greater Houston Community Foundation",
+"reason": "transparency, no surfaced identity"
+},
+{
+"name": "Usatransform",
+"reason": "transparency, identity mismatch"
+}
+]
+}
+]
+}
