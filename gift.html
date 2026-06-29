@@ -573,8 +573,8 @@ async function renderRecipientProfile(id){
   // group grants by funder
   const byFunder = {};
   rows.forEach(g=>{
-    const key = g.funder_ein || g.fid || g.funder;
-    if(!byFunder[key]) byFunder[key] = {name:g.funder, ein:(g.funder_ein||g.fid||null), grants:[], total:0};
+    const key = g.funder_id || g.funder_ein || g.fid || g.funder;
+    if(!byFunder[key]) byFunder[key] = {name:g.funder, ein:(g.funder_id||g.funder_ein||g.fid||null), grants:[], total:0};
     byFunder[key].grants.push({a:Number(g.amount)||0, p:g.purpose||""});
     byFunder[key].total += Number(g.amount)||0;
   });
@@ -589,8 +589,8 @@ async function renderRecipientProfile(id){
 
   const funderRow = f => {
     const multi = f.grants.length>1;
-    const ein = f.ein ? esc(f.ein) : null;
-    const nameHtml = ein ? `<a data-nav="#/funder/${ein}">${esc(f.name)}</a>` : esc(f.name);
+    const linkable = f.ein && App.funderById[f.ein];
+    const nameHtml = linkable ? `<a data-nav="#/funder/${esc(f.ein)}">${esc(f.name)}</a>` : esc(f.name);
     const body = multi
       ? `<div class="breakdown">${f.grants.map(g=>`<div class="bk"><div class="bk-amt">${fmt(g.a)}</div><div class="bk-p">${esc(g.p)}</div></div>`).join("")}</div>`
       : `<div class="fpurpose">${esc(f.grants[0].p)}</div>`;
@@ -639,9 +639,24 @@ async function renderFunderProfile(id){
   catch(e){ app().innerHTML = `<main class="wrap"><div class="empty">Could not load funder detail.</div></main>`; return; }
   if(!fund){ app().innerHTML = `<main class="wrap"><div class="empty">Funder not found.</div></main>`; return; }
 
-  const rows = (detail[id] || []).map(g=>({
-    name:g.recipient, rid:(g.recipient_id||g.rid||null), amt:Number(g.amount)||0, p:g.purpose||""
-  })).sort((a,b)=>b.amt-a.amt);
+  // build a normalized-name -> recipient id index once, for linking funder recipients
+  if(!App.recipNameIndex){
+    App.recipNameIndex = {};
+    const norm = s => String(s||"").toUpperCase().replace(/[^A-Z0-9]+/g," ").trim();
+    App.recipients.forEach(r=>{
+      const k = norm(r.name);
+      // first writer wins; avoid clobbering with a later same-name record
+      if(k && !(k in App.recipNameIndex)) App.recipNameIndex[k] = r.id;
+    });
+    App._normRecip = norm;
+  }
+  const normR = App._normRecip;
+
+  const rows = (detail[id] || []).map(g=>{
+    const nm = g.recipient;
+    const rid = g.recipient_id || g.rid || App.recipNameIndex[normR(nm)] || null;
+    return { name:nm, rid:rid, amt:Number(g.amount)||0, p:g.purpose||"" };
+  }).sort((a,b)=>b.amt-a.amt);
 
   const sideType = fund.side==="private_foundation" ? "Private foundation" : "Public charity";
   const total = fund.grants || rows.reduce((s,r)=>s+r.amt,0);
