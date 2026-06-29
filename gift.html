@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GIFT — Grants Index For Texas</title>
+<meta name="description" content="A free index of Texas foundation giving, built from public IRS filings. Find who funds organizations like yours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#1c1a17; --paper:#f4efe2; --well:#fffdf7;
+    --rule:#c9c0ab; --rule-soft:#ddd5c3; --wash:#6b6456; --money:#3f7d4e;
+    --serif:'Spectral',Georgia,'Times New Roman',serif;
+    --mono:'JetBrains Mono','Courier New',monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  ::selection{background:var(--ink);color:var(--paper);}
+  a{color:inherit;}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 32px;}
+  .wrap-narrow{max-width:880px;margin:0 auto;padding:0 32px;}
+  .hidden{display:none!important;}
+
+  /* masthead */
+  .masthead{border-bottom:2px solid var(--ink);position:sticky;top:0;background:var(--paper);z-index:50;}
+  .masthead .inner{max-width:1040px;margin:0 auto;display:flex;justify-content:space-between;align-items:baseline;padding:18px 32px;}
+  .mark{font-size:28px;font-weight:700;line-height:1;text-decoration:none;color:var(--ink);}
+  .mark span{color:var(--money);}
+  .mast-nav{font-family:var(--mono);font-size:12px;letter-spacing:.04em;display:flex;gap:22px;}
+  .mast-nav a{color:var(--ink);text-decoration:none;padding-bottom:2px;border-bottom:1px solid transparent;cursor:pointer;}
+  .mast-nav a:hover,.mast-nav a.on{border-bottom-color:var(--ink);}
+
+  /* shared headings */
+  h1{font-weight:700;letter-spacing:-.01em;line-height:1.14;}
+  .crumb{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--wash);}
+  .crumb a{color:var(--wash);text-decoration:none;cursor:pointer;}
+  .crumb a:hover{color:var(--ink);}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--wash);}
+
+  /* search box */
+  .search{display:flex;border:1.5px solid var(--ink);background:var(--well);}
+  .search input{flex:1;border:0;background:transparent;padding:15px 18px;font-family:var(--serif);font-size:17px;color:var(--ink);outline:none;}
+  .search input::placeholder{color:#b3a98f;}
+  .search .icon{display:flex;align-items:center;padding:0 16px 0 0;font-family:var(--mono);font-size:13px;color:var(--wash);}
+
+  /* sort + toggle controls */
+  .sort{display:flex;gap:4px;align-items:center;font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--wash);}
+  .sort button{font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--rule);background:transparent;color:var(--wash);padding:5px 10px;cursor:pointer;transition:all .12s;}
+  .sort button:hover{border-color:var(--ink);color:var(--ink);}
+  .sort button.on{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+  .toggle{display:flex;border:1.5px solid var(--ink);width:fit-content;}
+  .toggle button{font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;background:transparent;border:0;color:var(--wash);padding:11px 22px;cursor:pointer;transition:all .12s;}
+  .toggle button:first-child{border-right:1.5px solid var(--ink);}
+  .toggle button.on{background:var(--ink);color:var(--paper);}
+
+  .count{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--wash);}
+  .count b{color:var(--ink);font-weight:700;}
+  .count .hint{color:var(--wash);text-transform:none;letter-spacing:.02em;}
+
+  /* money + figures */
+  .money{color:var(--money);font-family:var(--mono);font-weight:700;}
+
+  /* loading + empty */
+  .loading,.empty{padding:50px 0;font-family:var(--mono);font-size:13px;color:var(--wash);letter-spacing:.03em;text-align:center;}
+  .loading::after{content:'';display:inline-block;width:1em;text-align:left;animation:dots 1.2s steps(4,end) infinite;}
+  @keyframes dots{0%{content:''}25%{content:'.'}50%{content:'..'}75%{content:'...'}}
+
+  footer{border-top:2px solid var(--ink);padding:30px 0 50px;margin-top:50px;}
+
+  @media (max-width:680px){
+    .masthead .inner{flex-direction:column;gap:10px;align-items:flex-start;}
+    .mast-nav{font-size:11px;gap:16px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="inner">
+    <a class="mark" data-nav="#/">GI<span>F</span>T</a>
+    <nav class="mast-nav">
+      <a data-nav="#/recipients" data-navkey="recipients">Recipients</a>
+      <a data-nav="#/funders" data-navkey="funders">Funders</a>
+      <a data-nav="#/about" data-navkey="about">About</a>
+    </nav>
+  </div>
+</header>
+
+<div id="app"></div>
+
+<!-- view scripts appended below in subsequent build steps -->
+<style>
+  /* ===== LANDING ===== */
+  .lhero{padding:60px 0 8px;}
+  .lhero h1{font-size:48px;max-width:840px;}
+  .lhero h1 b{font-weight:700;}
+  .llede{font-size:19px;color:var(--wash);max-width:600px;margin-top:22px;line-height:1.55;}
+  .lsearch-block{margin-top:38px;}
+  .lsearch-label{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin-bottom:10px;}
+  .lsearch{max-width:600px;}
+  .lsearch button{border:0;border-left:1.5px solid var(--ink);background:var(--ink);color:var(--paper);padding:0 28px;font-family:var(--mono);font-size:13px;letter-spacing:.08em;cursor:pointer;}
+  .lsearch button:hover{background:#000;}
+  .lalt{margin-top:14px;font-size:15px;color:var(--wash);}
+  .lalt a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;cursor:pointer;}
+  .lledger{margin-top:60px;}
+  .lledger-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:8px;}
+  .lledger-title{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;}
+  .lledger-note{font-family:var(--mono);font-size:11px;color:var(--wash);letter-spacing:.04em;}
+  .lentry{display:grid;grid-template-columns:auto 1fr auto;gap:20px;padding:14px 0;border-bottom:1px solid var(--rule-soft);align-items:baseline;cursor:pointer;transition:background .12s,padding-left .12s;}
+  .lentry:hover{background:#efe9da;padding-left:8px;}
+  .lentry .rk{font-family:var(--mono);font-size:13px;color:var(--wash);min-width:26px;}
+  .lentry .nm{font-size:18px;}
+  .lentry .nm .sub{display:block;font-family:var(--mono);font-size:11px;color:var(--wash);letter-spacing:.03em;text-transform:uppercase;margin-top:3px;}
+  .lentry .amt{font-size:17px;text-align:right;white-space:nowrap;}
+  .lmore{margin-top:24px;font-family:var(--mono);font-size:13px;}
+  .lmore a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:2px;cursor:pointer;}
+  .ldoors{display:grid;grid-template-columns:1fr 1fr;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);margin-top:60px;}
+  .ldoor{padding:30px 28px;cursor:pointer;transition:background .12s;}
+  .ldoor:first-child{border-right:1px solid var(--rule);}
+  .ldoor:hover{background:#efe9da;}
+  .ldoor .k{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--wash);margin-bottom:8px;}
+  .ldoor .h{font-size:22px;font-weight:600;margin-bottom:6px;}
+  .ldoor .d{font-size:15px;color:var(--wash);line-height:1.5;}
+  .lfoot{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;}
+  .lfoot .note{font-size:14px;color:var(--wash);max-width:520px;line-height:1.55;}
+  .lfoot .meta{font-family:var(--mono);font-size:11px;color:var(--wash);letter-spacing:.05em;text-align:right;line-height:1.8;}
+  .lfoot .meta a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);cursor:pointer;}
+
+  /* ===== DIRECTORY (recipients + funders shared) ===== */
+  .vhead{padding:34px 0 0;}
+  .vhead h1{font-size:30px;margin-bottom:6px;}
+  .vsub{font-size:16px;color:var(--wash);max-width:560px;}
+  .dcontrols{display:flex;justify-content:space-between;align-items:center;margin-top:18px;border-bottom:2px solid var(--ink);padding-bottom:8px;flex-wrap:wrap;gap:10px;}
+  .ftag{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--wash);padding:14px 0 0;}
+  .dmore{font-family:var(--mono);font-size:11.5px;color:var(--wash);letter-spacing:.04em;padding:16px 0 60px;}
+  .dmore b{color:var(--ink);}
+
+  /* recipient rows: prominent funder count */
+  .rentry{display:grid;grid-template-columns:64px 1fr auto;gap:22px;padding:11px 0;border-bottom:1px solid var(--rule-soft);align-items:center;cursor:pointer;transition:background .12s,padding-left .12s;}
+  .rentry:hover{background:#efe9da;padding-left:8px;}
+  .rentry .fcount{text-align:center;border-right:1px solid var(--rule);padding-right:10px;}
+  .rentry .fcount .num{font-family:var(--mono);font-weight:700;font-size:22px;line-height:1;color:var(--ink);}
+  .rentry .fcount .lab{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--wash);margin-top:3px;}
+  .rentry .nm{font-size:17px;line-height:1.3;}
+  .rentry .nm .loc{display:block;font-family:var(--mono);font-size:10.5px;color:var(--wash);letter-spacing:.03em;text-transform:uppercase;margin-top:2px;}
+  .rentry .amt{font-size:16px;text-align:right;white-space:nowrap;min-width:120px;}
+  .rentry .amt .alab{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--wash);font-weight:400;margin-top:2px;}
+
+  /* funder directory rows */
+  .col-h{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--wash);}
+  .fentry{display:grid;grid-template-columns:40px 1fr auto;gap:22px;padding:13px 0;border-bottom:1px solid var(--rule-soft);align-items:center;cursor:pointer;transition:background .12s,padding-left .12s;}
+  .fentry:hover{background:#efe9da;padding-left:8px;}
+  .fentry .rank{font-family:var(--mono);font-size:14px;font-weight:700;color:var(--wash);}
+  .fentry .nm{font-size:17px;line-height:1.3;}
+  .fentry .nm .meta{display:block;font-family:var(--mono);font-size:10.5px;color:var(--wash);letter-spacing:.03em;text-transform:uppercase;margin-top:3px;}
+  .fentry .nm .posture{display:inline-block;font-family:var(--mono);font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--wash);border:1px solid var(--rule);padding:1px 6px;margin-top:6px;}
+  .fentry .gv{font-size:16px;text-align:right;white-space:nowrap;}
+  .fentry .gv .gl{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--wash);font-weight:400;margin-top:2px;}
+
+  /* ===== PROFILE (shared) ===== */
+  .pcrumb{padding:26px 0 0;}
+  .phead{padding:14px 0 18px;border-bottom:2px solid var(--ink);}
+  .ptype{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--wash);margin-bottom:8px;}
+  .htop{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;}
+  .phead h1{font-size:32px;}
+  .ploc{font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--wash);margin-top:6px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+  .ploc .posture{font-family:var(--mono);font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:var(--wash);border:1px solid var(--rule);padding:1px 6px;}
+  .pstats{display:flex;gap:30px;align-items:flex-end;}
+  .pstats .stat{text-align:right;}
+  .pstats .v{font-family:var(--mono);font-weight:700;font-size:22px;line-height:1;}
+  .pstats .v.m{color:var(--money);}
+  .pstats .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--wash);margin-top:5px;}
+  .pcontext{font-size:13.5px;color:var(--wash);max-width:680px;margin-top:14px;line-height:1.5;}
+  .pcontext b{color:var(--ink);font-weight:600;}
+  .pledger-head{display:flex;justify-content:space-between;align-items:baseline;padding:22px 0 6px;}
+  .pledger-title{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;}
+  .pledger-note{font-family:var(--mono);font-size:10.5px;color:var(--wash);letter-spacing:.04em;}
+  .col-rule{border-bottom:2px solid var(--ink);}
+
+  /* recipient profile: grouped funders */
+  .funder{padding:13px 0;border-bottom:1px solid var(--rule-soft);}
+  .frow{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:baseline;}
+  .frow .fname{font-size:17px;}
+  .frow .fname a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);cursor:pointer;}
+  .frow .fname a:hover{border-bottom-color:var(--ink);}
+  .frow .fname .ct{font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--wash);margin-left:8px;}
+  .frow .ftotal{font-size:17px;text-align:right;white-space:nowrap;}
+  .fpurpose{font-size:13px;color:var(--wash);line-height:1.45;margin-top:4px;max-width:640px;}
+  .breakdown{margin-top:8px;padding-left:14px;border-left:2px solid var(--rule);}
+  .bk{display:grid;grid-template-columns:auto 1fr;gap:14px;padding:3px 0;align-items:baseline;}
+  .bk-amt{font-family:var(--mono);font-size:12px;color:var(--ink);white-space:nowrap;min-width:78px;}
+  .bk-p{font-size:12.5px;color:var(--wash);line-height:1.4;}
+  .showall{width:100%;text-align:left;background:transparent;border:0;border-bottom:2px solid var(--ink);padding:14px 0;cursor:pointer;font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink);display:flex;justify-content:space-between;align-items:center;}
+  .showall:hover{background:#efe9da;padding-left:8px;}
+  .showall .meta{color:var(--wash);text-transform:none;letter-spacing:.02em;}
+
+  /* funder profile: outbound grants */
+  .grant{display:grid;grid-template-columns:1fr auto;gap:28px;padding:14px 0;border-bottom:1px solid var(--rule-soft);align-items:start;}
+  .grant:hover{background:#efe9da;}
+  .grant .grec{font-size:17px;}
+  .grant .grec a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);cursor:pointer;}
+  .grant .grec a:hover{border-bottom-color:var(--ink);}
+  .grant .gpurpose{font-size:13px;color:var(--wash);line-height:1.45;margin-top:4px;max-width:600px;}
+  .grant .gamt{font-size:17px;text-align:right;white-space:nowrap;}
+  .pcountline{display:flex;justify-content:space-between;align-items:center;margin-top:16px;border-bottom:2px solid var(--ink);padding-bottom:8px;}
+
+  .pfoot{font-size:13px;color:var(--wash);max-width:680px;line-height:1.55;}
+  .pfoot a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);cursor:pointer;}
+
+  /* ===== ABOUT ===== */
+  .ahead h1{font-size:34px;padding:14px 0 0;}
+  .asummary{font-size:18px;line-height:1.6;max-width:660px;margin-top:18px;}
+  .asummary b{font-weight:600;}
+  .asummary .free{color:var(--wash);font-size:15px;margin-top:14px;display:block;}
+  .asections{margin-top:40px;border-top:2px solid var(--ink);}
+  .asections details{border-bottom:1px solid var(--rule);}
+  .asections summary{list-style:none;cursor:pointer;padding:20px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;}
+  .asections summary::-webkit-details-marker{display:none;}
+  .s-title{font-size:19px;font-weight:600;}
+  .s-meta{font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--wash);display:flex;align-items:center;gap:14px;}
+  .chev{font-family:var(--mono);font-size:14px;color:var(--wash);transition:transform .2s;}
+  details[open] .chev{transform:rotate(90deg);}
+  .s-body{padding:2px 0 26px;}
+  .s-intro{font-size:15px;color:var(--wash);line-height:1.55;max-width:640px;margin-bottom:20px;}
+  .basis-row{display:grid;grid-template-columns:auto 1fr auto;gap:18px;padding:11px 0;border-bottom:1px solid var(--rule-soft);align-items:baseline;}
+  .basis-row .bn{font-family:var(--mono);font-weight:700;font-size:18px;min-width:28px;}
+  .basis-row .bl{font-size:16px;}
+  .basis-row .bd{font-size:13px;color:var(--wash);max-width:420px;}
+  .rgroup{margin-bottom:24px;}
+  .rgroup-h{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--wash);border-bottom:1px solid var(--ink);padding-bottom:6px;margin-bottom:8px;display:flex;justify-content:space-between;}
+  .rgroup-h .cnt{color:var(--ink);font-weight:700;}
+  .rorg{display:grid;grid-template-columns:1fr auto;gap:16px;padding:6px 0;border-bottom:1px dotted var(--rule-soft);align-items:baseline;}
+  .rorg .ron{font-size:15px;}
+  .rorg .rob{font-family:var(--mono);font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--wash);white-space:nowrap;}
+  .caveat{padding:9px 0;border-bottom:1px solid var(--rule-soft);}
+  .caveat .ct{font-weight:600;font-size:16px;}
+  .caveat .cd{font-size:14px;color:var(--wash);line-height:1.5;margin-top:2px;}
+  .methprose{font-size:15.5px;line-height:1.65;max-width:660px;}
+  .methprose p{margin-bottom:14px;}
+  .dl{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:.05em;text-transform:uppercase;background:var(--ink);color:var(--paper);border:0;padding:12px 20px;cursor:pointer;text-decoration:none;margin-top:18px;}
+  .dl:hover{background:#000;}
+  .dl .ext{opacity:.6;font-size:10px;}
+  .dlnote{font-family:var(--mono);font-size:10px;color:var(--wash);letter-spacing:.03em;margin-top:8px;}
+  .afoot .meta{font-family:var(--mono);font-size:11px;color:var(--wash);letter-spacing:.05em;line-height:2;}
+  .afoot .meta a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);cursor:pointer;}
+
+  @media (max-width:680px){
+    .lhero h1{font-size:34px;}
+    .ldoors{grid-template-columns:1fr;}
+    .ldoor:first-child{border-right:0;border-bottom:1px solid var(--rule);}
+    .lfoot .meta{text-align:left;}
+    .rentry{grid-template-columns:54px 1fr auto;gap:14px;}
+    .htop{flex-direction:column;align-items:flex-start;gap:14px;}
+    .pstats .stat{text-align:left;}
+    .grant{grid-template-columns:1fr;gap:6px;}.grant .gamt{text-align:left;}
+  }
+</style>
+<script>
+//==================================================================
+// GIFT single-page app
+// Data files expected alongside this HTML:
+//   gift_funders.json          (summary, loaded on start)
+//   gift_recipients.json       (summary, loaded on start)
+//   gift_funder_detail.json    (lazy, on first funder profile)
+//   gift_recipient_detail.json (lazy, on first recipient profile)
+//   gift_exclusions.json       (companion roster for About; generated from excluded_funders.csv)
+//==================================================================
+
+const App = {
+  funders:null, recipients:null,        // summaries
+  funderDetail:null, recipientDetail:null, // lazy caches
+  exclusions:null,                      // about roster
+  loadingDetail:{funder:false, recipient:false}
+};
+
+const fmt = n => "$" + (Number(n)||0).toLocaleString("en-US");
+const fmtShort = n => {
+  n = Number(n)||0;
+  if(n>=1e6) return "$"+(n/1e6).toFixed(1).replace(/\.0$/,"")+"M";
+  if(n>=1e3) return "$"+Math.round(n/1e3)+"K";
+  return "$"+n;
+};
+const esc = s => String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const app = () => document.getElementById("app");
+
+// ---- data loaders ----
+async function loadSummaries(){
+  if(App.funders && App.recipients) return;
+  const [f,r] = await Promise.all([
+    fetch("gift_funders.json").then(x=>x.json()),
+    fetch("gift_recipients.json").then(x=>x.json())
+  ]);
+  App.funders = f; App.recipients = r;
+  // index by id for quick lookup
+  App.funderById = {}; f.forEach(o=>App.funderById[o.id]=o);
+  App.recipientById = {}; r.forEach(o=>App.recipientById[o.id]=o);
+}
+async function loadRecipientDetail(){
+  if(App.recipientDetail) return App.recipientDetail;
+  App.recipientDetail = await fetch("gift_recipient_detail.json").then(x=>x.json());
+  return App.recipientDetail;
+}
+async function loadFunderDetail(){
+  if(App.funderDetail) return App.funderDetail;
+  App.funderDetail = await fetch("gift_funder_detail.json").then(x=>x.json());
+  return App.funderDetail;
+}
+async function loadExclusions(){
+  if(App.exclusions) return App.exclusions;
+  try { App.exclusions = await fetch("gift_exclusions.json").then(x=>x.json()); }
+  catch(e){ App.exclusions = null; }
+  return App.exclusions;
+}
+
+// ---- nav helpers ----
+function go(hash){ if(location.hash!==hash){ location.hash=hash; } else { route(); } }
+function setNav(key){
+  document.querySelectorAll(".mast-nav a").forEach(a=>{
+    a.classList.toggle("on", a.dataset.navkey===key);
+  });
+}
+function bindNav(scope){
+  (scope||document).querySelectorAll("[data-nav]").forEach(el=>{
+    el.onclick = e => { e.preventDefault(); go(el.dataset.nav); };
+  });
+}
+
+//==================================================================
+// ROUTER
+//==================================================================
+async function route(){
+  const hash = location.hash || "#/";
+  const parts = hash.replace(/^#\//,"").split("/"); // ["recipient","e123"] etc
+  const top = parts[0] || "";
+  window.scrollTo(0,0);
+
+  // ensure summaries before any data view
+  if(!App.funders){
+    app().innerHTML = `<div class="wrap"><div class="loading">Loading the index</div></div>`;
+    try { await loadSummaries(); }
+    catch(e){ app().innerHTML = `<div class="wrap"><div class="empty">Could not load the index data. If you are viewing this locally, serve the folder over http rather than opening the file directly.</div></div>`; return; }
+  }
+
+  if(top===""){ setNav(""); return renderLanding(); }
+  if(top==="recipients"){ setNav("recipients"); return renderRecipients(); }
+  if(top==="funders"){ setNav("funders"); return renderFunders(); }
+  if(top==="about"){ setNav("about"); return renderAbout(); }
+  if(top==="recipient"){ setNav("recipients"); return renderRecipientProfile(parts[1]); }
+  if(top==="funder"){ setNav("funders"); return renderFunderProfile(parts[1]); }
+  // unknown
+  setNav(""); return renderLanding();
+}
+window.addEventListener("hashchange", route);
+
+//==================================================================
+// LANDING
+//==================================================================
+function topRecipientsByFunders(n){
+  return [...App.recipients].sort((a,b)=>(b.funders-a.funders)||(b.total-a.total)).slice(0,n);
+}
+function renderLanding(){
+  const feat = topRecipientsByFunders(6);
+  app().innerHTML = `
+  <main class="wrap">
+    <section class="lhero">
+      <div class="eyebrow">Grants Index For Texas · Tax year 2023 · Public record</div>
+      <h1>Texas foundation giving, <b>opened up</b>, so your next funder is a search away.</h1>
+      <p class="llede">A free index built entirely from public IRS filings. Start with an organization like yours and see exactly who has funded it, and for how much.</p>
+      <div class="lsearch-block">
+        <div class="lsearch-label">Find who funds organizations like yours</div>
+        <div class="search lsearch">
+          <input id="lq" placeholder="Search a nonprofit, school, or cause" autocomplete="off">
+          <button id="lgo">SEARCH</button>
+        </div>
+        <p class="lalt">Looking the other way? <a data-nav="#/funders">Browse the funders</a> and see where their money goes.</p>
+      </div>
+    </section>
+
+    <section class="lledger">
+      <div class="lledger-head">
+        <div class="lledger-title">Widely backed recipients</div>
+        <div class="lledger-note">funded by many · FY2023</div>
+      </div>
+      <div id="lrows"></div>
+      <div class="lmore"><a data-nav="#/recipients">See all ${App.recipients.length.toLocaleString()} recipients →</a></div>
+    </section>
+
+    <section class="ldoors">
+      <div class="ldoor" data-nav="#/recipients">
+        <div class="k">Start with a recipient</div>
+        <div class="h">Find your funders</div>
+        <div class="d">Search any organization and trace every foundation that gave to it, with amounts and stated purpose.</div>
+      </div>
+      <div class="ldoor" data-nav="#/funders">
+        <div class="k">Start with a funder</div>
+        <div class="h">Browse the givers</div>
+        <div class="d">Open any of the top ${App.funders.length} Texas grantmakers and see the full list of organizations it funded.</div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap lfoot">
+    <div class="note">GIFT is an independent public good built by Jonathan Lin Davis from public IRS filings. It is free to use, takes no money, and endorses no one. Figures are reported as filed for tax year 2023 and run about a year behind.</div>
+    <div class="meta">
+      Data · <a data-nav="#/about">CC BY 4.0</a><br>
+      Code · <a data-nav="#/about">MIT</a><br>
+      Method · <a data-nav="#/about">read the methodology</a><br>
+      Exclusions · <a data-nav="#/about">audit file</a>
+    </div>
+  </div></footer>`;
+
+  document.getElementById("lrows").innerHTML = feat.map((r,i)=>`
+    <div class="lentry" data-nav="#/recipient/${esc(r.id)}">
+      <div class="rk">${String(i+1).padStart(2,"0")}</div>
+      <div class="nm">${esc(r.name)}<span class="sub">${esc(r.state||"")} · ${r.funders} funders</span></div>
+      <div class="amt money">${fmt(r.total)}</div>
+    </div>`).join("");
+
+  const doSearch = ()=>{ const v=document.getElementById("lq").value.trim(); location.hash = "#/recipients"; sessionStorage.setItem("gift_rq", v); };
+  document.getElementById("lgo").onclick = doSearch;
+  document.getElementById("lq").addEventListener("keydown",e=>{ if(e.key==="Enter") doSearch(); });
+  bindNav(app());
+}
+
+//==================================================================
+// RECIPIENTS DIRECTORY
+//==================================================================
+function renderRecipients(){
+  const CAP = 10;
+  let sortKey = "funders";
+  const carried = sessionStorage.getItem("gift_rq") || "";
+  sessionStorage.removeItem("gift_rq");
+
+  app().innerHTML = `
+  <main class="wrap">
+    <div class="vhead">
+      <div class="crumb"><a data-nav="#/">GIFT</a> / Recipients</div>
+      <h1 style="margin-top:14px">Find your funders.</h1>
+      <p class="vsub">Search any organization to see every Texas foundation that funded it. Type to narrow the full index of ${App.recipients.length.toLocaleString()} recipients.</p>
+      <div class="search" style="margin-top:22px"><input id="q" placeholder="Search a nonprofit, school, or cause" autocomplete="off"><div class="icon">↵</div></div>
+    </div>
+    <div class="dcontrols">
+      <div class="count" id="count"></div>
+      <div class="sort">sort
+        <button data-k="funders" class="on">funders</button>
+        <button data-k="total">total</button>
+        <button data-k="name">name</button>
+      </div>
+    </div>
+    <div class="ftag" id="ftag">Widely backed recipients · start typing to search all ${App.recipients.length.toLocaleString()}</div>
+    <div id="list"></div>
+    <div class="dmore" id="more"></div>
+  </main>`;
+
+  const qbox=document.getElementById("q"), list=document.getElementById("list");
+  const countEl=document.getElementById("count"), moreEl=document.getElementById("more"), ftag=document.getElementById("ftag");
+
+  function draw(){
+    const q=qbox.value.trim().toLowerCase();
+    let rows = q ? App.recipients.filter(r=>r.name.toLowerCase().includes(q))
+                 : topRecipientsByFunders(App.recipients.length);
+    if(sortKey==="name") rows=[...rows].sort((a,b)=>a.name.localeCompare(b.name));
+    else rows=[...rows].sort((a,b)=>(b[sortKey]-a[sortKey])||(b.total-a.total));
+    const shown=rows.slice(0,CAP);
+    ftag.style.display = q ? "none":"block";
+    countEl.innerHTML = q
+      ? `<b>${rows.length.toLocaleString()}</b> matching${rows.length>CAP?` <span class="hint">· showing top ${CAP}</span>`:""}`
+      : `<b>${App.recipients.length.toLocaleString()}</b> recipients indexed`;
+    if(rows.length===0){ list.innerHTML=`<div class="empty">No recipients match that name. Try fewer letters, or a different spelling.</div>`; moreEl.innerHTML=""; return; }
+    list.innerHTML = shown.map(r=>`
+      <div class="rentry" data-nav="#/recipient/${esc(r.id)}">
+        <div class="fcount"><span class="num">${r.funders}</span><span class="lab">funders</span></div>
+        <div class="nm">${esc(r.name)}<span class="loc">${esc(r.state||"")}</span></div>
+        <div class="amt money">${fmt(r.total)}<span class="alab">received</span></div>
+      </div>`).join("");
+    bindNav(list);
+    moreEl.innerHTML = !q
+      ? `Showing the top ${Math.min(CAP,shown.length)} by funder count. Search to reach any of the ${App.recipients.length.toLocaleString()} recipients.`
+      : (rows.length>CAP ? `<b>${(rows.length-CAP).toLocaleString()}</b> more match. Keep typing to narrow.` : "");
+  }
+  qbox.addEventListener("input",draw);
+  document.querySelectorAll(".sort button").forEach(b=>b.onclick=()=>{
+    document.querySelectorAll(".sort button").forEach(x=>x.classList.remove("on"));
+    b.classList.add("on"); sortKey=b.dataset.k; draw();
+  });
+  if(carried) qbox.value=carried;
+  bindNav(app());
+  draw();
+  qbox.focus();
+}
+
+//==================================================================
+// FUNDERS DIRECTORY
+//==================================================================
+function renderFunders(){
+  const CAP=12;
+  let side = "private_foundation";
+  const sideLabel = s => s==="private_foundation" ? "private foundations" : "public charities";
+  const sideData = s => App.funders.filter(f=>f.side===s).sort((a,b)=>a.rank-b.rank);
+  const counts = {
+    private_foundation: App.funders.filter(f=>f.side==="private_foundation").length,
+    public_charity: App.funders.filter(f=>f.side==="public_charity").length
+  };
+
+  app().innerHTML = `
+  <main class="wrap">
+    <div class="vhead">
+      <div class="crumb"><a data-nav="#/">GIFT</a> / Funders</div>
+      <h1 style="margin-top:14px">Browse the givers.</h1>
+      <p class="vsub">The top Texas grantmakers, ranked by grants paid. Open any to see the full list of organizations it funded.</p>
+      <div class="toggle" style="margin-top:24px">
+        <button data-side="private_foundation" class="on">Private foundations</button>
+        <button data-side="public_charity">Public charities</button>
+      </div>
+      <div class="search" style="margin-top:18px"><input id="q" placeholder="Search a funder by name" autocomplete="off"><div class="icon">↵</div></div>
+    </div>
+    <div class="dcontrols">
+      <div class="count" id="count"></div>
+      <div class="col-h">Grants paid · FY2023</div>
+    </div>
+    <div id="list"></div>
+    <div class="dmore" id="more"></div>
+  </main>`;
+
+  const qbox=document.getElementById("q"), list=document.getElementById("list");
+  const countEl=document.getElementById("count"), moreEl=document.getElementById("more");
+
+  function draw(){
+    const q=qbox.value.trim().toLowerCase();
+    let rows=sideData(side).filter(f=>f.name.toLowerCase().includes(q));
+    const shown=rows.slice(0,CAP);
+    countEl.innerHTML = q ? `<b>${rows.length}</b> matching ${sideLabel(side)}` : `Top <b>${counts[side]}</b> ${sideLabel(side)}`;
+    if(rows.length===0){ list.innerHTML=`<div class="empty">No funders match that name.</div>`; moreEl.innerHTML=""; return; }
+    list.innerHTML = shown.map(f=>{
+      const post = (side==="private_foundation" && f.posture && f.posture!=="unstated")
+        ? `<span class="posture">${esc(f.posture)}</span>` : "";
+      return `<div class="fentry" data-nav="#/funder/${esc(f.id)}">
+        <div class="rank">${String(f.rank).padStart(2,"0")}</div>
+        <div class="nm">${esc(f.name)}<span class="meta">${esc(f.city||"")}</span>${post}</div>
+        <div class="gv money">${fmt(f.grants)}<span class="gl">granted</span></div>
+      </div>`;
+    }).join("");
+    bindNav(list);
+    moreEl.innerHTML = !q
+      ? `Showing the top ${Math.min(CAP,shown.length)}. Search to find any of the ${counts[side]} ranked ${sideLabel(side)}.`
+      : (rows.length>CAP ? `<b>${rows.length-CAP}</b> more match. Keep typing to narrow.` : "");
+  }
+  qbox.addEventListener("input",draw);
+  document.querySelectorAll(".toggle button").forEach(b=>b.onclick=()=>{
+    document.querySelectorAll(".toggle button").forEach(x=>x.classList.remove("on"));
+    b.classList.add("on"); side=b.dataset.side; qbox.value=""; draw();
+  });
+  bindNav(app());
+  draw();
+}
+
+//==================================================================
+// RECIPIENT PROFILE  (inbound: funders that gave to this recipient)
+//==================================================================
+async function renderRecipientProfile(id){
+  const rec = App.recipientById[id];
+  app().innerHTML = `<main class="wrap"><div class="pcrumb crumb"><a data-nav="#/">GIFT</a> / <a data-nav="#/recipients">Recipients</a> / ${rec?esc(rec.name):"…"}</div><div class="loading">Loading funders</div></main>`;
+  bindNav(app());
+  let detail;
+  try { detail = await loadRecipientDetail(); }
+  catch(e){ app().innerHTML = `<main class="wrap"><div class="empty">Could not load recipient detail.</div></main>`; return; }
+  const rows = detail[id] || [];
+  if(!rec){ app().innerHTML = `<main class="wrap"><div class="empty">Recipient not found.</div></main>`; return; }
+
+  // group grants by funder
+  const byFunder = {};
+  rows.forEach(g=>{
+    const key = g.funder_ein || g.fid || g.funder;
+    if(!byFunder[key]) byFunder[key] = {name:g.funder, ein:(g.funder_ein||g.fid||null), grants:[], total:0};
+    byFunder[key].grants.push({a:Number(g.amount)||0, p:g.purpose||""});
+    byFunder[key].total += Number(g.amount)||0;
+  });
+  let funders = Object.values(byFunder).sort((a,b)=>b.total-a.total);
+  funders.forEach(f=>f.grants.sort((a,b)=>b.a-a.a));
+  const grantCount = rows.length, funderCount = funders.length;
+  const total = rec.total || funders.reduce((s,f)=>s+f.total,0);
+  const TOPN = 8;
+  const top = funders.slice(0,TOPN), tail = funders.slice(TOPN);
+  const tailMin = tail.length ? Math.min(...tail.map(f=>f.total)) : 0;
+  const tailMax = tail.length ? Math.max(...tail.map(f=>f.total)) : 0;
+
+  const funderRow = f => {
+    const multi = f.grants.length>1;
+    const ein = f.ein ? esc(f.ein) : null;
+    const nameHtml = ein ? `<a data-nav="#/funder/${ein}">${esc(f.name)}</a>` : esc(f.name);
+    const body = multi
+      ? `<div class="breakdown">${f.grants.map(g=>`<div class="bk"><div class="bk-amt">${fmt(g.a)}</div><div class="bk-p">${esc(g.p)}</div></div>`).join("")}</div>`
+      : `<div class="fpurpose">${esc(f.grants[0].p)}</div>`;
+    const ct = multi ? `<span class="ct">${f.grants.length} grants</span>` : "";
+    return `<div class="funder"><div class="frow"><div class="fname">${nameHtml}${ct}</div><div class="ftotal money">${fmt(f.total)}</div></div>${body}</div>`;
+  };
+
+  app().innerHTML = `
+  <main class="wrap">
+    <div class="pcrumb crumb"><a data-nav="#/">GIFT</a> / <a data-nav="#/recipients">Recipients</a> / ${esc(rec.name)}</div>
+    <div class="phead">
+      <div class="ptype">Recipient</div>
+      <div class="htop">
+        <div><h1>${esc(rec.name)}</h1><div class="ploc">${esc(rec.state||"")}</div></div>
+        <div class="pstats">
+          <div class="stat"><div class="v m">${fmtShort(total)}</div><div class="k">Received</div></div>
+          <div class="stat"><div class="v">${funderCount}</div><div class="k">Funders</div></div>
+          <div class="stat"><div class="v">${grantCount}</div><div class="k">Grants</div></div>
+        </div>
+      </div>
+      <p class="pcontext">In tax year 2023, this organization received <b>${grantCount} ${grantCount===1?"grant":"grants"} from ${funderCount} indexed Texas ${funderCount===1?"funder":"funders"}</b>, totaling <b>${fmt(total)}</b>. Figures reflect grants of $10,000 or more reported by the indexed funders, as filed.</p>
+    </div>
+    <div class="pledger-head"><div class="pledger-title">Funders, by total given</div><div class="pledger-note">largest first</div></div>
+    <div class="col-rule"></div>
+    <div id="list">${top.map(funderRow).join("")}</div>
+    ${tail.length ? `<button class="showall" id="showall"><span>Show all ${funderCount} funders ↓</span><span class="meta">${tail.length} more, ${fmt(tailMin)} to ${fmt(tailMax)}</span></button><div id="tail" class="hidden">${tail.map(funderRow).join("")}</div>` : ""}
+  </main>
+  <footer><div class="wrap"><p class="pfoot">Showing grants reported by indexed funders for tax year 2023, grouped by funder. Click any funder to see everything it gave. <a data-nav="#/about">Read the methodology</a>.</p></div></footer>`;
+
+  if(tail.length){
+    const btn=document.getElementById("showall");
+    btn.onclick=()=>{ document.getElementById("tail").classList.remove("hidden"); btn.classList.add("hidden"); bindNav(document.getElementById("tail")); };
+  }
+  bindNav(app());
+}
+
+//==================================================================
+// FUNDER PROFILE  (outbound: recipients this funder gave to)
+//==================================================================
+async function renderFunderProfile(id){
+  const fund = App.funderById[id];
+  app().innerHTML = `<main class="wrap"><div class="pcrumb crumb"><a data-nav="#/">GIFT</a> / <a data-nav="#/funders">Funders</a> / ${fund?esc(fund.name):"…"}</div><div class="loading">Loading recipients</div></main>`;
+  bindNav(app());
+  let detail;
+  try { detail = await loadFunderDetail(); }
+  catch(e){ app().innerHTML = `<main class="wrap"><div class="empty">Could not load funder detail.</div></main>`; return; }
+  if(!fund){ app().innerHTML = `<main class="wrap"><div class="empty">Funder not found.</div></main>`; return; }
+
+  const rows = (detail[id] || []).map(g=>({
+    name:g.recipient, rid:(g.recipient_id||g.rid||null), amt:Number(g.amount)||0, p:g.purpose||""
+  })).sort((a,b)=>b.amt-a.amt);
+
+  const sideType = fund.side==="private_foundation" ? "Private foundation" : "Public charity";
+  const total = fund.grants || rows.reduce((s,r)=>s+r.amt,0);
+  const recCount = rows.length;
+  const posture = (fund.side==="private_foundation" && fund.posture && fund.posture!=="unstated") ? fund.posture : null;
+  const CAP=10;
+
+  // no itemized detail case
+  const noDetail = recCount===0;
+
+  app().innerHTML = `
+  <main class="wrap">
+    <div class="pcrumb crumb"><a data-nav="#/">GIFT</a> / <a data-nav="#/funders">Funders</a> / ${esc(fund.name)}</div>
+    <div class="phead">
+      <div class="ptype">${sideType}</div>
+      <div class="htop">
+        <div><h1>${esc(fund.name)}</h1><div class="ploc">${esc(fund.city||"")}${posture?` <span class="posture">${esc(posture)}</span>`:""}</div></div>
+        <div class="pstats">
+          <div class="stat"><div class="v m">${fmtShort(total)}</div><div class="k">Granted</div></div>
+          <div class="stat"><div class="v">${noDetail?"—":recCount}</div><div class="k">Recipients</div></div>
+          <div class="stat"><div class="v">${fund.rank}</div><div class="k">Rank</div></div>
+        </div>
+      </div>
+      <p class="pcontext">In tax year 2023, this ${fund.side==="private_foundation"?"foundation":"organization"} ${noDetail?`reported <b>${fmt(total)}</b> in grants paid`:`made <b>grants to ${recCount} ${recCount===1?"organization":"organizations"}</b>, totaling <b>${fmt(total)}</b>`}. Figures reflect grants of $10,000 or more as filed.${posture?" This funder states it does not accept unsolicited requests.":""}</p>
+    </div>
+    ${noDetail
+      ? `<div class="empty" style="text-align:left;padding:30px 0">This funder's filing did not itemize individual recipients, so only its total grants paid is available. The recipient list could not be opened from the public return.</div>`
+      : `<div class="pledger-head"><div class="pledger-title">Recipients, by amount</div></div>
+         <div class="search" style="margin-top:12px"><input id="q" placeholder="Search this funder's ${recCount} recipients" autocomplete="off"><div class="icon">↵</div></div>
+         <div class="pcountline"><div class="count" id="count"></div><div class="col-h">Grant amount · FY2023</div></div>
+         <div id="list"></div>
+         <div class="dmore" id="more"></div>`}
+  </main>
+  <footer><div class="wrap"><p class="pfoot">Showing grants of $10,000 or more reported by this funder for tax year 2023. Click any recipient to see every funder that supported it. <a data-nav="#/about">Read the methodology</a>.</p></div></footer>`;
+
+  if(!noDetail){
+    const qbox=document.getElementById("q"), list=document.getElementById("list");
+    const countEl=document.getElementById("count"), moreEl=document.getElementById("more");
+    function draw(){
+      const q=qbox.value.trim().toLowerCase();
+      let f = q ? rows.filter(r=>r.name.toLowerCase().includes(q)) : rows;
+      const shown=f.slice(0,CAP);
+      countEl.innerHTML = q ? `<b>${f.length}</b> matching` : `Top <b>${Math.min(CAP,recCount)}</b> of <b>${recCount}</b> recipients`;
+      if(f.length===0){ list.innerHTML=`<div class="empty">No recipients of this funder match that name.</div>`; moreEl.innerHTML=""; return; }
+      list.innerHTML = shown.map(r=>{
+        const nameHtml = r.rid ? `<a data-nav="#/recipient/${esc(r.rid)}">${esc(r.name)}</a>` : esc(r.name);
+        return `<div class="grant"><div><div class="grec">${nameHtml}</div><div class="gpurpose">${esc(r.p)}</div></div><div class="gamt money">${fmt(r.amt)}</div></div>`;
+      }).join("");
+      bindNav(list);
+      moreEl.innerHTML = !q
+        ? `Showing the ${Math.min(CAP,recCount)} largest grants. Search above to find any of this funder's <b>${recCount}</b> recipients.`
+        : (f.length>CAP ? `<b>${f.length-CAP}</b> more match. Keep typing to narrow.` : "");
+    }
+    qbox.addEventListener("input",draw);
+    draw();
+  }
+  bindNav(app());
+}
+
+//==================================================================
+// ABOUT
+//==================================================================
+async function renderAbout(){
+  const ex = await loadExclusions(); // {groups:[{label, orgs:[{name,reason}]}]} or null
+
+  // descriptions are explanatory prose keyed by basis label; counts come from the live data
+  const BASIS_DESC = {
+    "Closed loop to a controlled entity":"Gives only to a parent or affiliate it exists to serve",
+    "Closed certified or membership network":"Recipients are a fixed set an outsider cannot join",
+    "Operator or conduit":"Runs its own programs, or passes money through without choice",
+    "In kind rather than cash":"Distributes goods or services, not grant dollars",
+    "No researchable public identity":"Cannot be verified or contacted"
+  };
+
+  let basisHtml, rosterHtml, totalExcluded;
+  if(ex && ex.groups){
+    totalExcluded = ex.groups.reduce((s,g)=>s+g.orgs.length,0);
+    basisHtml = ex.groups.map(g=>`<div class="basis-row"><div class="bn">${g.orgs.length}</div><div class="bl">${esc(g.label)}</div><div class="bd">${esc(BASIS_DESC[g.label]||"")}</div></div>`).join("");
+    rosterHtml = ex.groups.map(g=>`
+      <div class="rgroup">
+        <div class="rgroup-h"><span>${esc(g.label)}</span><span class="cnt">${g.orgs.length}</span></div>
+        ${g.orgs.map(o=>`<div class="rorg"><div class="ron">${esc(o.name)}</div><div class="rob">${esc(o.reason||"")}</div></div>`).join("")}
+      </div>`).join("");
+  } else {
+    totalExcluded = 40;
+    basisHtml = `<div class="s-intro">Basis counts load from gift_exclusions.json, generated from excluded_funders.csv.</div>`;
+    rosterHtml = `<div class="s-intro">The full named roster loads from gift_exclusions.json, generated from excluded_funders.csv. Download the complete file below.</div>`;
+  }
+
+  app().innerHTML = `
+  <main class="wrap-narrow">
+    <div class="crumb" style="padding-top:30px"><a data-nav="#/">GIFT</a> / About</div>
+    <div class="ahead"><h1>About &amp; method</h1></div>
+    <p class="asummary">
+      GIFT, Grants Index For Texas, is an independent public good that opens up Texas foundation giving so nonprofits can find the funders they can actually approach. It is built entirely from public IRS filings for tax year 2023, covering the top private foundations and top grantmaking public charities, and it shows for each funder where its money went, and for each recipient who funded it.
+      <span class="free">Made by Jonathan Lin Davis. Free to use, takes no money, endorses no one. Data under CC BY 4.0, code under MIT.</span>
+    </p>
+
+    <div class="asections">
+      <details>
+        <summary><span class="s-title">What gets excluded, and why</span><span class="s-meta">${totalExcluded} excluded <span class="chev">›</span></span></summary>
+        <div class="s-body">
+          <p class="s-intro">Some organizations move money but are not reachable grantmakers. They are set aside for one of five reasons. Each is listed under the single basis that best explains why it does not belong in the index.</p>
+          ${basisHtml}
+        </div>
+      </details>
+
+      <details>
+        <summary><span class="s-title">Full exclusion roster</span><span class="s-meta">${totalExcluded} organizations <span class="chev">›</span></span></summary>
+        <div class="s-body">
+          <p class="s-intro">Every excluded organization, grouped by its primary basis. The complete file with EINs and full reasons is available to download.</p>
+          ${rosterHtml}
+          <a class="dl" href="excluded_funders.csv" download>Download full exclusion file <span class="ext">CSV</span></a>
+        </div>
+      </details>
+
+      <details>
+        <summary><span class="s-title">Caveats and limits</span><span class="s-meta"><span class="chev">›</span></span></summary>
+        <div class="s-body">
+          <p class="s-intro">What the index does and does not claim. Stated plainly, because trust depends on it.</p>
+          <div class="caveat"><div class="ct">As filed, not live</div><div class="cd">Every figure is what a funder reported for tax year 2023. It is not current guidance, and a funder's priorities may have changed.</div></div>
+          <div class="caveat"><div class="ct">About a year behind</div><div class="cd">Filings lag, so the current index reflects 2023. It is refreshed as new filings arrive.</div></div>
+          <div class="caveat"><div class="ct">Recipient detail is not universal</div><div class="cd">Itemized recipients were available for most funders. Funders who filed grants as an attachment or lump sum still appear with their total, marked.</div></div>
+          <div class="caveat"><div class="ct">Recipients may appear more than once</div><div class="cd">The index merges recipients conservatively by EIN and exact name. It never guesses, so a large organization can occasionally appear under more than one entry rather than be wrongly combined.</div></div>
+          <div class="caveat"><div class="ct">Application posture is one directional</div><div class="cd">The filing marks only when a foundation does not accept unsolicited requests. A blank is recorded as unstated and never implies the door is closed.</div></div>
+          <div class="caveat"><div class="ct">Bounded by the indexed funders</div><div class="cd">A recipient appears only if one of the indexed funders reported a grant to it of $10,000 or more.</div></div>
+        </div>
+      </details>
+
+      <details>
+        <summary><span class="s-title">Methodology</span><span class="s-meta">how the index is built <span class="chev">›</span></span></summary>
+        <div class="s-body">
+          <p class="s-intro">GIFT is built from public IRS sources, the organization master file, the income extracts, and the electronically filed return data, ranked by grants paid and screened so only reachable grantmakers appear. The full plain language method is below, and the complete technical pipeline is available as a PDF.</p>
+          <div class="methprose">
+            <p>GIFT covers two kinds of funder, private foundations and grantmaking public charities, ranked separately because they file different returns and operate differently. An organization is included when it is a real, approachable grantmaker, meaning it is reachable, it chooses its own giving, it gives cash, and it has a public identity you can research and contact.</p>
+            <p>For each funder GIFT shows where the money went, and for each recipient it shows who gave. Everything comes from public records, reflects filings that run about a year behind, and is free to use.</p>
+          </div>
+          <a class="dl" href="GIFT_methodology.pdf" download>Download technical methodology <span class="ext">PDF</span></a>
+          <div class="dlnote">Full pipeline, sources, and rules.</div>
+        </div>
+      </details>
+    </div>
+  </main>
+  <footer><div class="wrap-narrow afoot"><div class="meta">
+    Data · <a data-nav="#/about">CC BY 4.0</a> &nbsp;·&nbsp; Code · <a data-nav="#/about">MIT</a><br>
+    Built by Jonathan Lin Davis as an independent public good · not affiliated with or endorsed by any funder or agency
+  </div></div></footer>`;
+  bindNav(app());
+}
+
+//==================================================================
+// BOOT
+//==================================================================
+route();
+</script>
+</body>
+</html>
