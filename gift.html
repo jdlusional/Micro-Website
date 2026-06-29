@@ -248,9 +248,8 @@
   .rgroup{margin-bottom:24px;}
   .rgroup-h{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--wash);border-bottom:1px solid var(--ink);padding-bottom:6px;margin-bottom:8px;display:flex;justify-content:space-between;}
   .rgroup-h .cnt{color:var(--ink);font-weight:700;}
-  .rorg{display:grid;grid-template-columns:1fr auto;gap:16px;padding:6px 0;border-bottom:1px dotted var(--rule-soft);align-items:baseline;}
+  .rorg{padding:6px 0;border-bottom:1px dotted var(--rule-soft);}
   .rorg .ron{font-size:15px;}
-  .rorg .rob{font-family:var(--mono);font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--wash);white-space:nowrap;}
   .caveat{padding:9px 0;border-bottom:1px solid var(--rule-soft);}
   .caveat .ct{font-weight:600;font-size:16px;}
   .caveat .cd{font-size:14px;color:var(--wash);line-height:1.5;margin-top:2px;}
@@ -828,7 +827,7 @@ async function renderAbout(){
     rosterHtml = ex.groups.map(g=>`
       <div class="rgroup">
         <div class="rgroup-h"><span>${esc(g.label)}</span><span class="cnt">${g.orgs.length}</span></div>
-        ${g.orgs.map(o=>`<div class="rorg"><div class="ron">${esc(o.name)}</div><div class="rob">${esc(o.reason||"")}</div></div>`).join("")}
+        ${g.orgs.map(o=>`<div class="rorg"><div class="ron">${esc(o.name)}</div></div>`).join("")}
       </div>`).join("");
   } else {
     totalExcluded = 40;
