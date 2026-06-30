@@ -943,82 +943,60 @@ async function renderAbout(){
     "No researchable public identity":"Cannot be verified or contacted"
   };
 
-  // Create reason codes: group similar reasons
-  const normalizeReason = (reason) => {
-    if(!reason) return "";
-    return reason.toLowerCase().trim();
+  // Assign codes to basis labels in consistent order
+  const BASIS_CODES = {
+    "Closed loop to a controlled entity": "A",
+    "Closed certified or membership network": "B",
+    "Operator or conduit": "C",
+    "In kind rather than cash": "D",
+    "No researchable public identity": "E"
   };
 
-  const getReasonBase = (reason) => {
-    const norm = normalizeReason(reason);
-    // Extract base reason (first part before comma or specific modifiers)
-    if(norm.includes("closed")) return "closed";
-    if(norm.includes("operator") || norm.includes("conduit")) return "operator";
-    if(norm.includes("kind") || norm.includes("in-kind")) return "in-kind";
-    if(norm.includes("identity") || norm.includes("researchable")) return "identity";
-    return norm.split(/[,;]/)[0].trim();
-  };
-
-  let basisHtml, legendHtml, rosterHtml, totalExcluded, reasonMap = {}, codeMap = {};
+  let basisHtml, legendHtml, rosterHtml, totalExcluded, orgBases = {};
   if(ex && ex.groups){
     totalExcluded = ex.groups.reduce((s,g)=>s+g.orgs.length,0);
 
-    // Build reason map with smart deduplication
-    const reasonCodes = {};
+    // Build a map of org name -> array of basis codes
     ex.groups.forEach(g => {
+      const code = BASIS_CODES[g.label];
       g.orgs.forEach(o => {
-        if(o.reason){
-          const base = getReasonBase(o.reason);
-          if(!reasonCodes[base]) reasonCodes[base] = [];
-          if(!reasonCodes[base].includes(o.reason)) reasonCodes[base].push(o.reason);
-        }
+        if(!orgBases[o.name]) orgBases[o.name] = [];
+        orgBases[o.name].push(code);
       });
     });
 
-    // Create codes for each base reason
-    const baseList = Object.keys(reasonCodes).sort();
-    const codeLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    baseList.forEach((base, i) => {
-      const code = codeLetters[i] || "?";
-      reasonCodes[base].forEach(fullReason => {
-        reasonMap[fullReason] = code;
-        if(!codeMap[code]) codeMap[code] = [];
-        if(!codeMap[code].includes(fullReason)) codeMap[code].push(fullReason);
-      });
-    });
+    // Build basis HTML with codes
+    basisHtml = Object.keys(BASIS_CODES).map(label => {
+      const code = BASIS_CODES[label];
+      const count = ex.groups.find(g=>g.label===label)?.orgs.length || 0;
+      return `<div class="basis-row"><div class="bn">${count}</div><div class="bl"><a href="#" class="rob" data-reason-code="${esc(code)}" onclick="highlightReason('${esc(code)}'); return false; text-decoration:underline">${esc(label)}</a></div><div class="bd">${esc(BASIS_DESC[label]||"")}</div></div>`;
+    }).join("");
 
-    const sortedCodes = Object.keys(codeMap).sort();
+    // Build legend
     legendHtml = `<div class="reason-legend">
       <div style="font-weight:600;margin-bottom:8px;">Exclusion reason codes:</div>
       <div class="reason-codes">
-        ${sortedCodes.map(code=>{
-          const reasons = codeMap[code];
-          const mainReason = reasons[0];
-          return `<div class="reason-code" id="reason-${esc(code)}"><span class="reason-code-label">${esc(code)}</span><span class="reason-code-desc">${esc(mainReason)}</span></div>`;
+        ${Object.keys(BASIS_CODES).map(label => {
+          const code = BASIS_CODES[label];
+          return `<div class="reason-code" id="reason-${esc(code)}"><span class="reason-code-label">${esc(code)}</span><span class="reason-code-desc">${esc(label)}</span></div>`;
         }).join("")}
       </div>
     </div>`;
 
-    basisHtml = ex.groups.map(g=>`<div class="basis-row"><div class="bn">${g.orgs.length}</div><div class="bl">${esc(g.label)}</div><div class="bd">${esc(BASIS_DESC[g.label]||"")}</div></div>`).join("");
-
-    // Build flat roster with codes inline
+    // Build flat roster with all applicable codes for each org
     const allOrgs = [];
     ex.groups.forEach(g => {
       g.orgs.forEach(o => {
-        allOrgs.push({name: o.name, reason: o.reason, codes: []});
+        if(!allOrgs.find(x=>x.name===o.name)){
+          allOrgs.push({name: o.name, codes: orgBases[o.name] || []});
+        }
       });
     });
 
-    // Assign codes to each org
-    allOrgs.forEach(o => {
-      if(o.reason){
-        const code = reasonMap[o.reason];
-        if(code && !o.codes.includes(code)) o.codes.push(code);
-      }
-    });
+    allOrgs.sort((a,b)=>a.name.localeCompare(b.name));
 
     rosterHtml = `<div class="rgroup"><div class="rgroup-h" style="border-bottom:2px solid var(--ink);padding-bottom:8px;"><span>All excluded organizations</span><span class="cnt">${allOrgs.length}</span></div>
-      ${allOrgs.map(o=>`<div class="rorg"><div class="ron">${esc(o.name)}</div><div style="display:flex;gap:6px;">${o.codes.map(code=>`<a href="#" class="rob" data-reason-code="${esc(code)}" onclick="highlightReason('${esc(code)}'); return false;">${esc(code)}</a>`).join("")}</div></div>`).join("")}
+      ${allOrgs.map(o=>`<div class="rorg"><div class="ron">${esc(o.name)}</div><div style="display:flex;gap:6px;flex-wrap:wrap;">${o.codes.sort().map(code=>`<a href="#" class="rob" data-reason-code="${esc(code)}" onclick="highlightReason('${esc(code)}'); return false;">${esc(code)}</a>`).join("")}</div></div>`).join("")}
     </div>`;
   } else {
     totalExcluded = 40;
