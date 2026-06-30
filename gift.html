@@ -1059,6 +1059,41 @@ async function renderAbout(){
       </details>
 
       <details>
+        <summary><span class="s-title">Data and sources</span><span class="s-meta">613.4 million data points <span class="chev">›</span></span></summary>
+        <div class="s-body">
+          <p class="s-intro">GIFT is built on public IRS filings and master data. The complete data pipeline includes millions of records across multiple IRS sources, processed and synthesized into the index you see here.</p>
+          <p style="font-size:15px;color:var(--wash);line-height:1.55;max-width:640px;margin:18px 0;">IRS Parquet Index – comprehensive metadata for all indexed Form 990 filings across all tax years:</p>
+          <div style="margin-left:20px;margin-bottom:20px;">
+            <div style="padding:8px 0;border-bottom:1px solid var(--rule-soft);">7,344,896 rows × 35 columns = <strong>257.1 million cells</strong></div>
+            <div style="padding:8px 0;font-size:13px;color:var(--wash);line-height:1.5;max-width:600px;">Contains BuildTs, EIN, FormType, OrganizationName, TaxYear, GrossReceipts, TotalRevenueCY, TotalExpensesCY, TotalAssetsBkEOY, and 26 additional fields for every filing in the index.</div>
+          </div>
+
+          <p style="font-size:15px;color:var(--wash);line-height:1.55;max-width:640px;margin:20px 0 18px 0;">Master 990 extracts – structured form data for tax years 2023–2024:</p>
+          <div style="margin-left:20px;margin-bottom:20px;">
+            <div style="padding:8px 0;border-bottom:1px solid var(--rule-soft);">Form 990 (standard orgs): 683,413 rows × 246 columns = <strong>168.1 million cells</strong></div>
+            <div style="padding:8px 0;border-bottom:1px solid var(--rule-soft);">Form 990-PF (private foundations): 239,409 rows × 180 columns = <strong>43.1 million cells</strong></div>
+            <div style="padding:8px 0;border-bottom:1px solid var(--rule-soft);">Form 990-EZ (small orgs): 411,235 rows × 72 columns = <strong>29.6 million cells</strong></div>
+            <div style="padding:8px 0;font-size:13px;color:var(--wash);line-height:1.5;max-width:600px;">IRS form extracts spanning income, revenue, expenses, asset valuations, and organizational details.</div>
+          </div>
+
+          <p style="font-size:15px;color:var(--wash);line-height:1.55;max-width:640px;margin:20px 0 18px 0;">IRS Exempt Organizations (EO) master files – the authoritative index of all nonprofits:</p>
+          <div style="margin-left:20px;margin-bottom:20px;">
+            <div style="padding:8px 0;border-bottom:1px solid var(--rule-soft);">EO National: 1,974,830 rows × 28 columns = <strong>55.3 million cells</strong></div>
+            <div style="padding:8px 0;border-bottom:1px solid var(--rule-soft);">EO Texas: 154,768 rows × 28 columns = <strong>4.3 million cells</strong></div>
+            <div style="padding:8px 0;border-bottom:1px solid var(--rule-soft);">EO regional shards: 964,828 rows × 28 columns = <strong>27.0 million cells</strong></div>
+            <div style="padding:8px 0;font-size:13px;color:var(--wash);line-height:1.5;max-width:600px;">Master index of all exempt organizations in the U.S., including status, location, EIN, and organizational type.</div>
+          </div>
+
+          <p style="font-size:15px;color:var(--wash);line-height:1.55;max-width:640px;margin:20px 0 18px 0;">GIFT processed output – the curated index:</p>
+          <div style="margin-left:20px;">
+            <div style="padding:8px 0;border-bottom:1px solid var(--rule-soft);">Funder directory: 200 records, recipient directory: 12,890 records = <strong>195k cells</strong></div>
+            <div style="padding:8px 0;border-bottom:1px solid var(--rule-soft);">Grant edges & relationships: 21,384 grant records across funders and recipients = <strong>407k cells</strong></div>
+            <div style="padding:8px 0;font-size:13px;color:var(--wash);line-height:1.5;max-width:600px;">Synthesis of the full pipeline into a queryable, human-readable index of funders, recipients, and grants.</div>
+          </div>
+        </div>
+      </details>
+
+      <details>
         <summary><span class="s-title">Caveats and limits</span><span class="s-meta"><span class="chev">›</span></span></summary>
         <div class="s-body">
           <p class="s-intro">What the index does and does not claim. Stated plainly, because trust depends on it.</p>
