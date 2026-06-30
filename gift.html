@@ -257,7 +257,8 @@
   .mexpand:hover{border-bottom-color:var(--ink);}
 
   /* ===== ABOUT ===== */
-  .ahead h1{font-size:34px;padding:14px 0 0;}
+  .ahead{border-bottom:2px solid var(--ink);}
+  .ahead h1{font-size:34px;padding:0 0 0 0;margin:0;display:inline-block;background:var(--paper);padding:0 0 8px 0;position:relative;bottom:-2px;}
   .asummary{font-size:18px;line-height:1.6;max-width:660px;margin-top:18px;}
   .asummary b{font-weight:600;}
   .asummary .free{color:var(--wash);font-size:15px;margin-top:14px;display:block;}
@@ -1034,9 +1035,9 @@ async function renderAbout(){
   app().innerHTML = `
   <main class="wrap-narrow">
     <div class="crumb" style="padding-top:30px"><a data-nav="#/">GIFT</a> / About</div>
-    <div class="ahead"><h1>About &amp; method</h1></div>
+    <div class="ahead"><h1>About &amp; Method</h1></div>
     <p class="asummary">
-      GIFT, Grants Index For Texas, is a free, open-access tool built to help nonprofits understand foundation giving in Texas. It answers four core questions: who gives, what they give, where they give, and what they give to. GIFT covers all 10,259 Texas-based recipients who filed Form 990 filings in tax year 2023, plus the top 100 private foundations and top 100 grantmaking public charities (approximately 160 active funders after excluding those that do not meet criteria for approachable grantmakers). The index was built by analyzing over 200 IRS XML filings, processing thousands of grant records and recipient data points, and cross-referencing information across multiple public IRS sources.
+      GIFT (Grants Index of Funders in Texas) is a free, open-access tool built to help nonprofits understand foundation giving in Texas. It answers four core questions: who gives, what they give, where they give, and what they give to. GIFT covers all 10,259 Texas-based recipients who filed Form 990 filings in tax year 2023, plus the top 100 private foundations and top 100 grantmaking public charities (approximately 160 active funders after excluding those that do not meet criteria for approachable grantmakers). The index was built by analyzing over 200 IRS XML filings, processing thousands of grant records and recipient data points, and cross-referencing information across multiple public IRS sources.
       <span class="free">Made by Jonathan Lin Davis. Free to use, takes no money, endorses no one. Data under CC BY 4.0, code under MIT.</span>
     </p>
 
