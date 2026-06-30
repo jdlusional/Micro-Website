@@ -1,17 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-08J22J0DXL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-08J22J0DXL');
-</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GIFT — Grant Index of Funders in Texas</title>
+<title>GIFT — Grants Index For Texas</title>
 <meta name="description" content="A free index of Texas foundation giving, built from public IRS filings. Find who funds organizations like yours.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,9 +27,9 @@
 
   /* masthead */
   .masthead{border-bottom:2px solid var(--ink);position:sticky;top:0;background:var(--paper);z-index:50;}
-  .masthead .inner{max-width:1040px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:18px 32px;}
-  .mark{text-decoration:none;color:var(--ink);display:flex;align-items:center;}
-  .mark-logo{height:44px;width:auto;display:block;}
+  .masthead .inner{max-width:1040px;margin:0 auto;display:flex;justify-content:space-between;align-items:baseline;padding:18px 32px;}
+  .mark{font-size:28px;font-weight:700;line-height:1;text-decoration:none;color:var(--ink);}
+  .mark span{color:var(--money);}
   .mast-nav{font-family:var(--mono);font-size:12px;letter-spacing:.04em;display:flex;gap:22px;}
   .mast-nav a{color:var(--ink);text-decoration:none;padding-bottom:2px;border-bottom:1px solid transparent;cursor:pointer;}
   .mast-nav a:hover,.mast-nav a.on{border-bottom-color:var(--ink);}
@@ -89,7 +81,7 @@
 
 <header class="masthead">
   <div class="inner">
-    <a class="mark" data-nav="#/"><img class="mark-logo" src="Assets/gift-favicon-64.png" alt="GIFT"></a>
+    <a class="mark" data-nav="#/">GI<span>F</span>T</a>
     <nav class="mast-nav">
       <a data-nav="#/" data-navkey="">Home</a>
       <a data-nav="#/recipients" data-navkey="recipients">Recipients</a>
@@ -104,13 +96,22 @@
 <!-- view scripts appended below in subsequent build steps -->
 <style>
   /* ===== LANDING ===== */
-  .lhero{padding:60px 0 8px;text-align:center;}
-  .lhero h1{font-size:48px;max-width:840px;margin:0 auto;}
+  .lhero{padding:60px 0 8px;}
+  .lhero h1{font-size:48px;max-width:840px;}
   .lhero h1 b{font-weight:700;}
-  .llede{font-size:19px;color:var(--wash);max-width:600px;margin:22px auto 0;line-height:1.55;}
+  .llede{font-size:19px;color:var(--wash);max-width:600px;margin-top:22px;line-height:1.55;}
   .lsearch-block{margin-top:38px;}
   .lsearch-label{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin-bottom:10px;}
-  .lsearch{max-width:600px;position:relative;margin:0 auto;}
+  .fade-toggle{display:inline-block;min-height:1em;}
+  .fade-items{position:relative;height:1.6em;margin-top:14px;}
+  .fade-item{position:absolute;animation:fadeInOut 10s infinite;opacity:0;font-size:15px;color:var(--wash);line-height:1.55;}
+  .fade-item:nth-child(1){animation-delay:0s;}
+  .fade-item:nth-child(2){animation-delay:2s;}
+  .fade-item:nth-child(3){animation-delay:4s;}
+  .fade-item:nth-child(4){animation-delay:6s;}
+  .fade-item:nth-child(5){animation-delay:8s;}
+  @keyframes fadeInOut{0%{opacity:0;}10%{opacity:1;}40%{opacity:1;}50%{opacity:0;}100%{opacity:0;}}
+  .lsearch{max-width:600px;position:relative;}
   .lsearch button{border:0;border-left:1.5px solid var(--ink);background:var(--ink);color:var(--paper);padding:0 28px;font-family:var(--mono);font-size:13px;letter-spacing:.08em;cursor:pointer;}
   .lsearch button:hover{background:#000;}
   .lsuggest{position:absolute;top:calc(100% + 3px);left:0;right:0;background:var(--well);border:1.5px solid var(--ink);z-index:100;max-height:380px;overflow-y:auto;}
@@ -285,10 +286,8 @@
   .afoot .meta{font-family:var(--mono);font-size:11px;color:var(--wash);letter-spacing:.05em;line-height:2;}
   .afoot .meta a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);cursor:pointer;}
 
-  .lhero-logo{width:600px;height:auto;display:block;margin:0 auto 28px;}
   @media (max-width:680px){
     .lhero h1{font-size:34px;}
-    .lhero-logo{width:260px;}
     .ldoors{grid-template-columns:1fr;}
     .ldoor:first-child{border-right:0;border-bottom:1px solid var(--rule);}
     .lfoot .meta{text-align:left;}
@@ -405,12 +404,19 @@ function renderLanding(){
   app().innerHTML = `
   <main class="wrap">
     <section class="lhero">
-      <img class="lhero-logo" src="Assets/gift-lockup.svg" alt="GIFT — Grant Index of Funders in Texas">
-      <div class="eyebrow">Tax year 2023 · Public record</div>
-      <h1>Texas foundation giving, <b>opened up</b>, so your next funder is a search away.</h1>
-      <p class="llede">A free index built entirely from public IRS filings. Start with an organization like yours and see exactly who has funded it, and for how much.</p>
+      <div class="eyebrow">Grants Index For Texas · Tax year 2023</div>
+      <h1>Your next funder is a search away.</h1>
+      <p class="llede">A free search index of private foundations and public charities
+        <div class="fade-items">
+          <div class="fade-item">Who they give to</div>
+          <div class="fade-item">Why they give</div>
+          <div class="fade-item">How much they give</div>
+          <div class="fade-item">Why they give</div>
+          <div class="fade-item">Where they give</div>
+        </div>
+      </p>
       <div class="lsearch-block">
-        <div class="lsearch-label">Find who funds organizations like yours</div>
+        <div class="lsearch-label"><span class="fade-toggle">Find who funds organizations like yours</span></div>
         <div class="search lsearch">
           <input id="lq" placeholder="Search a nonprofit, school, or cause" autocomplete="off">
           <button id="lgo">SEARCH</button>
@@ -521,6 +527,23 @@ function renderLanding(){
   document.getElementById("lgo").onclick = doSearch;
   lqEl.addEventListener("keydown", e=>{ if(e.key==="Enter") doSearch(); });
   bindNav(app());
+
+  // Fade toggle for search label
+  const fadeToggleEl = document.querySelector(".fade-toggle");
+  if(fadeToggleEl){
+    const options = ["Find who funds organizations like yours", "Find who does the work you support"];
+    let fadeIdx = 0;
+    setInterval(()=>{
+      fadeIdx = (fadeIdx + 1) % options.length;
+      fadeToggleEl.textContent = options[fadeIdx];
+      fadeToggleEl.style.opacity = "0";
+      fadeToggleEl.style.transition = "opacity 0.5s ease-in-out";
+      setTimeout(()=>{
+        fadeToggleEl.textContent = options[fadeIdx];
+        fadeToggleEl.style.opacity = "1";
+      }, 250);
+    }, 4000);
+  }
 }
 
 //==================================================================
@@ -902,7 +925,7 @@ async function renderAbout(){
     <div class="crumb" style="padding-top:30px"><a data-nav="#/">GIFT</a> / About</div>
     <div class="ahead"><h1>About &amp; method</h1></div>
     <p class="asummary">
-      GIFT, Grant Index of Funders in Texas, is an independent public good that opens up Texas foundation giving so nonprofits can find the funders they can actually approach. It is built entirely from public IRS filings for tax year 2023, covering the top private foundations and top grantmaking public charities, and it shows for each funder where its money went, and for each recipient who funded it.
+      GIFT, Grants Index For Texas, is an independent public good that opens up Texas foundation giving so nonprofits can find the funders they can actually approach. It is built entirely from public IRS filings for tax year 2023, covering the top private foundations and top grantmaking public charities, and it shows for each funder where its money went, and for each recipient who funded it.
       <span class="free">Made by Jonathan Lin Davis. Free to use, takes no money, endorses no one. Data under CC BY 4.0, code under MIT.</span>
     </p>
 
