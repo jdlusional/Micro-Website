@@ -539,7 +539,11 @@ function renderRecipients(){
     <div class="ftag" id="ftag">Top Texas recipients by amount received · start typing to search all ${App.recipients.length.toLocaleString()}</div>
     <div id="list"></div>
     <div class="dmore" id="more"></div>
-  </main>`;
+  </main>
+  <footer><div class="wrap lflinks">
+    <a href="https://jonathanlindavis.com/newsletters" target="_blank" rel="noopener">Sign up for newsletter</a>
+    <a href="https://jonathanlindavis.com/contact" target="_blank" rel="noopener">Contact the Developer</a>
+  </div></footer>`;
 
   const qbox=document.getElementById("q"), list=document.getElementById("list");
   const countEl=document.getElementById("count"), moreEl=document.getElementById("more"), ftag=document.getElementById("ftag");
@@ -615,7 +619,11 @@ function renderFunders(){
     </div>
     <div id="list"></div>
     <div class="dmore" id="more"></div>
-  </main>`;
+  </main>
+  <footer><div class="wrap lflinks">
+    <a href="https://jonathanlindavis.com/newsletters" target="_blank" rel="noopener">Sign up for newsletter</a>
+    <a href="https://jonathanlindavis.com/contact" target="_blank" rel="noopener">Contact the Developer</a>
+  </div></footer>`;
 
   const qbox=document.getElementById("q"), list=document.getElementById("list");
   const countEl=document.getElementById("count"), moreEl=document.getElementById("more");
@@ -746,6 +754,10 @@ async function renderRecipientProfile(id){
   <footer><div class="wrap">
     ${rec.has_recipient_total ? `<p class="pfoot" style="margin-bottom:12px">Worldwide total is from this organization's Form 990 for the fiscal year ending ${fyeLabel} and reflects all contributions from all sources globally, not only Texas giving.</p>` : ""}
     <p class="pfoot">Showing grants reported by indexed funders for tax year 2023, grouped by funder. Click any funder to see everything it gave. <a data-nav="#/about">Read the methodology</a>.</p>
+  </div>
+  <div class="wrap lflinks">
+    <a href="https://jonathanlindavis.com/newsletters" target="_blank" rel="noopener">Sign up for newsletter</a>
+    <a href="https://jonathanlindavis.com/contact" target="_blank" rel="noopener">Contact the Developer</a>
   </div></footer>`;
 
   if(tail.length){
@@ -808,7 +820,11 @@ async function renderFunderProfile(id){
          <div id="list"></div>
          <div class="dmore" id="more"></div>`}
   </main>
-  <footer><div class="wrap"><p class="pfoot">Showing grants of $5,000 or more reported by this funder for tax year 2023. Click any recipient to see every funder that supported it. <a data-nav="#/about">Read the methodology</a>.</p></div></footer>`;
+  <footer><div class="wrap"><p class="pfoot">Showing grants of $5,000 or more reported by this funder for tax year 2023. Click any recipient to see every funder that supported it. <a data-nav="#/about">Read the methodology</a>.</p></div>
+  <div class="wrap lflinks">
+    <a href="https://jonathanlindavis.com/newsletters" target="_blank" rel="noopener">Sign up for newsletter</a>
+    <a href="https://jonathanlindavis.com/contact" target="_blank" rel="noopener">Contact the Developer</a>
+  </div></footer>`;
 
   if(!noDetail){
     const qbox=document.getElementById("q"), list=document.getElementById("list");
@@ -929,7 +945,11 @@ async function renderAbout(){
   <footer><div class="wrap-narrow afoot"><div class="meta">
     Data · <a data-nav="#/about">CC BY 4.0</a> &nbsp;·&nbsp; Code · <a data-nav="#/about">MIT</a><br>
     Built by Jonathan Lin Davis as an independent public good · not affiliated with or endorsed by any funder or agency
-  </div></div></footer>`;
+  </div></div>
+  <div class="wrap lflinks">
+    <a href="https://jonathanlindavis.com/newsletters" target="_blank" rel="noopener">Sign up for newsletter</a>
+    <a href="https://jonathanlindavis.com/contact" target="_blank" rel="noopener">Contact the Developer</a>
+  </div></footer>`;
   bindNav(app());
 }
 
