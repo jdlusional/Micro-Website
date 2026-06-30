@@ -87,6 +87,26 @@
 {
 "name": "Texas Casa Inc",
 "reason": "closed network, certified members "
+},
+{
+"name": "Feeding Texas",
+"reason": "closed network, commodities"
+},
+{
+"name": "Fp Assistance Inc",
+"reason": "closed network, USDA food"
+},
+{
+"name": "Geo-Son Child Care Services Inc",
+"reason": "closed network, USDA food"
+},
+{
+"name": "Hype Foundation Inc",
+"reason": "closed network, USDA food"
+},
+{
+"name": "Nar Incorporated",
+"reason": "closed network, USDA food"
 }
 ]
 },
@@ -165,6 +185,10 @@
 {
 "name": "Trusted World Foundation Inc",
 "reason": "cash, in kind goods distributor"
+},
+{
+"name": "Trinity Christian Academy",
+"reason": "cash, closed loop to own a"
 }
 ]
 },
