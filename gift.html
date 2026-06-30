@@ -343,9 +343,9 @@ const toSentenceCase = s => {
   const upper = (s.match(/[A-Z]/g)||[]).length;
   const letters = (s.match(/[A-Za-z]/g)||[]).length;
   if(letters > 0 && upper/letters > 0.8) {
-    return s.split(/\s+/).map(word =>
-      word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-    ).join(" ");
+    // Convert to lowercase then capitalize only first letter
+    const lower = s.toLowerCase();
+    return lower.charAt(0).toUpperCase() + lower.slice(1);
   }
   return s;
 };
