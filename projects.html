@@ -22,6 +22,9 @@
 <style>
 .project-card-static{cursor:default;}
 .pc-go-muted{color:var(--muted-light);opacity:.8;font-style:italic;}
+.project-card{grid-template-columns:200px 1fr!important}
+.project-card .pc-cover{width:200px!important;height:200px!important}
+@media(max-width:620px){.project-card{grid-template-columns:1fr!important}.project-card .pc-cover{width:220px!important;height:220px!important}}
 </style>
 </head>
 <body>
@@ -60,7 +63,7 @@
         <h3 class="projects-subhead">Active</h3>
         <div class="projects-grid">
           <a class="project-card" href="https://fellowship4free.com" target="_blank" rel="noopener">
-            <img class="pc-cover" src="Assets/f4f-logo.png" alt="Fellowships4Free logo">
+            <img class="pc-cover" src="Assets/f4f-square-dark.svg" alt="Fellowships4Free logo">
             <div>
               <span class="pc-kicker">Open-Data Project</span>
               <h3>Fellowships4Free</h3>
@@ -75,7 +78,7 @@
         <h3 class="projects-subhead">Pending or In Progress</h3>
         <div class="projects-grid">
           <div class="project-card project-card-static">
-            <img class="pc-cover" src="Assets/gift-cover.png" alt="GIFT, Grants Index For Texas — screenshot of the home page">
+            <img class="pc-cover" src="Assets/gift-square-dark.svg" alt="GIFT, Grants Index For Texas logo">
             <div>
               <span class="pc-kicker">Open-Data Project</span>
               <h3>GIFT</h3>

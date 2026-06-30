@@ -28,8 +28,8 @@
   /* masthead */
   .masthead{border-bottom:2px solid var(--ink);position:sticky;top:0;background:var(--paper);z-index:50;}
   .masthead .inner{max-width:1040px;margin:0 auto;display:flex;justify-content:space-between;align-items:baseline;padding:18px 32px;}
-  .mark{font-size:28px;font-weight:700;line-height:1;text-decoration:none;color:var(--ink);}
-  .mark span{color:var(--money);}
+  .mark{text-decoration:none;color:var(--ink);display:flex;align-items:center;}
+  .mark-logo{height:30px;width:auto;display:block;}
   .mast-nav{font-family:var(--mono);font-size:12px;letter-spacing:.04em;display:flex;gap:22px;}
   .mast-nav a{color:var(--ink);text-decoration:none;padding-bottom:2px;border-bottom:1px solid transparent;cursor:pointer;}
   .mast-nav a:hover,.mast-nav a.on{border-bottom-color:var(--ink);}
@@ -81,7 +81,7 @@
 
 <header class="masthead">
   <div class="inner">
-    <a class="mark" data-nav="#/">GI<span>F</span>T</a>
+    <a class="mark" data-nav="#/"><img class="mark-logo" src="Assets/gift-lockup.svg" alt="GIFT"></a>
     <nav class="mast-nav">
       <a data-nav="#/" data-navkey="">Home</a>
       <a data-nav="#/recipients" data-navkey="recipients">Recipients</a>
@@ -277,8 +277,10 @@
   .afoot .meta{font-family:var(--mono);font-size:11px;color:var(--wash);letter-spacing:.05em;line-height:2;}
   .afoot .meta a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);cursor:pointer;}
 
+  .lhero-logo{width:200px;height:auto;display:block;margin-bottom:28px;}
   @media (max-width:680px){
     .lhero h1{font-size:34px;}
+    .lhero-logo{width:160px;}
     .ldoors{grid-template-columns:1fr;}
     .ldoor:first-child{border-right:0;border-bottom:1px solid var(--rule);}
     .lfoot .meta{text-align:left;}
@@ -395,6 +397,7 @@ function renderLanding(){
   app().innerHTML = `
   <main class="wrap">
     <section class="lhero">
+      <img class="lhero-logo" src="Assets/gift-square.svg" alt="GIFT — Grants Index For Texas">
       <div class="eyebrow">Grants Index For Texas · Tax year 2023 · Public record</div>
       <h1>Texas foundation giving, <b>opened up</b>, so your next funder is a search away.</h1>
       <p class="llede">A free index built entirely from public IRS filings. Start with an organization like yours and see exactly who has funded it, and for how much.</p>
