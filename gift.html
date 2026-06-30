@@ -257,12 +257,11 @@
   .mexpand:hover{border-bottom-color:var(--ink);}
 
   /* ===== ABOUT ===== */
-  .ahead{border-bottom:2px solid var(--ink);}
-  .ahead h1{font-size:34px;padding:0 0 0 0;margin:0;display:inline-block;background:var(--paper);padding:0 0 8px 0;position:relative;bottom:-2px;}
-  .asummary{font-size:18px;line-height:1.6;max-width:660px;margin-top:18px;}
+  .ahead h1{font-size:34px;padding:14px 0 0;}
+  .asummary{font-size:18px;line-height:1.6;max-width:660px;margin-top:18px;padding-bottom:34px;border-bottom:2px solid var(--ink);}
   .asummary b{font-weight:600;}
   .asummary .free{color:var(--wash);font-size:15px;margin-top:14px;display:block;}
-  .asections{margin-top:40px;border-top:2px solid var(--ink);}
+  .asections{margin-top:0;}
   .asections details{border-bottom:1px solid var(--rule);}
   .asections summary{list-style:none;cursor:pointer;padding:20px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;}
   .asections summary::-webkit-details-marker{display:none;}
@@ -1060,6 +1059,19 @@ async function renderAbout(){
       </details>
 
       <details>
+        <summary><span class="s-title">Caveats and limits</span><span class="s-meta"><span class="chev">›</span></span></summary>
+        <div class="s-body">
+          <p class="s-intro">What the index does and does not claim. Stated plainly, because trust depends on it.</p>
+          <div class="caveat"><div class="ct">As filed, not live</div><div class="cd">Every figure is what a funder reported for tax year 2023. It is not current guidance, and a funder's priorities may have changed.</div></div>
+          <div class="caveat"><div class="ct">About a year behind</div><div class="cd">Filings lag, so the current index reflects 2023. It is refreshed as new filings arrive.</div></div>
+          <div class="caveat"><div class="ct">Recipient detail is not universal</div><div class="cd">Itemized recipients were available for most funders. Funders who filed grants as an attachment or lump sum still appear with their total, marked.</div></div>
+          <div class="caveat"><div class="ct">Recipients may appear more than once</div><div class="cd">The index merges recipients conservatively by EIN and exact name. It never guesses, so a large organization can occasionally appear under more than one entry rather than be wrongly combined.</div></div>
+          <div class="caveat"><div class="ct">Application posture is one directional</div><div class="cd">The filing marks only when a foundation does not accept unsolicited requests. A blank is recorded as unstated and never implies the door is closed.</div></div>
+          <div class="caveat"><div class="ct">Bounded by the indexed funders</div><div class="cd">A recipient appears only if one of the indexed funders reported a grant to it of $5,000 or more. The $5,000 floor matches the IRS statutory minimum for itemized grant reporting on Schedule I (Form 990) and Part XV (Form 990-PF); grants below that threshold are not required to be listed by recipient in public filings.</div></div>
+        </div>
+      </details>
+
+      <details>
         <summary><span class="s-title">Data and sources</span><span class="s-meta">613.4 million data points <span class="chev">›</span></span></summary>
         <div class="s-body">
           <p class="s-intro">GIFT is built on public IRS filings and master data. The complete data pipeline includes millions of records across multiple IRS sources, processed and synthesized into the index you see here.</p>
@@ -1091,19 +1103,6 @@ async function renderAbout(){
             <div style="padding:8px 0;border-bottom:1px solid var(--rule-soft);">Grant edges & relationships: 21,384 grant records across funders and recipients = <strong>407k cells</strong></div>
             <div style="padding:8px 0;font-size:13px;color:var(--wash);line-height:1.5;max-width:600px;">Synthesis of the full pipeline into a queryable, human-readable index of funders, recipients, and grants.</div>
           </div>
-        </div>
-      </details>
-
-      <details>
-        <summary><span class="s-title">Caveats and limits</span><span class="s-meta"><span class="chev">›</span></span></summary>
-        <div class="s-body">
-          <p class="s-intro">What the index does and does not claim. Stated plainly, because trust depends on it.</p>
-          <div class="caveat"><div class="ct">As filed, not live</div><div class="cd">Every figure is what a funder reported for tax year 2023. It is not current guidance, and a funder's priorities may have changed.</div></div>
-          <div class="caveat"><div class="ct">About a year behind</div><div class="cd">Filings lag, so the current index reflects 2023. It is refreshed as new filings arrive.</div></div>
-          <div class="caveat"><div class="ct">Recipient detail is not universal</div><div class="cd">Itemized recipients were available for most funders. Funders who filed grants as an attachment or lump sum still appear with their total, marked.</div></div>
-          <div class="caveat"><div class="ct">Recipients may appear more than once</div><div class="cd">The index merges recipients conservatively by EIN and exact name. It never guesses, so a large organization can occasionally appear under more than one entry rather than be wrongly combined.</div></div>
-          <div class="caveat"><div class="ct">Application posture is one directional</div><div class="cd">The filing marks only when a foundation does not accept unsolicited requests. A blank is recorded as unstated and never implies the door is closed.</div></div>
-          <div class="caveat"><div class="ct">Bounded by the indexed funders</div><div class="cd">A recipient appears only if one of the indexed funders reported a grant to it of $5,000 or more. The $5,000 floor matches the IRS statutory minimum for itemized grant reporting on Schedule I (Form 990) and Part XV (Form 990-PF); grants below that threshold are not required to be listed by recipient in public filings.</div></div>
         </div>
       </details>
 
