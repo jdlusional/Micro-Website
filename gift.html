@@ -102,9 +102,15 @@
   .llede{font-size:19px;color:var(--wash);max-width:600px;margin-top:22px;line-height:1.55;}
   .lsearch-block{margin-top:38px;}
   .lsearch-label{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin-bottom:10px;}
-  .lsearch{max-width:600px;}
+  .lsearch{max-width:600px;position:relative;}
   .lsearch button{border:0;border-left:1.5px solid var(--ink);background:var(--ink);color:var(--paper);padding:0 28px;font-family:var(--mono);font-size:13px;letter-spacing:.08em;cursor:pointer;}
   .lsearch button:hover{background:#000;}
+  .lsuggest{position:absolute;top:calc(100% + 3px);left:0;right:0;background:var(--well);border:1.5px solid var(--ink);z-index:100;max-height:380px;overflow-y:auto;}
+  .lsuggest-item{padding:10px 18px;cursor:pointer;border-bottom:1px solid var(--rule-soft);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+  .lsuggest-item:hover{background:#efe9da;}
+  .lsuggest-item:last-child{border-bottom:0;}
+  .lsuggest-name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .lsuggest-tag{font-family:var(--mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--wash);white-space:nowrap;flex-shrink:0;}
   .lalt{margin-top:14px;font-size:15px;color:var(--wash);}
   .lalt a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;cursor:pointer;}
   .lledger{margin-top:60px;}
@@ -222,6 +228,17 @@
   .rsrow-total{font-weight:600;}
   .rslab{font-size:15px;}
   .rsamount{font-size:15px;text-align:right;white-space:nowrap;}
+
+  /* org metadata block (website, mission, NTEE) */
+  .orgmeta{margin:18px 0 0;padding:14px 0;border-top:1px solid var(--rule);}
+  .orgmeta-row{display:grid;grid-template-columns:90px 1fr;gap:12px;padding:5px 0;align-items:baseline;font-size:14px;}
+  .orgmeta-label{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--wash);padding-top:2px;}
+  .orgmeta-link{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule);word-break:break-all;}
+  .orgmeta-link:hover{border-bottom-color:var(--ink);}
+  .orgmeta-missing{color:var(--wash);font-style:italic;font-size:13px;}
+  .orgmeta-val{color:var(--ink);}
+  .mexpand{background:transparent;border:0;border-bottom:1px solid var(--rule);padding:0;cursor:pointer;font-family:inherit;font-size:inherit;color:var(--ink);}
+  .mexpand:hover{border-bottom-color:var(--ink);}
 
   /* ===== ABOUT ===== */
   .ahead h1{font-size:34px;padding:14px 0 0;}
@@ -421,11 +438,7 @@ function renderLanding(){
 
   const pfRows = App.funders.filter(f=>f.side==="private_foundation").sort((a,b)=>a.rank-b.rank);
   const pcRows = App.funders.filter(f=>f.side==="public_charity").sort((a,b)=>a.rank-b.rank);
-  const rcRows = [...App.recipients].filter(r=>r.state==="TX").sort((a,b)=>{
-    const av=a.has_recipient_total?a.recipient_total:a.indexed_grants;
-    const bv=b.has_recipient_total?b.recipient_total:b.indexed_grants;
-    return (bv-av)||(b.indexed_grants-a.indexed_grants);
-  }).slice(0,100);
+  const rcRows = [...App.recipients].filter(r=>r.state==="TX").sort((a,b)=>b.indexed_grants-a.indexed_grants).slice(0,100);
 
   let ltab = "pf";
   const lrows = document.getElementById("lrows");
@@ -440,15 +453,15 @@ function renderLanding(){
           <div class="nm">${esc(f.name)}<span class="sub">${esc(f.city||"")}</span></div>
           <div class="amt money">${fmt(f.grants)}</div>
         </div>`).join("");
-      lmoreEl.innerHTML=`<a data-nav="#/funders">Browse all ${App.funders.length} funders →</a>`;
+      lmoreEl.innerHTML=`<a href="#" onclick="window.scrollTo(0,0);return false">Go back to top</a>`;
     } else {
       lrows.innerHTML=rcRows.map((r,i)=>`
         <div class="lentry" data-nav="#/recipient/${esc(r.id)}">
           <div class="rk">${String(i+1).padStart(2,"0")}</div>
           <div class="nm">${esc(r.name)}<span class="sub">${esc(r.state||"")} · ${r.funders} funders</span></div>
-          <div class="amt money">${r.has_recipient_total?fmt(r.recipient_total):fmt(r.indexed_grants)}</div>
+          <div class="amt money">${fmt(r.indexed_grants)}</div>
         </div>`).join("");
-      lmoreEl.innerHTML=`<a data-nav="#/recipients">See all ${App.recipients.length.toLocaleString()} recipients →</a>`;
+      lmoreEl.innerHTML=`<a href="#" onclick="window.scrollTo(0,0);return false">Go back to top</a>`;
     }
     bindNav(lrows);
     bindNav(lmoreEl);
@@ -460,9 +473,42 @@ function renderLanding(){
     b.classList.add("on"); ltab=b.dataset.ltab; drawLtab();
   });
 
-  const doSearch = ()=>{ const v=document.getElementById("lq").value.trim(); location.hash = "#/recipients"; sessionStorage.setItem("gift_rq", v); };
+  const lqEl = document.getElementById("lq");
+  const lsearchEl = lqEl.closest(".lsearch");
+  const suggestEl = document.createElement("div");
+  suggestEl.className = "lsuggest";
+  suggestEl.style.display = "none";
+  lsearchEl.appendChild(suggestEl);
+
+  function lsearchDraw(){
+    const q = lqEl.value.trim().toLowerCase();
+    if(q.length < 2){ suggestEl.style.display = "none"; return; }
+    const score = n => n.toLowerCase().startsWith(q) ? 0 : 1;
+    const hits = [
+      ...App.funders.map(f=>({ name:f.name, tag:f.side==="private_foundation"?"Private foundation":"Public charity", nav:"#/funder/"+f.id, s:score(f.name) })),
+      ...App.recipients.map(r=>({ name:r.name, tag:"Recipient"+(r.state?" · "+r.state:""), nav:"#/recipient/"+r.id, s:score(r.name) }))
+    ].filter(x=>x.name.toLowerCase().includes(q)).sort((a,b)=>a.s-b.s).slice(0,10);
+    if(!hits.length){ suggestEl.style.display = "none"; return; }
+    suggestEl.innerHTML = hits.map(x=>`<div class="lsuggest-item" data-nav="${esc(x.nav)}"><span class="lsuggest-name">${esc(x.name)}</span><span class="lsuggest-tag">${esc(x.tag)}</span></div>`).join("");
+    suggestEl.style.display = "block";
+    bindNav(suggestEl);
+    suggestEl.querySelectorAll(".lsuggest-item").forEach(el=>el.addEventListener("click",()=>{ suggestEl.style.display="none"; lqEl.value=""; }));
+  }
+
+  lqEl.addEventListener("input", lsearchDraw);
+  lqEl.addEventListener("focus", lsearchDraw);
+  lqEl.addEventListener("blur", ()=>setTimeout(()=>{ suggestEl.style.display="none"; }, 160));
+
+  const doSearch = ()=>{
+    const first = suggestEl.querySelector(".lsuggest-item[data-nav]");
+    if(first && suggestEl.style.display !== "none"){ first.click(); return; }
+    const v = lqEl.value.trim();
+    if(!v) return;
+    location.hash = "#/recipients"; sessionStorage.setItem("gift_rq", v);
+    suggestEl.style.display = "none";
+  };
   document.getElementById("lgo").onclick = doSearch;
-  document.getElementById("lq").addEventListener("keydown",e=>{ if(e.key==="Enter") doSearch(); });
+  lqEl.addEventListener("keydown", e=>{ if(e.key==="Enter") doSearch(); });
   bindNav(app());
 }
 
@@ -504,11 +550,7 @@ function renderRecipients(){
     let rows = q ? App.recipients.filter(r=>r.name.toLowerCase().includes(q))
                  : [...txRecipients];
     if(sortKey==="name") rows=[...rows].sort((a,b)=>a.name.localeCompare(b.name));
-    else if(sortKey==="indexed_grants") rows=[...rows].sort((a,b)=>{
-      const av=a.has_recipient_total?a.recipient_total:a.indexed_grants;
-      const bv=b.has_recipient_total?b.recipient_total:b.indexed_grants;
-      return (bv-av)||(b.indexed_grants-a.indexed_grants);
-    });
+    else if(sortKey==="indexed_grants") rows=[...rows].sort((a,b)=>b.indexed_grants-a.indexed_grants);
     else rows=[...rows].sort((a,b)=>(b[sortKey]-a[sortKey])||(b.indexed_grants-a.indexed_grants));
     const shown=rows.slice(0,CAP);
     ftag.style.display = q ? "none":"block";
@@ -520,7 +562,7 @@ function renderRecipients(){
       <div class="rentry" data-nav="#/recipient/${esc(r.id)}">
         <div class="fcount"><span class="num">${r.funders}</span><span class="lab">funders</span></div>
         <div class="nm">${esc(r.name)}<span class="loc">${esc(r.state||"")}</span></div>
-        <div class="amt money">${r.has_recipient_total?fmt(r.recipient_total):fmt(r.indexed_grants)}<span class="alab">received</span></div>
+        <div class="amt money">${fmt(r.indexed_grants)}<span class="alab">from TX funders</span></div>
       </div>`).join("");
     bindNav(list);
     moreEl.innerHTML = !q
@@ -542,7 +584,7 @@ function renderRecipients(){
 // FUNDERS DIRECTORY
 //==================================================================
 function renderFunders(){
-  const CAP=12;
+  const CAP=10;
   let side = "public_charity";
   const sideLabel = s => s==="private_foundation" ? "private foundations" : "public charities";
   const sideData = s => App.funders.filter(f=>f.side===s).sort((a,b)=>a.rank-b.rank);
@@ -607,6 +649,27 @@ function renderFunders(){
   draw();
 }
 
+function missionHtml(text){
+  if(!text) return "";
+  const SHORT=200;
+  if(text.length<=SHORT) return esc(text);
+  return `${esc(text.slice(0,SHORT))}<span class="mhide">… <button class="mexpand" onclick="this.closest('.mwrap').querySelector('.mfull').style.display='inline';this.closest('.mhide').style.display='none'">Read more</button></span><span class="mfull" style="display:none">${esc(text.slice(SHORT))}</span>`;
+}
+
+function orgMetaHtml(obj, hasXml){
+  const wRow = obj.website
+    ? `<div class="orgmeta-row"><span class="orgmeta-label">Website</span><a class="orgmeta-link" href="${esc(obj.website)}" target="_blank" rel="noopener">${esc(obj.website.replace(/^https?:\/\//,""))}</a></div>`
+    : (hasXml ? `<div class="orgmeta-row"><span class="orgmeta-label">Website</span><span class="orgmeta-missing">Not provided in filing</span></div>` : "");
+  const nteeRow = obj.ntee_code
+    ? `<div class="orgmeta-row"><span class="orgmeta-label">Category</span><span class="orgmeta-val">${esc(obj.ntee_code)}${obj.ntee_major?` · ${esc(obj.ntee_major)}`:""}</span></div>`
+    : "";
+  const mRow = obj.mission
+    ? `<div class="orgmeta-row"><span class="orgmeta-label">Mission</span><div class="orgmeta-val mwrap">${missionHtml(obj.mission)}</div></div>`
+    : (hasXml ? `<div class="orgmeta-row"><span class="orgmeta-label">Mission</span><span class="orgmeta-missing">Not provided in filing</span></div>` : "");
+  if(!wRow && !nteeRow && !mRow) return "";
+  return `<div class="orgmeta">${wRow}${nteeRow}${mRow}</div>`;
+}
+
 //==================================================================
 // RECIPIENT PROFILE  (inbound: funders that gave to this recipient)
 //==================================================================
@@ -632,8 +695,8 @@ async function renderRecipientProfile(id){
   funders.forEach(f=>f.grants.sort((a,b)=>b.a-a.a));
   const grantCount = rows.length, funderCount = funders.length;
   const total = rec.indexed_grants || funders.reduce((s,f)=>s+f.total,0);
-  const headlineFigure = rec.has_recipient_total ? rec.recipient_total : total;
-  const headlineLabel = rec.has_recipient_total ? "Total received" : "Indexed grants";
+  const headlineFigure = total;
+  const headlineLabel = "Texas indexed grants";
   const fyeLabel = (()=>{
     if(!rec.fiscal_year_end) return "";
     const d = new Date(rec.fiscal_year_end+"T12:00:00");
@@ -668,12 +731,12 @@ async function renderRecipientProfile(id){
           <div class="stat"><div class="v">${grantCount}</div><div class="k">Grants</div></div>
         </div>
       </div>
-      <p class="pcontext">In tax year 2023, this organization received <b>${grantCount} ${grantCount===1?"grant":"grants"} from ${funderCount} indexed Texas ${funderCount===1?"funder":"funders"}</b>, totaling <b>${fmt(total)}</b>.<br><em>Figures reflect grants of $10,000 or more reported by the indexed funders, as filed.</em></p>
+      <p class="pcontext">In tax year 2023, this organization received <b>${grantCount} ${grantCount===1?"grant":"grants"} from ${funderCount} indexed Texas ${funderCount===1?"funder":"funders"}</b>, totaling <b>${fmt(total)}</b>.<br><em>Figures reflect grants of $5,000 or more reported by the indexed funders, as filed.</em></p>
       ${rec.has_recipient_total ? `<div class="rsummary">
-        <div class="rsrow rsrow-total"><div class="rslab">Total contributions and grants</div><div class="rsamount money">${fmt(rec.recipient_total)}</div></div>
-        <div class="rsrow rsrow-indexed"><div class="rslab">Indexed Texas grants, $10,000 and above</div><div class="rsamount money">${fmt(total)}</div></div>
-        <div class="rsrow rsrow-other"><div class="rslab">All other support (approximate)</div><div class="rsamount money">${fmt(rec.remainder)}</div></div>
+        <div class="rsrow rsrow-total"><div class="rslab">Indexed Texas grants, $5,000 and above</div><div class="rsamount money">${fmt(total)}</div></div>
+        <div class="rsrow rsrow-worldwide"><div class="rslab">Total contributions worldwide (Form 990)</div><div class="rsamount money">${fmt(rec.recipient_total)}</div></div>
       </div>` : ""}
+      ${orgMetaHtml(rec, rec.has_xml)}
     </div>
     <div class="pledger-head"><div class="pledger-title">Funders, by total given</div><div class="pledger-note">largest first</div></div>
     <div class="col-rule"></div>
@@ -681,7 +744,7 @@ async function renderRecipientProfile(id){
     ${tail.length ? `<button class="showall" id="showall"><span>Show all ${funderCount} funders ↓</span><span class="meta">${tail.length} more, ${fmt(tailMin)} to ${fmt(tailMax)}</span></button><div id="tail" class="hidden">${tail.map(funderRow).join("")}</div>` : ""}
   </main>
   <footer><div class="wrap">
-    ${rec.has_recipient_total ? `<p class="pfoot" style="margin-bottom:12px">Recipient total is from this organization's Form 990 for the fiscal year ending ${fyeLabel}. Funder grants are reported by indexed Texas funders for tax year 2023 as filed; the two cover different reporting periods, so all other support is approximate, not an exact reconciliation.</p>` : ""}
+    ${rec.has_recipient_total ? `<p class="pfoot" style="margin-bottom:12px">Worldwide total is from this organization's Form 990 for the fiscal year ending ${fyeLabel} and reflects all contributions from all sources globally, not only Texas giving.</p>` : ""}
     <p class="pfoot">Showing grants reported by indexed funders for tax year 2023, grouped by funder. Click any funder to see everything it gave. <a data-nav="#/about">Read the methodology</a>.</p>
   </div></footer>`;
 
@@ -730,35 +793,46 @@ async function renderFunderProfile(id){
           <div class="stat"><div class="v">${fund.rank}</div><div class="k">Rank</div></div>
         </div>
       </div>
-      <p class="pcontext">In tax year 2023, this ${fund.side==="private_foundation"?"foundation":"organization"} ${noDetail?`reported <b>${fmt(total)}</b> in grants paid`:`made <b>grants to ${recCount} ${recCount===1?"organization":"organizations"}</b>, totaling <b>${fmt(total)}</b>`}. Figures reflect grants of $10,000 or more as filed.${posture?" This funder states it does not accept unsolicited requests.":""}</p>
+      ${fund.no_filing_2023
+        ? `<p class="pcontext">No 2023 electronic filing is available in the public index for this organization. The grants figure shown is from the indexed data.</p>`
+        : `<p class="pcontext">In tax year 2023, this ${fund.side==="private_foundation"?"foundation":"organization"} ${noDetail?`reported <b>${fmt(total)}</b> in grants paid`:`made <b>grants to ${recCount} ${recCount===1?"organization":"organizations"}</b>, totaling <b>${fmt(total)}</b>`}. Figures reflect grants of $5,000 or more as filed.${posture?" This funder states it does not accept unsolicited requests.":""}</p>`}
+      ${orgMetaHtml(fund, true)}
     </div>
     ${noDetail
-      ? `<div class="empty" style="text-align:left;padding:30px 0">This funder's filing did not itemize individual recipients, so only its total grants paid is available. The recipient list could not be opened from the public return.</div>`
+      ? (fund.no_filing_2023
+          ? `<div class="empty" style="text-align:left;padding:30px 0">No 2023 electronic filing for this organization is available in the public index. Recipient detail is not available.</div>`
+          : `<div class="empty" style="text-align:left;padding:30px 0">This funder's filing did not itemize individual recipients, so only its total grants paid is available. The recipient list could not be opened from the public return.</div>`)
       : `<div class="pledger-head"><div class="pledger-title">Recipients, by amount</div></div>
          <div class="search" style="margin-top:12px"><input id="q" placeholder="Search this funder's ${recCount} recipients" autocomplete="off"><div class="icon">↵</div></div>
          <div class="pcountline"><div class="count" id="count"></div><div class="col-h">Grant amount · FY2023</div></div>
          <div id="list"></div>
          <div class="dmore" id="more"></div>`}
   </main>
-  <footer><div class="wrap"><p class="pfoot">Showing grants of $10,000 or more reported by this funder for tax year 2023. Click any recipient to see every funder that supported it. <a data-nav="#/about">Read the methodology</a>.</p></div></footer>`;
+  <footer><div class="wrap"><p class="pfoot">Showing grants of $5,000 or more reported by this funder for tax year 2023. Click any recipient to see every funder that supported it. <a data-nav="#/about">Read the methodology</a>.</p></div></footer>`;
 
   if(!noDetail){
     const qbox=document.getElementById("q"), list=document.getElementById("list");
     const countEl=document.getElementById("count"), moreEl=document.getElementById("more");
+    let showAll=false;
     function draw(){
       const q=qbox.value.trim().toLowerCase();
       let f = q ? rows.filter(r=>r.name.toLowerCase().includes(q)) : rows;
-      const shown=f.slice(0,CAP);
-      countEl.innerHTML = q ? `<b>${f.length}</b> matching` : `Top <b>${Math.min(CAP,recCount)}</b> of <b>${recCount}</b> recipients`;
+      const shown = (!q && !showAll) ? f.slice(0,CAP) : (q ? f.slice(0,CAP) : f);
+      countEl.innerHTML = q ? `<b>${f.length}</b> matching` : `<b>${recCount}</b> recipients`;
       if(f.length===0){ list.innerHTML=`<div class="empty">No recipients of this funder match that name.</div>`; moreEl.innerHTML=""; return; }
       list.innerHTML = shown.map(r=>{
         const nameHtml = r.rid ? `<a data-nav="#/recipient/${esc(r.rid)}">${esc(r.name)}</a>` : esc(r.name);
         return `<div class="grant"><div><div class="grec">${nameHtml}</div><div class="gpurpose">${esc(r.p)}</div></div><div class="gamt money">${fmt(r.amt)}</div></div>`;
       }).join("");
       bindNav(list);
-      moreEl.innerHTML = !q
-        ? `Showing the ${Math.min(CAP,recCount)} largest grants. Search above to find any of this funder's <b>${recCount}</b> recipients.`
-        : (f.length>CAP ? `<b>${f.length-CAP}</b> more match. Keep typing to narrow.` : "");
+      if(!q && !showAll && recCount>CAP){
+        moreEl.innerHTML=`<button class="showall" id="showallbtn"><span>See all ${recCount} recipients ↓</span></button>`;
+        document.getElementById("showallbtn").onclick=()=>{ showAll=true; draw(); };
+      } else if(q && f.length>CAP){
+        moreEl.innerHTML=`<b>${f.length-CAP}</b> more match. Keep typing to narrow.`;
+      } else {
+        moreEl.innerHTML="";
+      }
     }
     qbox.addEventListener("input",draw);
     draw();
@@ -832,7 +906,7 @@ async function renderAbout(){
           <div class="caveat"><div class="ct">Recipient detail is not universal</div><div class="cd">Itemized recipients were available for most funders. Funders who filed grants as an attachment or lump sum still appear with their total, marked.</div></div>
           <div class="caveat"><div class="ct">Recipients may appear more than once</div><div class="cd">The index merges recipients conservatively by EIN and exact name. It never guesses, so a large organization can occasionally appear under more than one entry rather than be wrongly combined.</div></div>
           <div class="caveat"><div class="ct">Application posture is one directional</div><div class="cd">The filing marks only when a foundation does not accept unsolicited requests. A blank is recorded as unstated and never implies the door is closed.</div></div>
-          <div class="caveat"><div class="ct">Bounded by the indexed funders</div><div class="cd">A recipient appears only if one of the indexed funders reported a grant to it of $10,000 or more.</div></div>
+          <div class="caveat"><div class="ct">Bounded by the indexed funders</div><div class="cd">A recipient appears only if one of the indexed funders reported a grant to it of $5,000 or more. The $5,000 floor matches the IRS statutory minimum for itemized grant reporting on Schedule I (Form 990) and Part XV (Form 990-PF); grants below that threshold are not required to be listed by recipient in public filings.</div></div>
         </div>
       </details>
 
