@@ -280,7 +280,15 @@
   .rgroup-h .cnt{color:var(--ink);font-weight:700;}
   .rorg{display:grid;grid-template-columns:1fr auto;gap:16px;padding:6px 0;border-bottom:1px dotted var(--rule-soft);align-items:baseline;}
   .rorg .ron{font-size:15px;}
-  .rorg .rob{font-family:var(--mono);font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--wash);white-space:nowrap;}
+  .rorg .rob{font-family:var(--mono);font-size:9px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink);background:var(--rule-soft);padding:2px 6px;border-radius:2px;white-space:nowrap;cursor:pointer;text-decoration:none;border-bottom:1px solid transparent;transition:all .12s;}
+  .rorg .rob:hover{background:var(--ink);color:var(--paper);}
+  .reason-legend{margin-bottom:24px;padding:14px 0;border:1px solid var(--rule);background:#faf8f4;}
+  .reason-codes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px;}
+  .reason-code{font-size:13px;padding:8px 0;}
+  .reason-code-label{font-family:var(--mono);font-weight:700;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);background:var(--rule-soft);padding:2px 6px;border-radius:2px;display:inline-block;margin-right:8px;}
+  .reason-code-desc{font-size:13px;color:var(--wash);}
+  .reason-code.highlighted{background:var(--ink);color:var(--paper);padding:8px;border-radius:2px;}
+  .reason-code.highlighted .reason-code-label{background:transparent;color:var(--paper);}
   .caveat{padding:9px 0;border-bottom:1px solid var(--rule-soft);}
   .caveat .ct{font-weight:600;font-size:16px;}
   .caveat .cd{font-size:14px;color:var(--wash);line-height:1.5;margin-top:2px;}
@@ -935,18 +943,49 @@ async function renderAbout(){
     "No researchable public identity":"Cannot be verified or contacted"
   };
 
-  let basisHtml, rosterHtml, totalExcluded;
+  // Create reason codes: abbreviate detailed reasons
+  const createReasonCode = (reason) => {
+    if(!reason) return "—";
+    // Create 2-3 letter abbreviation from first letters
+    const words = reason.split(/\s+/);
+    if(words.length === 1) return reason.slice(0,3).toUpperCase();
+    return (words[0][0] + words[1][0] + (words[2]?words[2][0]:"")).toUpperCase();
+  };
+
+  let basisHtml, legendHtml, rosterHtml, totalExcluded, reasonMap = {};
   if(ex && ex.groups){
     totalExcluded = ex.groups.reduce((s,g)=>s+g.orgs.length,0);
+
+    // Build reason map and legend
+    ex.groups.forEach(g => {
+      g.orgs.forEach(o => {
+        if(o.reason && !reasonMap[o.reason]){
+          reasonMap[o.reason] = createReasonCode(o.reason);
+        }
+      });
+    });
+
+    const reasonEntries = Object.entries(reasonMap).sort((a,b)=>a[1].localeCompare(b[1]));
+    legendHtml = `<div class="reason-legend">
+      <div style="font-weight:600;margin-bottom:8px;">Exclusion reason codes:</div>
+      <div class="reason-codes">
+        ${reasonEntries.map(([reason,code])=>`<div class="reason-code" id="reason-${esc(code)}"><span class="reason-code-label">${esc(code)}</span><span class="reason-code-desc">${esc(reason)}</span></div>`).join("")}
+      </div>
+    </div>`;
+
     basisHtml = ex.groups.map(g=>`<div class="basis-row"><div class="bn">${g.orgs.length}</div><div class="bl">${esc(g.label)}</div><div class="bd">${esc(BASIS_DESC[g.label]||"")}</div></div>`).join("");
     rosterHtml = ex.groups.map(g=>`
       <div class="rgroup">
         <div class="rgroup-h"><span>${esc(g.label)}</span><span class="cnt">${g.orgs.length}</span></div>
-        ${g.orgs.map(o=>`<div class="rorg"><div class="ron">${esc(o.name)}</div><div class="rob">${esc(o.reason||"")}</div></div>`).join("")}
+        ${g.orgs.map(o=>{
+          const code = reasonMap[o.reason] || "—";
+          return `<div class="rorg"><div class="ron">${esc(o.name)}</div><a href="#" class="rob" data-reason-code="${esc(code)}" onclick="highlightReason('${esc(code)}'); return false;">${esc(code)}</a></div>`;
+        }).join("")}
       </div>`).join("");
   } else {
     totalExcluded = 40;
     basisHtml = `<div class="s-intro">Basis counts load from gift_exclusions.json, generated from excluded_funders.csv.</div>`;
+    legendHtml = "";
     rosterHtml = `<div class="s-intro">The full named roster loads from gift_exclusions.json, generated from excluded_funders.csv. Download the complete file below.</div>`;
   }
 
@@ -965,6 +1004,13 @@ async function renderAbout(){
         <div class="s-body">
           <p class="s-intro">Some organizations move money but are not reachable grantmakers. They are set aside for one of five reasons. Each is listed under the single basis that best explains why it does not belong in the index.</p>
           ${basisHtml}
+        </div>
+      </details>
+
+      <details>
+        <summary><span class="s-title">Exclusion reason codes</span><span class="s-meta">what the codes mean <span class="chev">›</span></span></summary>
+        <div class="s-body">
+          ${legendHtml}
         </div>
       </details>
 
@@ -1015,6 +1061,25 @@ async function renderAbout(){
     <a href="https://jonathanlindavis.com/contact" target="_blank" rel="noopener">Contact the Developer</a>
   </div></footer>`;
   bindNav(app());
+
+  // Add click handlers for reason codes in roster
+  document.querySelectorAll(".rob[data-reason-code]").forEach(el => {
+    el.addEventListener("click", e => {
+      e.preventDefault();
+      highlightReason(el.dataset.reasonCode);
+    });
+  });
+}
+
+function highlightReason(code){
+  // Remove previous highlights
+  document.querySelectorAll(".reason-code.highlighted").forEach(el => el.classList.remove("highlighted"));
+  // Highlight the code in legend
+  const legendEl = document.getElementById("reason-" + code);
+  if(legendEl){
+    legendEl.classList.add("highlighted");
+    legendEl.scrollIntoView({behavior:"smooth",block:"nearest"});
+  }
 }
 
 //==================================================================
