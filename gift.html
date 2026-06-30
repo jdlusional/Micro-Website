@@ -284,9 +284,10 @@
   .rorg .rob:hover{background:var(--ink);color:var(--paper);}
   .reason-legend{margin-bottom:24px;padding:14px 0;}
   .reason-codes{display:flex;flex-direction:column;gap:16px;margin-top:16px;}
-  .reason-code{font-size:16px;padding:12px 0;border-bottom:1px solid var(--rule);transition:all .12s;}
+  .reason-code{font-size:16px;padding:12px 0;border-bottom:1px solid var(--rule-soft);transition:all .12s;display:flex;justify-content:space-between;align-items:flex-start;}
   .reason-code-label{font-family:var(--mono);font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);background:var(--rule-soft);padding:3px 8px;border-radius:2px;display:inline-block;margin-right:10px;}
   .reason-code-desc{font-size:16px;color:var(--wash);margin-top:6px;line-height:1.5;}
+  .reason-code-count{font-family:var(--mono);font-size:14px;font-weight:700;color:var(--wash);white-space:nowrap;margin-left:16px;}
   .reason-code.highlighted{background:#ffd700;color:var(--ink);padding:12px;border-radius:2px;border-bottom:none;margin:0 -12px;padding-left:12px;}
   .reason-code.highlighted .reason-code-label{background:rgba(0,0,0,.1);}
   .caveat{padding:9px 0;border-bottom:1px solid var(--rule-soft);}
@@ -972,13 +973,20 @@ async function renderAbout(){
       return `<div class="basis-row"><div class="bn">${count}</div><div class="bl"><a href="#" class="rob" data-reason-code="${esc(code)}" onclick="highlightReason('${esc(code)}'); return false; text-decoration:underline">${esc(label)}</a></div><div class="bd">${esc(BASIS_DESC[label]||"")}</div></div>`;
     }).join("");
 
-    // Build legend
+    // Count organizations for each code
+    const codeCounts = {A:0, B:0, C:0, D:0, E:0};
+    Object.values(orgBases).forEach(codes => {
+      codes.forEach(code => codeCounts[code]++);
+    });
+
+    // Build legend with counts
     legendHtml = `<div class="reason-legend">
       <div style="font-weight:600;margin-bottom:8px;">Exclusion reason codes:</div>
       <div class="reason-codes">
         ${Object.keys(BASIS_CODES).map(label => {
           const code = BASIS_CODES[label];
-          return `<div class="reason-code" id="reason-${esc(code)}"><span class="reason-code-label">${esc(code)}</span><span class="reason-code-desc">${esc(label)}</span></div>`;
+          const count = codeCounts[code] || 0;
+          return `<div class="reason-code" id="reason-${esc(code)}"><div><span class="reason-code-label">${esc(code)}</span><span class="reason-code-desc">${esc(label)}</span></div><span class="reason-code-count">${count}</span></div>`;
         }).join("")}
       </div>
     </div>`;
