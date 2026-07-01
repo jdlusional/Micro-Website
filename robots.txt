@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /testing.html
+Disallow: /LLOpensecrets
+Disallow: /LLOpensecrets.html
 
 Sitemap: https://jonathanlindavis.com/sitemap.xml
