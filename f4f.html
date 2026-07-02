@@ -326,9 +326,14 @@ function buildFacets(){
 }
 
 /* ---- Filter + Sort ---- */
+const DISPLAY_CAP=50; // default (no search/filter) view shows this many, soonest deadline first.
+                       // The full repository (state.data) is always searchable/filterable beyond this cap.
+
 function apply(){
   const q=state.q.toLowerCase().trim();
-  state.filtered=state.data.filter(r=>{
+  const noActiveFilters=!q&&state.facets.area.size===0&&!state.facets.restricted;
+
+  let base=state.data.filter(r=>{
     if(state.facets.area.size){const v=(r.area||"").trim()||"Other";if(!state.facets.area.has(v))return false;}
     if(state.facets.restricted&&r.flags&&r.flags.trim())return false;
     if(q){
@@ -337,6 +342,18 @@ function apply(){
     }
     return true;
   });
+
+  if(noActiveFilters){
+    // Default view: the DISPLAY_CAP fellowships with the soonest deadlines.
+    // Undated/rolling entries (parseDeadline -> null) sort last, same convention as the Deadline sort option.
+    base=base.slice().sort((a,b)=>{
+      const da=parseDeadline(a.deadline),db=parseDeadline(b.deadline);
+      if(!da&&!db)return 0;if(!da)return 1;if(!db)return -1;
+      return da-db;
+    }).slice(0,DISPLAY_CAP);
+  }
+
+  state.filtered=base;
   sortRows();render();
 }
 
