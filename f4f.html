@@ -247,10 +247,13 @@ function esc(s){return(s||"").replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':
 function isRolling(v){return/rolling/i.test(v||"");}
 
 /* Parse a deadline string to a Date for sorting/urgency.
-   Handles: "Oct 29, 2026", "~Nov 10, 2026", "Jun 1, 2026 at 5 PM ET", "Rolling", "TBD" */
+   Handles: "Oct 29, 2026", "~Nov 10, 2026", "Jun 1, 2026 at 5 PM ET", "Rolling", "TBD".
+   Requires an explicit day-of-month - without one, JS's Date() will silently default to
+   Jan 1 for vague strings like "Fall 2026" or "Jan 2027", making them look falsely urgent. */
 function parseDeadline(s){
   if(!s||isRolling(s)||/tbd|verify|biannual|continuous/i.test(s))return null;
   const clean=s.replace(/[~\u2019]/g,"").replace(/\bat\b.*/i,"").replace(/,\s*\d{1,2}:\d{2}.*$/,"").trim();
+  if(!/^[A-Za-z]{3,9}\.?\s+\d{1,2},?\s+\d{4}$/.test(clean))return null;
   const d=new Date(clean);
   return isNaN(d)?null:d;
 }
