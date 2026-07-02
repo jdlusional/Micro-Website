@@ -11,7 +11,8 @@
     "eligibility": "US, UK, or Canada work authorization required",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Cohort-based research fellowship; check Anthropic careers page for current openings"
+    "notes": "Cohort-based research fellowship; check Anthropic careers page for current openings",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "aspen-policy-academy",
@@ -25,7 +26,8 @@
     "eligibility": "US-based; graduate students and early-career professionals",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Dates projected from prior cycle; verify current cycle on website"
+    "notes": "Dates projected from prior cycle; verify current cycle on website",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "base-fellows",
@@ -39,7 +41,8 @@
     "eligibility": "Black researchers; US-eligible; all fields",
     "area": "Open Field",
     "flags": "Black researchers focus",
-    "notes": "Dates projected from prior cycle; verify current cycle on website"
+    "notes": "Dates projected from prior cycle; verify current cycle on website",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "belfer-isp-predoc",
@@ -53,7 +56,8 @@
     "eligibility": "All nationalities; in-residence Cambridge MA",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "In-residence at Harvard Kennedy School"
+    "notes": "In-residence at Harvard Kennedy School",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "belfer-tech-geopolitics",
@@ -67,7 +71,8 @@
     "eligibility": "US-eligible; all nationalities considered",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Tech and geopolitics research focus; verify current cycle"
+    "notes": "Tech and geopolitics research focus; verify current cycle",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "berkman-klein",
@@ -81,7 +86,8 @@
     "eligibility": "US-eligible; all backgrounds; Sept 2027-Aug 2028 term",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Internet, law, and society research focus; verify current cycle"
+    "notes": "Internet, law, and society research focus; verify current cycle",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "cais-fellowship",
@@ -95,7 +101,8 @@
     "eligibility": "US-based; graduate students and researchers",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "AI safety and society research focus"
+    "notes": "AI safety and society research focus",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "govai-dc-summer",
@@ -109,7 +116,8 @@
     "eligibility": "US-eligible; graduate students",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "AI governance focus; DC-based summer program"
+    "notes": "AI governance focus; DC-based summer program",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "coding-it-forward",
@@ -123,7 +131,8 @@
     "eligibility": "US citizens, nationals, or permanent residents currently in the US; undergrad and grad eligible",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Civic technology and government; open to undergrads and graduate students"
+    "notes": "Civic technology and government; open to undergrads and graduate students",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "cip-research",
@@ -137,7 +146,8 @@
     "eligibility": "Global including US; graduate students",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Information policy and privacy research focus"
+    "notes": "Information policy and privacy research focus",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "horizon-public-service",
@@ -151,7 +161,8 @@
     "eligibility": "Recent master's or doctoral graduates; green card holders eligible; full-time DC",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Full-time post-graduate public service fellowship; not for current students"
+    "notes": "Full-time post-graduate public service fellowship; not for current students",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "new-america-national-fellows",
@@ -165,7 +176,8 @@
     "eligibility": "US-based; welcomes international applicants; researchers and practitioners",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Public policy research and writing fellowship"
+    "notes": "Public policy research and writing fellowship",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "otf-icfp",
@@ -179,7 +191,8 @@
     "eligibility": "All nationalities except OFAC-sanctioned countries; US-eligible",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Internet freedom and censorship circumvention research focus"
+    "notes": "Internet freedom and censorship circumvention research focus",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "mozilla-fellowship",
@@ -193,7 +206,8 @@
     "eligibility": "US-eligible and select other countries; self-nomination accepted",
     "area": "AI and Tech Policy",
     "flags": "Self-nomination (not closed invitation); verify eligible countries on website",
-    "notes": "Internet health, privacy, and open web research focus"
+    "notes": "Internet health, privacy, and open web research focus",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "princeton-citp",
@@ -207,7 +221,8 @@
     "eligibility": "US-eligible; graduate students and researchers; in-residence Princeton NJ",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Technology and information policy research focus; verify current cycle"
+    "notes": "Technology and information policy research focus; verify current cycle",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "tech-policy-press",
@@ -221,7 +236,8 @@
     "eligibility": "Remote; global including US; researchers, journalists, and policy professionals",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Technology policy writing and research fellowship"
+    "notes": "Technology policy writing and research fellowship",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "penn-csis-doctoral",
@@ -235,7 +251,8 @@
     "eligibility": "Current PhD candidates; US-based program",
     "area": "Public Policy and Government",
     "flags": "Verify current cycle dates; most recent confirmed cycle was 2024",
-    "notes": "US-based Penn residential program (distinct from Oxford UK posting)"
+    "notes": "US-based Penn residential program (distinct from Oxford UK posting)",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "nsf-grfp",
@@ -249,7 +266,8 @@
     "eligibility": "US citizens, nationals, or permanent residents; STEM including STEM education",
     "area": "STEM and Engineering",
     "flags": "STEM and STEM education fields only",
-    "notes": "One of the most prestigious and portable US graduate fellowships"
+    "notes": "One of the most prestigious and portable US graduate fellowships",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "aauw-american-dissertation",
@@ -263,7 +281,8 @@
     "eligibility": "Must identify as a woman; US citizen or permanent resident; enrolled at accredited institution; first doctoral degree only; final dissertation year",
     "area": "Dissertation Completion",
     "flags": "Women only; final dissertation year only; first doctoral degree only",
-    "notes": "Oldest non-institutional graduate funding source for women in the US"
+    "notes": "Oldest non-institutional graduate funding source for women in the US",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "mellon-acls-dissertation",
@@ -277,7 +296,8 @@
     "eligibility": "US-eligible; CRITICAL EXCLUSIONS: EdD, education, public policy, public administration, law, STEM, social work, business not eligible; humanities and interpretive social sciences only",
     "area": "Humanities",
     "flags": "EXCLUDES EdD, education, public policy, public admin, law, STEM, social work, business. Humanities and interpretive social sciences ONLY.",
-    "notes": "Read exclusion list carefully before applying"
+    "notes": "Read exclusion list carefully before applying",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "naed-spencer-dissertation",
@@ -291,7 +311,8 @@
     "eligibility": "Enrolled at US graduate school; US citizenship NOT required (includes undocumented); dissertation must focus on education in any discipline",
     "area": "Education Research",
     "flags": "Dissertation must focus on education (broadly defined)",
-    "notes": "35 awards/year; one of the most prestigious education research dissertation fellowships"
+    "notes": "35 awards/year; one of the most prestigious education research dissertation fellowships",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "abf-doctoral-fellowship",
@@ -305,7 +326,8 @@
     "eligibility": "US citizens, nationals, or permanent residents; ABD social-science or sociolegal doctoral candidates; in-residence Chicago",
     "area": "Social Science",
     "flags": "Social science and sociolegal research focus; in-residence Chicago required",
-    "notes": "Formerly ABF-LSA-NSF; verify current cycle and amount on ABF website"
+    "notes": "Formerly ABF-LSA-NSF; verify current cycle and amount on ABF website",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "kauffman-knowledge-challenge",
@@ -319,7 +341,8 @@
     "eligibility": "US-eligible; doctoral students; entrepreneurship research focus",
     "area": "Social Science",
     "flags": "Entrepreneurship and innovation research focus; biannual cycle",
-    "notes": "Note: standalone Kauffman Dissertation Fellowship discontinued 2018; this is the current grant program"
+    "notes": "Note: standalone Kauffman Dissertation Fellowship discontinued 2018; this is the current grant program",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "rsf-dissertation-grants",
@@ -333,7 +356,8 @@
     "eligibility": "Enrolled ABD doctoral students at US institutions; US citizenship not required",
     "area": "Social Science",
     "flags": "Social science research focus",
-    "notes": "Supports dissertation research in the social sciences"
+    "notes": "Supports dissertation research in the social sciences",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "horowitz-foundation",
@@ -347,7 +371,8 @@
     "eligibility": "Current PhD or DrPH candidates (degree not yet received); US citizenship not required; social policy research",
     "area": "Social Science",
     "flags": "Must not have received doctorate by application date",
-    "notes": "Social policy dissertation research focus; all social science disciplines"
+    "notes": "Social policy dissertation research focus; all social science disciplines",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "rand-gsap",
@@ -361,7 +386,8 @@
     "eligibility": "Must reside in US; full-time doctoral or professional students (PhD, EdD, and equivalent); not undergrad or postdoc",
     "area": "Public Policy and Government",
     "flags": "EdD eligible; must reside in US during program",
-    "notes": "Summer policy research fellowship at RAND; broad policy fields"
+    "notes": "Summer policy research fellowship at RAND; broad policy fields",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "rand-cast",
@@ -375,7 +401,8 @@
     "eligibility": "US and UK citizens/work auth; security clearance required or anticipated; open to graduate students and researchers",
     "area": "AI and Tech Policy",
     "flags": "Security clearance required; US and UK only",
-    "notes": "AI safety and technology policy; rolling admissions"
+    "notes": "AI safety and technology policy; rolling admissions",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "jams-weinstein",
@@ -389,7 +416,8 @@
     "eligibility": "US-eligible; practitioners and researchers in alternative dispute resolution (ADR); not exclusively students",
     "area": "Social Science",
     "flags": "ADR field focus; open to practitioners, not exclusively graduate students",
-    "notes": "Alternative dispute resolution research and practice focus"
+    "notes": "Alternative dispute resolution research and practice focus",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "ndseg",
@@ -403,7 +431,8 @@
     "eligibility": "US citizens or nationals ONLY (permanent residents NOT eligible; dual citizens OK); first 2 years of graduate study in STEM/engineering; 3+ years remaining",
     "area": "STEM and Engineering",
     "flags": "US citizens and nationals ONLY (no permanent residents); STEM and engineering fields only; early-stage graduate students only",
-    "notes": "Cannot be held simultaneously with NSF GRFP or other major fellowships"
+    "notes": "Cannot be held simultaneously with NSF GRFP or other major fellowships",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "paul-daisy-soros",
@@ -417,7 +446,8 @@
     "eligibility": "Must be a New American: US citizen (naturalized or born to non-US-citizen parents), green card holder, asylee, refugee, or DACA recipient, OR graduated US high school and college; age 30 or younger; not past 3rd year of graduate program; all fields",
     "area": "Open Field",
     "flags": "New Americans ONLY (immigrants or children of immigrants meeting specific criteria); age 30 or younger; not past 3rd year of grad program",
-    "notes": "For the 2027 Fellowship; any graduate or professional field at any US university"
+    "notes": "For the 2027 Fellowship; any graduate or professional field at any US university",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "hertz-fellowship",
@@ -431,7 +461,8 @@
     "eligibility": "US citizens or permanent residents; college seniors, first-year graduate students, or gap-year applicants; PhD in applied physical/biological sciences, math, or engineering at a US institution; no professional degrees (MD, JD, MBA)",
     "area": "STEM and Engineering",
     "flags": "STEM only: applied physical/biological sciences, math, engineering; PhD only; early-stage applicants only",
-    "notes": "One of the most prestigious and generous US STEM graduate fellowships"
+    "notes": "One of the most prestigious and generous US STEM graduate fellowships",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "aera-minority-dissertation",
@@ -445,7 +476,8 @@
     "eligibility": "US citizens or permanent residents who are members of underrepresented racial/ethnic minority groups in higher education (African Americans, Alaskan Natives, American Indians, Asian Americans, Hispanics/Latinos, Native Hawaiians/Pacific Islanders); ABD at dissertation writing stage; education, social science, humanities, or related disciplines",
     "area": "Education Research",
     "flags": "Underrepresented racial and ethnic minority scholars ONLY; education research focus; ABD dissertation writing stage",
-    "notes": "Write-up fellowship; 1-year nonrenewable award beginning July"
+    "notes": "Write-up fellowship; 1-year nonrenewable award beginning July",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "knight-hennessy",
@@ -459,7 +491,8 @@
     "eligibility": "Open to all nationalities including US; must apply to and be admitted to a full-time Stanford graduate program (MA, MS, MBA, JD, MD, MFA, PhD); bachelor's earned Jan 2019 or later (for 2027 cohort); all fields",
     "area": "Open Field",
     "flags": "Requires concurrent admission to a Stanford graduate program; bachelor's degree recency requirement",
-    "notes": "World's largest fully endowed university-wide graduate fellowship program; ~100 scholars per year"
+    "notes": "World's largest fully endowed university-wide graduate fellowship program; ~100 scholars per year",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "nasa-jenkins",
@@ -473,7 +506,8 @@
     "eligibility": "US citizens; STEM/NASA-related fields; master's and doctoral students; aimed at underrepresented groups (women, minorities, persons with disabilities)",
     "area": "STEM and Engineering",
     "flags": "VERIFY current cycle is open at intern.nasa.gov (OSSI); federal program subject to funding availability; STEM fields; diversity-focused",
-    "notes": "Apply through NASA One Stop Shopping Initiative (OSSI) at intern.nasa.gov; select Fellowship type"
+    "notes": "Apply through NASA One Stop Shopping Initiative (OSSI) at intern.nasa.gov; select Fellowship type",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "peo-scholar-awards",
@@ -487,7 +521,8 @@
     "eligibility": "Must identify as a woman; US or Canada citizen or legal permanent resident; enrolled in doctoral program at accredited US or Canadian institution; within 2 years of graduation with at least 1 full academic year remaining; all fields",
     "area": "Dissertation Completion",
     "flags": "Women only; must be NOMINATED by a local P.E.O. chapter (contact your nearest chapter to initiate); within 2 years of graduation",
-    "notes": "Nomination window Aug 20-Nov 20; contact a local P.E.O. Sisterhood chapter to be nominated before applying"
+    "notes": "Nomination window Aug 20-Nov 20; contact a local P.E.O. Sisterhood chapter to be nominated before applying",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "newcombe-dissertation",
@@ -501,7 +536,8 @@
     "eligibility": "PhD candidates at accredited US graduate schools in humanities or social sciences in the final dissertation writing stage; US citizenship not required; EdD, JD, PsyD, DMin and other professional degrees NOT eligible; STEM only if religion/ethics/values are central",
     "area": "Humanities",
     "flags": "EXCLUDES EdD and other professional degrees; topic MUST centrally address religion, ethics, morals, or values; humanities and social sciences only",
-    "notes": "Nation's largest award for PhD candidates addressing religion, ethics, or values; use Program Key CWNF to apply"
+    "notes": "Nation's largest award for PhD candidates addressing religion, ethics, or values; use Program Key CWNF to apply",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "gem-consortium",
@@ -515,7 +551,8 @@
     "eligibility": "US citizens or permanent residents; underrepresented minority students (Black, Hispanic, Native American) in STEM; master's and doctoral students in applied science and engineering; must apply to at least 3 GEM member universities",
     "area": "STEM and Engineering",
     "flags": "Underrepresented minority students ONLY; STEM and engineering fields only; must apply to 3+ GEM member universities simultaneously",
-    "notes": "Presidential Award-winning program; 5,000+ STEM leaders trained; strong full-funding package"
+    "notes": "Presidential Award-winning program; 5,000+ STEM leaders trained; strong full-funding package",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "apsa-centennial-center",
@@ -529,7 +566,8 @@
     "eligibility": "APSA members; graduate students at any stage from any institution welcome; priority to those with limited departmental resources; APSA membership required throughout grant period",
     "area": "Social Science",
     "flags": "Small award: up to $2,500, research costs only (not a living stipend); APSA membership required; cannot have received Centennial Center funding in prior 4 years",
-    "notes": "Research costs only: data collection, software, travel to archives; not for living expenses. Spring cycle closed; summer cycle dates vary - verify on website."
+    "notes": "Research costs only: data collection, software, travel to archives; not for living expenses. Spring cycle closed; summer cycle dates vary - verify on website.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "smithsonian-predoctoral",
@@ -543,7 +581,8 @@
     "eligibility": "PhD candidates conducting dissertation research; university must certify all requirements except dissertation are met before start; in-residence at Smithsonian (3-12 months); all nationalities; US-based study",
     "area": "Dissertation Completion",
     "flags": "In-residence at Smithsonian required; research must align with Smithsonian collections and research areas; doctoral candidate stage",
-    "notes": "Broad disciplinary range; research must connect to Smithsonian research interests"
+    "notes": "Broad disciplinary range; research must connect to Smithsonian research interests",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "hhmi-gilliam",
@@ -557,7 +596,8 @@
     "eligibility": "2nd or 3rd-year PhD students with 2+ years remaining in biological or biomedical PhD or dual-degree program at an HHMI-eligible US institution; US citizens, permanent residents, DACA, or international students eligible to receive funding at their institution",
     "area": "STEM and Engineering",
     "flags": "Biological and biomedical PhD ONLY; must apply jointly as an advisor-student pair; diversity and inclusion focused; CANNOT be held concurrently with NSF GRFP or NIH F31; verify open vs nomination-based at your institution",
-    "notes": "Application opens Sept 1 via HHMI ARC system; current HHMI page says open competition (no nomination), but verify with your institution"
+    "notes": "Application opens Sept 1 via HHMI ARC system; current HHMI page says open competition (no nomination), but verify with your institution",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "aauw-selected-professions",
@@ -571,7 +611,8 @@
     "eligibility": "Must identify as a woman; US citizen or permanent resident; pursuing FIRST full-time master's or professional degree in designated STEM/underrepresented fields (engineering, computer science, architecture, math/statistics, select medical programs); no prior graduate degree",
     "area": "Dissertation Completion",
     "flags": "Women only; STEM and designated professional fields ONLY; first graduate degree only (no prior master's or doctoral degree)",
-    "notes": "Fellowship year July 1 to June 30; fields include architecture, CS/AI, engineering, math, physical sciences"
+    "notes": "Fellowship year July 1 to June 30; fields include architecture, CS/AI, engineering, math, physical sciences",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "doe-csgf",
@@ -585,7 +626,8 @@
     "eligibility": "US citizens or lawful permanent residents; full-time PhD study at an accredited US university; engineering, physical, computer, mathematical, or life sciences using high-performance computing; college seniors, first-year grad students, or matriculating students",
     "area": "STEM and Engineering",
     "flags": "Computational science and HPC focus; engineering and sciences only; early-stage applicants",
-    "notes": "Established 1991; 675+ fellows trained; strong HPC and DOE national lab connection"
+    "notes": "Established 1991; 675+ fellows trained; strong HPC and DOE national lab connection",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "nih-f31",
@@ -599,7 +641,8 @@
     "eligibility": "US citizens or permanent residents; enrolled in research doctoral program (PhD, EdD, DrPH, ScD, and equivalent) in biomedical, behavioral, or clinical health-related fields at a US institution; must identify a faculty sponsor before applying",
     "area": "STEM and Engineering",
     "flags": "Biomedical, behavioral, and clinical health-related research fields only; faculty sponsor required; cannot be held with another federal fellowship providing stipend",
-    "notes": "Current announcement PA-25-422; FY2026 stipend levels confirmed; check NIH for current stipend rate"
+    "notes": "Current announcement PA-25-422; FY2026 stipend levels confirmed; check NIH for current stipend rate",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "josephine-de-karman",
@@ -613,7 +656,8 @@
     "eligibility": "Final-year PhD candidates defending in or around June 2028; currently enrolled at a specific list of California universities ONLY (Caltech, Stanford, UC Berkeley, UC Davis, UC Irvine, UCLA, UC Riverside, UC San Diego, UC Santa Barbara, UC Santa Cruz, USC); all disciplines including international students; no undergrads, master's, JD, or postdocs",
     "area": "Humanities",
     "flags": "CURRENTLY RESTRICTED to PhD students at listed California universities ONLY; verify your institution is on the eligible list; final dissertation year only; special consideration for humanities",
-    "notes": "Under new Pasadena Community Foundation stewardship since 2023; eligibility narrowed to California institutions"
+    "notes": "Under new Pasadena Community Foundation stewardship since 2023; eligibility narrowed to California institutions",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "asa-ddrig",
@@ -627,7 +671,8 @@
     "eligibility": "Doctoral student enrolled at a PhD-granting institution physically located in the US; completed pre-dissertation requirements; conducting empirical dissertation research in any sociological subfield; must have a faculty sponsor; may not have previously received any NSF-funded DDRIG",
     "area": "Social Science",
     "flags": "Sociological research focus; research-cost grant (not a living stipend); faculty sponsor required; prior NSF-funded DDRIG recipients not eligible; 2027 cycle contingent on continued NSF funding",
-    "notes": "NSF-funded through ASA; program funded through 2028; open to any sociological subfield regardless of method"
+    "notes": "NSF-funded through ASA; program funded through 2028; open to any sociological subfield regardless of method",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "wenner-gren-dissertation",
@@ -641,7 +686,8 @@
     "eligibility": "Doctoral students enrolled in anthropology or related fields conducting dissertation fieldwork; all nationalities; must have a dissertation supervisor at same institution; all requirements except dissertation must be met before start date",
     "area": "Social Science",
     "flags": "Anthropology and related fields only; all nationalities eligible (not US-restricted); research-cost grant, not a living stipend",
-    "notes": "Two cycles/year: May 1 and Nov 1. No preference for methodology, location, topic, or subfield. Review takes 6 months."
+    "notes": "Two cycles/year: May 1 and Nov 1. No preference for methodology, location, topic, or subfield. Review takes 6 months.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "pallas-fellowship",
@@ -655,7 +701,8 @@
     "eligibility": "Graduate students, recent graduates, and current seniors; interest in national security, defense, AI, cyber, and technology policy; DC-based (hybrid format)",
     "area": "AI and Tech Policy",
     "flags": "Deadline July 10, 2026 (urgent); paid amount not publicly listed; verify compensation on website; consulting-placement format",
-    "notes": "Fall 2026 cohort. Fellows support operational and research functions at Pallas Advisors consultancy. Weekly professional development programming included."
+    "notes": "Fall 2026 cohort. Fellows support operational and research functions at Pallas Advisors consultancy. Weekly professional development programming included.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "aaas-mass-media-fellowship",
@@ -669,7 +716,8 @@
     "eligibility": "Advanced undergraduate and graduate students in natural sciences, social sciences, or engineering at US institutions; US-eligible; all disciplines",
     "area": "Public Policy and Government",
     "flags": "Summer placement at a news organization; science communication and media focus; not a research fellowship",
-    "notes": "Places fellows at major newspapers, magazines, TV, and radio stations to report on science and policy. Strong for science-policy communication careers."
+    "notes": "Places fellows at major newspapers, magazines, TV, and radio stations to report on science and policy. Strong for science-policy communication careers.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "truman-scholarship",
@@ -683,7 +731,8 @@
     "eligibility": "US citizens; junior-year undergraduates or recent graduates planning graduate study in public service fields; must be nominated by institution; intent to pursue public service career",
     "area": "Public Policy and Government",
     "flags": "Primarily for current juniors or recent undergrads (not current graduate students); institution nomination required; public service career intent required",
-    "notes": "One of the most prestigious US public service scholarships. Supports graduate study in preparation for careers in government, nonprofit, or public service."
+    "notes": "One of the most prestigious US public service scholarships. Supports graduate study in preparation for careers in government, nonprofit, or public service.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "harry-frank-guggenheim",
@@ -697,7 +746,8 @@
     "eligibility": "Doctoral candidates writing dissertations on violence, aggression, and dominance (biological, social, cultural, psychological lenses); all nationalities; enrolled at institution anywhere in world; US-eligible",
     "area": "Social Science",
     "flags": "Research must address violence, aggression, or dominance as central theme; dissertation stage only; competitive (approximately 10 awards/year)",
-    "notes": "Supports dissertation research examining causes and control of violence, aggression, and dominance. Broad disciplinary scope including sociology, psychology, political science, anthropology, criminology."
+    "notes": "Supports dissertation research examining causes and control of violence, aggression, and dominance. Broad disciplinary scope including sociology, psychology, political science, anthropology, criminology.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "ai-governance-network-aignglobal-junior-ai-governance-fellowship",
@@ -711,7 +761,8 @@
     "eligibility": "Early-career; international eligible",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Early-career; international eligibility. Imported from personal research tracker; verify all details before applying."
+    "notes": "Early-career; international eligibility. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "berggruen-institute-berggruen-fellowship",
@@ -725,7 +776,8 @@
     "eligibility": "Stipendiary; long-term focus",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Stipendiary. LA/global; Future of Democracy track; long-term governance focus. Imported from personal research tracker; verify all details before applying."
+    "notes": "Stipendiary. LA/global; Future of Democracy track; long-term governance focus. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "russell-sage-foundation-rsf-sheldon-danziger-pipeline-grants",
@@ -739,7 +791,8 @@
     "eligibility": "Post-PhD early-career only",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Post-PhD early-career scholars only. Imported from personal research tracker; verify all details before applying."
+    "notes": "Post-PhD early-career scholars only. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "schmidt-sciences-ai2050-early-career-fellowship",
@@ -753,7 +806,8 @@
     "eligibility": "Postdoctoral/pre-tenure; post-defense",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "For postdoctoral and pre-tenure researchers; multidisciplinary AI; up to $5.5M cohort funding; post-defense target. Imported from personal research tracker; verify all details before applying."
+    "notes": "For postdoctoral and pre-tenure researchers; multidisciplinary AI; up to $5.5M cohort funding; post-defense target. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "spencer-foundation-small-large-research-grants",
@@ -767,7 +821,8 @@
     "eligibility": "Faculty PI required",
     "area": "Education Research",
     "flags": "",
-    "notes": "Faculty PI required; post-PhD horizon target. Imported from personal research tracker; verify all details before applying."
+    "notes": "Faculty PI required; post-PhD horizon target. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "william-t-grant-foundation-william-t-grant-scholars",
@@ -781,7 +836,8 @@
     "eligibility": "Faculty PI required; post-defense target",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Faculty PI required; track as post-defense target. Imported from personal research tracker; verify all details before applying."
+    "notes": "Faculty PI required; track as post-defense target. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "william-t-grant-foundation-institutional-challenge-grant",
@@ -795,7 +851,8 @@
     "eligibility": "Institutional applicant; faculty PI required",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Institutional applicant; faculty PI required. Imported from personal research tracker; verify all details before applying."
+    "notes": "Institutional applicant; faculty PI required. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "american-association-for-the-advancement-of-science-aaas",
@@ -809,7 +866,8 @@
     "eligibility": "PhD required; post-defense stage",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Flagship US science-policy fellowship; PhD required; 1-year federal/Congressional placement; post-defense target. Imported from personal research tracker; verify all details before applying."
+    "notes": "Flagship US science-policy fellowship; PhD required; 1-year federal/Congressional placement; post-defense target. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "american-evaluation-association-aea-graduate-education-diversity-internship",
@@ -823,7 +881,8 @@
     "eligibility": "Diversity-focused; 2 days/week",
     "area": "Data Analysis",
     "flags": "",
-    "notes": "Diversity-focused; 2 days/week placement; $15K stipend. Imported from personal research tracker; verify all details before applying."
+    "notes": "Diversity-focused; 2 days/week placement; $15K stipend. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "american-educational-research-association-aera-aeransf-dissertation-grants",
@@ -837,7 +896,8 @@
     "eligibility": "Quantitative methods required",
     "area": "Education Research",
     "flags": "",
-    "notes": "Up to ~$27,500; quantitative methods required. Imported from personal research tracker; verify all details before applying."
+    "notes": "Up to ~$27,500; quantitative methods required. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "association-for-public-policy-analysis-and-management-appam",
@@ -851,7 +911,8 @@
     "eligibility": "Broad eligibility",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Broad eligibility (substantial obstacles). Imported from personal research tracker; verify all details before applying."
+    "notes": "Broad eligibility (substantial obstacles). Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "berkman-klein-center-for-internet-society-berkman-klein",
@@ -865,7 +926,8 @@
     "eligibility": "Open to scholars and practitioners",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Year-long affiliate appointment; open to scholars, practitioners, policy professionals; multiple cohorts. Imported from personal research tracker; verify all details before applying."
+    "notes": "Year-long affiliate appointment; open to scholars, practitioners, policy professionals; multiple cohorts. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "center-for-ai-safety-cais-ai-and-society",
@@ -879,7 +941,8 @@
     "eligibility": "Econ/law/IR/poli-phil scholars; in-person SF",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "PASSED 2026 (deadline Mar 24). $25K, 3-mo IN-PERSON San Francisco (Jun 1-Aug 21). Econ/law/IR/poli-phil scholars. Reapply ~Mar 1. Imported from personal research tracker; verify all details before applying."
+    "notes": "PASSED 2026 (deadline Mar 24). $25K, 3-mo IN-PERSON San Francisco (Jun 1-Aug 21). Econ/law/IR/poli-phil scholars. Reapply ~Mar 1. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "coding-it-forward-coding-it-forward-summer-fellowship",
@@ -893,7 +956,8 @@
     "eligibility": "US citizen/national/PR only",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "international-society-for-third-sector-research-istr-phd",
@@ -907,7 +971,8 @@
     "eligibility": "Biennial; international option",
     "area": "Nonprofit Governance",
     "flags": "",
-    "notes": "Biennial; international option. Imported from personal research tracker; verify all details before applying."
+    "notes": "Biennial; international option. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "rand-corporation-graduate-student-summer-associate-program",
@@ -921,7 +986,8 @@
     "eligibility": "Graduate students; US-based",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "faith-and-politics-institute-john-robert-lewis-scholars",
@@ -935,7 +1001,8 @@
     "eligibility": "US citizen/PR; 18+; current or recent (<24mo) student; full participation required",
     "area": "Public Policy and Government",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "The John Robert Lewis Scholars & Fellows Program. Applications for Cohort 7 open September 2026. Program runs July 2026–July 2027 with a $2,000 stipend. Eligibility: US citizen or permanent resident; 18+; current undergraduate/graduate/seminary student or within 24 months of graduating; exceptional leadership potential; must participate in all trips, educational requirements, and the oral-history project. https://faithandpolitics.org/apply-for-fellowship/. Imported from personal research tracker; verify all details before applying."
+    "notes": "The John Robert Lewis Scholars & Fellows Program. Applications for Cohort 7 open September 2026. Program runs July 2026–July 2027 with a $2,000 stipend. Eligibility: US citizen or permanent resident; 18+; current undergraduate/graduate/seminary student or within 24 months of graduating; exceptional leadership potential; must participate in all trips, educational requirements, and the oral-history project. https://faithandpolitics.org/apply-for-fellowship/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "internet-society-foundation-research-grant-program",
@@ -949,7 +1016,8 @@
     "eligibility": "Individuals & institutions worldwide; applied/open research",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "$200K-$500K per project; open globally to individuals and institutions; applied + openly-published research informing policy. 2026 window closed (Apr 7-May 22); watch for 2027 cycle ~April. Submit via Fluxx (register 24h early). https://www.isocfoundation.org/grant-programme/research-grant-programme/. Imported from personal research tracker; verify all details before applying."
+    "notes": "$200K-$500K per project; open globally to individuals and institutions; applied + openly-published research informing policy. 2026 window closed (Apr 7-May 22); watch for 2027 cycle ~April. Submit via Fluxx (register 24h early). https://www.isocfoundation.org/grant-programme/research-grant-programme/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "american-bar-foundation-abf-doctoral-fellowship-in-law",
@@ -963,7 +1031,8 @@
     "eligibility": "Doctoral candidates; law/social science",
     "area": "Nonprofit Governance",
     "flags": "$30,000 + benefits. Year-long sociolegal research fellowship; has supported AI/tech policy work; strong methodological credential. Uchicago Only.",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "association-for-research-on-nonprofit-organizations-and-voluntary",
@@ -977,7 +1046,8 @@
     "eligibility": "Diversity-focused; 8 participants",
     "area": "Nonprofit Governance",
     "flags": "",
-    "notes": "Diversity-focused (specific named groups); 8 participants. Imported from personal research tracker; verify all details before applying."
+    "notes": "Diversity-focused (specific named groups); 8 participants. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "horizon-institute-for-public-service-horizon-fellowship-for",
@@ -991,7 +1061,8 @@
     "eligibility": "2-year DC placement",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "2-year DC placement; $75K junior / $113K full fellow. Look to apply for 2027 cycle. Imported from personal research tracker; verify all details before applying."
+    "notes": "2-year DC placement; $75K junior / $113K full fellow. Look to apply for 2027 cycle. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "russell-sage-foundation-rsf-dissertation-research-grants-drg",
@@ -1005,7 +1076,8 @@
     "eligibility": "Inequality framing",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Inequality framing did not match dissertation direction at decision point. Imported from personal research tracker; verify all details before applying."
+    "notes": "Inequality framing did not match dissertation direction at decision point. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "social-science-research-council-ssrc-just-tech-fellowship",
@@ -1019,7 +1091,8 @@
     "eligibility": "Tech & social justice framing",
     "area": "Data Analysis",
     "flags": "",
-    "notes": "Fits TF-IDF/Tableau work; tech & social justice framing. Look to apply for 2027 cycle. Imported from personal research tracker; verify all details before applying."
+    "notes": "Fits TF-IDF/Tableau work; tech & social justice framing. Look to apply for 2027 cycle. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "google-public-policy-fellowship-public-policy-fellowship",
@@ -1033,7 +1106,8 @@
     "eligibility": "Doctoral-eligible; all disciplines; summer DC placement; $12K full-time / $6K part-time",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Summer fellowship placing students at DC tech-policy orgs; AI governance/privacy/internet policy; ties to AI-in-legislative/TF-IDF work. 2026 deadline ~Apr (passed); watch 2027. Source: google.com/policyfellowship. Imported from personal research tracker; verify all details before applying."
+    "notes": "Summer fellowship placing students at DC tech-policy orgs; AI governance/privacy/internet policy; ties to AI-in-legislative/TF-IDF work. 2026 deadline ~Apr (passed); watch 2027. Source: google.com/policyfellowship. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "california-council-on-science-technology-ccst-ccst-science",
@@ -1047,7 +1121,8 @@
     "eligibility": "PhD (or MS in engineering + 3 yrs exp); 1-yr CA Legislature placement; $45K + benefits",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Bridges data/research and legislative decision-making; parallels Texas Senate analyst + TF-IDF work. Source: CCST via Caltech FASA. Imported from personal research tracker; verify all details before applying."
+    "notes": "Bridges data/research and legislative decision-making; parallels Texas Senate analyst + TF-IDF work. Source: CCST via Caltech FASA. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "techcongress-congressional-innovation-fellowship",
@@ -1061,7 +1136,8 @@
     "eligibility": "Targets technologists; CS competitive",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Targets technologists; CS PhD competitive. Imported from personal research tracker; verify all details before applying."
+    "notes": "Targets technologists; CS PhD competitive. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "mila-quebec-ai-institute-mila-ai-policy-fellowship",
@@ -1075,7 +1151,8 @@
     "eligibility": "AI policy focus",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "center-for-democracy-technology-cdt-cdt-non-resident",
@@ -1089,7 +1166,8 @@
     "eligibility": "Post-doc opportunity",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Post doc opportunity, pass. Imported from personal research tracker; verify all details before applying."
+    "notes": "Post doc opportunity, pass. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "american-association-of-university-women-aauw-american-fellowships",
@@ -1103,7 +1181,8 @@
     "eligibility": "Women applicants only",
     "area": "Education Research",
     "flags": "",
-    "notes": "Women applicants only; not eligible. Imported from personal research tracker; verify all details before applying."
+    "notes": "Women applicants only; not eligible. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "association-for-the-study-of-higher-education-ashe",
@@ -1117,7 +1196,8 @@
     "eligibility": "Higher-ed policy focus",
     "area": "Education Research",
     "flags": "",
-    "notes": "Higher-ed policy focus did not align with AI/legislative priority direction. Imported from personal research tracker; verify all details before applying."
+    "notes": "Higher-ed policy focus did not align with AI/legislative priority direction. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "association-for-the-study-of-higher-education-ashe-2",
@@ -1131,7 +1211,8 @@
     "eligibility": "Scholars of color; narrow eligibility",
     "area": "Education Research",
     "flags": "",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "brookings-institution-nonresident-fellow-appointments",
@@ -1145,7 +1226,8 @@
     "eligibility": "Non-doctoral interns only",
     "area": "AI and Tech Policy",
     "flags": "Only internships, and only for non doctoral students.",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "kettering-foundation-research-fellows-program",
@@ -1159,7 +1241,8 @@
     "eligibility": "Nomination/invitation only",
     "area": "Nonprofit Governance",
     "flags": "Nomination or invitation required — not an open application.",
-    "notes": "Senior scholars by nomination only; not open application. Imported from personal research tracker; verify all details before applying."
+    "notes": "Senior scholars by nomination only; not open application. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "metagov-public-ai-fellow-canada",
@@ -1173,7 +1256,8 @@
     "eligibility": "Canada-focused; verify eligibility",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Canada-focused; verify non-Canadian eligibility. Imported from personal research tracker; verify all details before applying."
+    "notes": "Canada-focused; verify non-Canadian eligibility. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "secure-program-synthesis-fellowship-secure-program-synthesis-fellowship",
@@ -1187,7 +1271,8 @@
     "eligibility": "Highly technical (formal methods/PL)",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Highly technical (formal methods/PL); fit caveat. Imported from personal research tracker; verify all details before applying."
+    "notes": "Highly technical (formal methods/PL); fit caveat. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "stanford-institute-for-human-centered-ai-hai-hai",
@@ -1201,7 +1286,8 @@
     "eligibility": "Stanford students only",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. Only for stanford students. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. Only for stanford students. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "stanford-knight-hennessy-scholars-knight-hennessy-scholars",
@@ -1215,7 +1301,8 @@
     "eligibility": "Stanford graduate students only",
     "area": "AI and Tech Policy",
     "flags": "Stanford graduate students only; verify whether visiting or transfer status enables eligibility. Fully funded for up to three years.",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "united-nations-university-institute-on-comparative-regional-integration",
@@ -1229,7 +1316,8 @@
     "eligibility": "Unstipended; international doctoral",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Unstipended (verify). Brussels-based; global governance; AI Act implementation work; international doctoral eligible. Imported from personal research tracker; verify all details before applying."
+    "notes": "Unstipended (verify). Brussels-based; global governance; AI Act implementation work; international doctoral eligible. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "vanderbilt-policy-accelerator-vpa-vpa-senior-fellows-affiliated",
@@ -1243,7 +1331,8 @@
     "eligibility": "Invitation/relationship only",
     "area": "AI and Tech Policy",
     "flags": "Nomination or invitation required — not an open application.",
-    "notes": "Not an open application; relationship-only. Imported from personal research tracker; verify all details before applying."
+    "notes": "Not an open application; relationship-only. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "vanderbilt-university-initiative-on-the-future-of-learning",
@@ -1257,7 +1346,8 @@
     "eligibility": "Internal Vanderbilt program; not a fellowship",
     "area": "AI and Tech Policy",
     "flags": "Nomination or invitation required — not an open application.",
-    "notes": "Not a fellowship; internal Vanderbilt program. Imported from personal research tracker; verify all details before applying."
+    "notes": "Not a fellowship; internal Vanderbilt program. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "vanderbilt-university-grand-challenge-initiative-artificial-intelligence",
@@ -1271,7 +1361,8 @@
     "eligibility": "Internal Vanderbilt program; not a fellowship",
     "area": "AI and Tech Policy",
     "flags": "Nomination or invitation required — not an open application.",
-    "notes": "Not a fellowship; internal Vanderbilt program. Imported from personal research tracker; verify all details before applying."
+    "notes": "Not a fellowship; internal Vanderbilt program. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "iu-lilly-family-school-of-philanthropy-lilly-family",
@@ -1285,7 +1376,8 @@
     "eligibility": "Doctoral thesis/dissertation research in philanthropy/nonprofit; up to $2K/yr",
     "area": "Nonprofit Governance",
     "flags": "Matches nonprofit-governance + org-theory lane; IU students only.",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "open-technology-fund-otf-information-controls-fellowship",
@@ -1299,7 +1391,8 @@
     "eligibility": "Researchers on internet freedom / information controls; hosted at academic or civil-society orgs",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Supports research on censorship, surveillance, governance of digital/AI systems; verify program is currently funded/operating and open-application. Source: opentech.fund. Imported from personal research tracker; verify all details before applying."
+    "notes": "Supports research on censorship, surveillance, governance of digital/AI systems; verify program is currently funded/operating and open-application. Source: opentech.fund. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "govern-for-america-gfa-govern-for-america-fellowship",
@@ -1313,7 +1406,8 @@
     "eligibility": "US work authorization; 2-yr commitment",
     "area": "Public Policy and Government",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "new-america-public-interest-technology-fellowship",
@@ -1327,7 +1421,8 @@
     "eligibility": "Flexible eligibility for policy researchers",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "DC think tank; public-interest tech focus; flexible eligibility for policy researchers. Imported from personal research tracker; verify all details before applying."
+    "notes": "DC think tank; public-interest tech focus; flexible eligibility for policy researchers. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "aspen-institute-aspen-tech-policy-hub-fellowship",
@@ -1341,7 +1436,8 @@
     "eligibility": "Accepts policy backgrounds",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Berkeley-based cohort; project-driven tech policy training; accepts policy backgrounds. Imported from personal research tracker; verify all details before applying."
+    "notes": "Berkeley-based cohort; project-driven tech policy training; accepts policy backgrounds. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "gradel-institute-for-charity-oxford-penn-social-impact",
@@ -1355,7 +1451,8 @@
     "eligibility": "Doctoral; Oxford-based",
     "area": "Nonprofit Governance",
     "flags": "",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "jams-foundation-association-for-conflict-resolution-acr-jams",
@@ -1369,7 +1466,8 @@
     "eligibility": "Requires nonprofit partner",
     "area": "Open Field",
     "flags": "",
-    "notes": "Organizational grant; requires nonprofit partner. Imported from personal research tracker; verify all details before applying."
+    "notes": "Organizational grant; requires nonprofit partner. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "paragon-fellowship-paragon-policy-fellowship",
@@ -1383,7 +1481,8 @@
     "eligibility": "Unpaid; remote; 8-10 hrs/week",
     "area": "Public Policy and Government",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "horowitz-foundation-for-social-policy-dissertation-research-grant",
@@ -1397,7 +1496,8 @@
     "eligibility": "Dissertation proposal stage prerequisite",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Dissertation proposal stage prerequisite; defer to future cycle. Imported from personal research tracker; verify all details before applying."
+    "notes": "Dissertation proposal stage prerequisite; defer to future cycle. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "anthropic-anthropic-institute-fellows",
@@ -1411,7 +1511,8 @@
     "eligibility": "Technical: Python fluency required; CS/math/physics background",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Technical fit caveat; $3,850/wk + $15K/mo compute; US/UK/CA only. Imported from personal research tracker; verify all details before applying."
+    "notes": "Technical fit caveat; $3,850/wk + $15K/mo compute; US/UK/CA only. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "american-society-for-public-administration-aspa-founders-fellows",
@@ -1425,7 +1526,8 @@
     "eligibility": "ASPA membership required",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Strongest pre-dissertation fit; ASPA membership required. Imported from personal research tracker; verify all details before applying."
+    "notes": "Strongest pre-dissertation fit; ASPA membership required. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "center-for-advanced-study-in-the-behavioral-sciences",
@@ -1439,7 +1541,8 @@
     "eligibility": "Advanced-stage; post-defense target",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Stipend + Stanford housing. Year-long residential; advanced-stage researchers; has hosted AI governance scholars; post-defense target. Imported from personal research tracker; verify all details before applying."
+    "notes": "Stipend + Stanford housing. Year-long residential; advanced-stage researchers; has hosted AI governance scholars; post-defense target. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "council-on-foreign-relations-cfr-international-affairs-fellowship",
@@ -1453,7 +1556,8 @@
     "eligibility": "Mid-career professionals",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Stipendiary. Mid-career professionals; policy-academic bridge; foreign policy/tech overlap; verify stage fit. Imported from personal research tracker; verify all details before applying."
+    "notes": "Stipendiary. Mid-career professionals; policy-academic bridge; foreign policy/tech overlap; verify stage fit. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "eth-zurich-visiting-researcher-program",
@@ -1467,7 +1571,8 @@
     "eligibility": "Doctoral visiting; verify funding",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. Stipendiary (verify). Swiss-based; AI/tech regulation focus including EU AI Act implementation; doctoral visiting. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. Stipendiary (verify). Swiss-based; AI/tech regulation focus including EU AI Act implementation; doctoral visiting. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "inter-university-consortium-for-political-and-social-research",
@@ -1481,7 +1586,8 @@
     "eligibility": "Must have attended a prior ICPSR General Session",
     "area": "Data Analysis",
     "flags": "",
-    "notes": "Open to students, faculty, and researchers from all disciplines who have previously attended a General Session of the ICPSR Summer Program. Imported from personal research tracker; verify all details before applying."
+    "notes": "Open to students, faculty, and researchers from all disciplines who have previously attended a General Session of the ICPSR Summer Program. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "vanderbilt-university-travel-and-research-grants",
@@ -1495,7 +1601,8 @@
     "eligibility": "1 yr at Vanderbilt; first author/presenter; DGS approval; exhaust dept funding first",
     "area": "Data Analysis",
     "flags": "",
-    "notes": "Up to $1,000 per trip. Must have completed one full year at Vanderbilt and be first author/presenter. Limit one grant per budget year (July 1–June 30); maximum three grants during your Vanderbilt tenure. Requires DGS approval and must exhaust departmental funding first. Imported from personal research tracker; verify all details before applying."
+    "notes": "Up to $1,000 per trip. Must have completed one full year at Vanderbilt and be first author/presenter. Limit one grant per budget year (July 1–June 30); maximum three grants during your Vanderbilt tenure. Requires DGS approval and must exhaust departmental funding first. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "vanderbilt-university-gli-professional-development-training-grants",
@@ -1509,7 +1616,8 @@
     "eligibility": "Vanderbilt graduate students; GLI program",
     "area": "Data Analysis",
     "flags": "",
-    "notes": "Vanderbilt GLI Professional Development & Training Grants. See https://gradschool.vanderbilt.edu/student-resources/professional-development/gli/gli-funding-opportunities/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Vanderbilt GLI Professional Development & Training Grants. See https://gradschool.vanderbilt.edu/student-resources/professional-development/gli/gli-funding-opportunities/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "ewing-marion-kauffman-foundation-kauffman-research-grant",
@@ -1523,7 +1631,8 @@
     "eligibility": "Entrepreneurship research focus",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Research Section grant. Strategic priority ENTREPRENEURSHIP: supporting and sustaining business ownership. Application window June 1, 2026. https://www.kauffman.org/funding/grants/research/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Research Section grant. Strategic priority ENTREPRENEURSHIP: supporting and sustaining business ownership. Application window June 1, 2026. https://www.kauffman.org/funding/grants/research/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "ewing-marion-kauffman-foundation-kauffman-project-grant",
@@ -1537,7 +1646,8 @@
     "eligibility": "Project-based; entrepreneurship focus",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Project Section grant. Application window Fall 2026. https://www.kauffman.org/funding/grants/project/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Project Section grant. Application window Fall 2026. https://www.kauffman.org/funding/grants/project/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "echoing-green-echoing-green-fellowship",
@@ -1551,7 +1661,8 @@
     "eligibility": "Original founder; early-stage org (<5 yrs); any nationality; no degree req; $100K over 18 mo",
     "area": "Nonprofit Governance",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Capacity-building + ~1,000-member network; fits founder track (Tarrant County Mediation Center, HRI). 2026 deadline Oct 8, 2 PM ET; notifications Jun/Jul. Source: echoinggreen.org. Imported from personal research tracker; verify all details before applying."
+    "notes": "Capacity-building + ~1,000-member network; fits founder track (Tarrant County Mediation Center, HRI). 2026 deadline Oct 8, 2 PM ET; notifications Jun/Jul. Source: echoinggreen.org. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "aaas-via-vanderbilt-sponsorship-case-workshop",
@@ -1565,7 +1676,8 @@
     "eligibility": "Full-time doctoral student; nominated by home university; STEM/SBE; 3.5-day DC workshop",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Congress, budget/appropriations, science advocacy + Hill visits; apply via Vanderbilt internal selection (Grad School); 2026 workshop Apr 12-15, internal apps ~mid-Feb. Source: aaas.org CASE. Too introductory. Focused on traditional sciences. Imported from personal research tracker; verify all details before applying."
+    "notes": "Congress, budget/appropriations, science advocacy + Hill visits; apply via Vanderbilt internal selection (Grad School); 2026 workshop Apr 12-15, internal apps ~mid-Feb. Source: aaas.org CASE. Too introductory. Focused on traditional sciences. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "harvard-ai-safety-student-team-aisst-governance-policy",
@@ -1579,7 +1691,8 @@
     "eligibility": "Harvard-affiliated; virtual option",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Virtual option; ~50% historical acceptance rate. Imported from personal research tracker; verify all details before applying."
+    "notes": "Virtual option; ~50% historical acceptance rate. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "harvard-ai-safety-student-team-aisst-introductory-technical",
@@ -1593,7 +1706,8 @@
     "eligibility": "Assumes ML familiarity",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Technical AI safety focus; assumes ML familiarity. Imported from personal research tracker; verify all details before applying."
+    "notes": "Technical AI safety focus; assumes ML familiarity. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "base-research-base-fellows-fall-2026",
@@ -1607,7 +1721,8 @@
     "eligibility": "Black researchers; governance track",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Diversity-focused (Black researchers); governance track fits profile. Imported from personal research tracker; verify all details before applying."
+    "notes": "Diversity-focused (Black researchers); governance track fits profile. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "effective-thesis-effective-thesis-fellowship-specialist-track",
@@ -1621,7 +1736,8 @@
     "eligibility": "Virtual; ~10 hrs/week; SRC-compatible",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Virtual; ~10 hrs/week for 3 months; SRC-compatible. Imported from personal research tracker; verify all details before applying."
+    "notes": "Virtual; ~10 hrs/week for 3 months; SRC-compatible. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "new-jersey-innovation-authority-njia-data-policy-graduate",
@@ -1635,7 +1751,8 @@
     "eligibility": "Full-time salaried; not SRC-compatible",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Full-time salaried role; not SRC-compatible. Imported from personal research tracker; verify all details before applying."
+    "notes": "Full-time salaried role; not SRC-compatible. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "hudson-institute-political-studies-summer-fellowship",
@@ -1649,7 +1766,8 @@
     "eligibility": "Undergraduates and recent graduates; summer program in Washington, DC",
     "area": "Public Policy and Government",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Hudson Institute Political Studies Summer Fellowship; political theory + American political principles; mentorship program. Source: hudsonpoliticalstudies.org/fellowship. Imported from personal research tracker; verify all details before applying."
+    "notes": "Hudson Institute Political Studies Summer Fellowship; political theory + American political principles; mentorship program. Source: hudsonpoliticalstudies.org/fellowship. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "us-general-services-administration-gsa-us-digital-corps",
@@ -1663,7 +1781,8 @@
     "eligibility": "Requires U.S. work authorization (not employer-sponsored); cohort starts ~August",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Requires U.S. work authorization; not employer-sponsored. Cohort typically starts August. Imported from personal research tracker; verify all details before applying."
+    "notes": "Requires U.S. work authorization; not employer-sponsored. Cohort typically starts August. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "us-general-services-administration-gsa-presidential-innovation-fellows",
@@ -1677,7 +1796,8 @@
     "eligibility": "U.S. citizens/nationals only; GS-15 salary; DC-based; PIF program reported terminated in 2025 — verify status before applying",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Open to U.S. citizens and nationals only; mid-to-senior career level. Imported from personal research tracker; verify all details before applying."
+    "notes": "Open to U.S. citizens and nationals only; mid-to-senior career level. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "princeton-university-citp-citp-fellowship-in-technology-policy",
@@ -1691,7 +1811,8 @@
     "eligibility": "Bachelor's required; visa sponsorship available; in-person at Princeton; appointment begins ~Sep 1",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Bachelor's required; position is eligible for employment-related visa sponsorship. Imported from personal research tracker; verify all details before applying."
+    "notes": "Bachelor's required; position is eligible for employment-related visa sponsorship. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "princeton-university-citp-citp-emerging-scholars-program",
@@ -1705,7 +1826,8 @@
     "eligibility": "Bachelor's required; hired as salaried University staff (research specialist); in-residence at Princeton; notifications mid-April; starts ~Aug 24",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "institute-for-ai-policy-and-strategy-iaps-ai",
@@ -1719,7 +1841,8 @@
     "eligibility": "$15,000 (Fellow) or $22,000 (Senior Fellow) stipend; travel/housing & healthcare for DC residency; US work authorization required for DC track (no visa sponsorship), remote track open more broadly.",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "internet-law-policy-foundry-the-foundry-ilpf-junior",
@@ -1733,7 +1856,8 @@
     "eligibility": "Unpaid/volunteer fellowship; selected via competitive review by current Fellows.",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "data-science-for-social-good-foundation-rotating-host",
@@ -1747,7 +1871,8 @@
     "eligibility": "Paid stipend covering travel/housing/expenses; restricted to currently-enrolled graduate students at US universities; no visa sponsorship; in-person required, no remote option.",
     "area": "Data Analysis",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "fao-schwarz-family-foundation-fao-schwarz-fellowship-in",
@@ -1761,7 +1886,8 @@
     "eligibility": "Total compensation ~$96,000-$110,000 (location-dependent) plus benefits over 2 years; must be graduating an accredited 4-year college/university between Nov 2026-Summer 2027; US work authorization required for full term.",
     "area": "Nonprofit Governance",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "national-urban-fellows-inc-national-urban-fellows-fellowship",
@@ -1775,7 +1901,8 @@
     "eligibility": "$25,000 stipend over 14 months + health insurance, book stipend, relocation assistance, full tuition; requires US citizenship/LPR/DACA, bachelor's degree, 5+ years professional experience by Jan 1 of application year.",
     "area": "Nonprofit Governance",
     "flags": "",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "national-academy-of-education-naed-naedspencer-postdoctoral-fellowship",
@@ -1789,7 +1916,8 @@
     "eligibility": "$70,000 stipend (2 installments); must have received PhD/EdD or equivalent between Jan 1, 2021 and Dec 31, 2025; not tenured at time of application; open worldwide.",
     "area": "Education Research",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. Added 2026-06-30; distinct from existing NAEd/Spencer Dissertation Fellowship (this is the postdoctoral tier); source: https://naeducation.org/naed-spencer-postdoctoral-fellowship/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. Added 2026-06-30; distinct from existing NAEd/Spencer Dissertation Fellowship (this is the postdoctoral tier); source: https://naeducation.org/naed-spencer-postdoctoral-fellowship/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "international-literacy-association-ila-jeanne-s-chall-research",
@@ -1803,7 +1931,8 @@
     "eligibility": "Up to $5,000, paid in 3 installments (45%/45%/10%); applicant must be an ILA member in good standing through ~1 year post-award.",
     "area": "Education Research",
     "flags": "",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "presidents-commission-on-white-house-fellowships-white-house",
@@ -1817,7 +1946,8 @@
     "eligibility": "Paid at GS-14 Step 3 federal salary; must be a US citizen with a completed undergraduate degree; federal employees ineligible except active-duty military.",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. Added 2026-06-30; next actionable cycle is 2027-28 (2026-27 window already closed); source: https://whff.org/apply/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. Added 2026-06-30; next actionable cycle is 2027-28 (2026-27 window already closed); source: https://whff.org/apply/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "american-political-science-association-apsa-apsa-congressional-fellowship",
@@ -1831,7 +1961,8 @@
     "eligibility": "~$66,000 stipend (2025-26 class, may vary by cycle); PhD completed within last 15 years or dissertation defense by November of fellowship year (PoliSci track), journalists need ~2-10 years experience; no visa sponsorship.",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Added 2026-06-30; next actionable cycle is 2027-28 (2026-27 window already closed); source: https://apsanet.org/programs/congressional-fellowship-program/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Added 2026-06-30; next actionable cycle is 2027-28 (2026-27 window already closed); source: https://apsanet.org/programs/congressional-fellowship-program/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "national-academies-of-sciences-engineering-and-medicine-christine",
@@ -1845,7 +1976,8 @@
     "eligibility": "$11,000 stipend (paid week 1) plus round-trip travel; must be a current graduate student in dissertation phase or have earned that degree within last 5 years; must already be US-based, no visa sponsorship.",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "coro-center-for-civic-leadership-coro-fellows-program",
@@ -1859,7 +1991,8 @@
     "eligibility": "Tuition-free; need-based monthly stipends (e.g. LA up to $2,200/mo, Bay Area up to $3,000/mo) plus health-insurance allowance; must hold a conferred bachelor's degree; full-time commitment, no outside employment; willingness to relocate to host city.",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Added 2026-06-30; operates as independently-run regional centers (LA/SF/NYC/Pittsburgh/STL), each with its own application portal; source: https://corofellowship.org/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Added 2026-06-30; operates as independently-run regional centers (LA/SF/NYC/Pittsburgh/STL), each with its own application portal; source: https://corofellowship.org/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "federation-of-american-scientists-fas-fas-impact-fellowship",
@@ -1873,7 +2006,8 @@
     "eligibility": "Compensation set per posted role (examples seen: $75,000-$174,000 federal salary bands); contractors additionally receive $2,000/month for health/living expenses; eligibility is role-specific.",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. Added 2026-06-30; ongoing roster of government-placement openings rather than a single annual cohort; source: https://fas.org/talent-hub/impact-fellowship/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. Added 2026-06-30; ongoing roster of government-placement openings rather than a single annual cohort; source: https://fas.org/talent-hub/impact-fellowship/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "open-technology-fund-otf-digital-integrity-fellowship-program",
@@ -1887,7 +2021,8 @@
     "eligibility": "$5,000/month stipend for up to 12 months, plus a one-time $5,000 stipend for the partner organization's security equipment/subscriptions.",
     "area": "Data Analysis",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. Added 2026-06-30; distinct from OTF's Information Controls Fellowship Program (already tracked) which funds research/writing rather than hands-on security engineering; source: https://www.opentech.fund/fellowships/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. Added 2026-06-30; distinct from OTF's Information Controls Fellowship Program (already tracked) which funds research/writing rather than hands-on security engineering; source: https://www.opentech.fund/fellowships/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "github-inc-github-secure-open-source-fund",
@@ -1901,7 +2036,8 @@
     "eligibility": "$10,000 total per project ($6,000 during program, $2,000 at 6-month check-in, $2,000 at 12-month check-in); applicant must be 18+, an existing maintainer of an adopted open-source project, in a GitHub Sponsors-supported region.",
     "area": "Data Analysis",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Imported from personal research tracker; verify all details before applying."
+    "notes": "Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "nlnet-foundation-ngi-zero-grants-next-generation-internet",
@@ -1915,7 +2051,8 @@
     "eligibility": "EUR 5,000-50,000 per project (scalable up to EUR 500,000 lifetime per recipient); explicitly open to individuals, not just organizations; deliverables must be free/libre/open-source.",
     "area": "Data Analysis",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Added 2026-06-30; NGI Zero Commons Fund's general call closed 2026-06-01, two specialized tracks (Taler, Fediversity) remain open through Aug 2026; source: https://nlnet.nl/funding.html. Imported from personal research tracker; verify all details before applying."
+    "notes": "Added 2026-06-30; NGI Zero Commons Fund's general call closed 2026-06-01, two specialized tracks (Taler, Fediversity) remain open through Aug 2026; source: https://nlnet.nl/funding.html. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "successif-ai-policy-strategy-fellowship",
@@ -1929,7 +2066,8 @@
     "eligibility": "No stipend; free to participate; top capstone submissions receive monetary prizes; fully remote; ~4 hrs/week; no explicit language excluding current students.",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. Confirmed via successif.org. Part-time, doesn't explicitly exclude students - passes scope rules. Added 2026-06-30 (batch 2); source: https://www.successif.org/fellowship. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. Confirmed via successif.org. Part-time, doesn't explicitly exclude students - passes scope rules. Added 2026-06-30 (batch 2); source: https://www.successif.org/fellowship. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "foundation-for-american-innovation-center-for-a-new",
@@ -1943,7 +2081,8 @@
     "eligibility": "Program expenses funded, no personal stipend; requires 6-25 years professional experience with 4+ years in AI-policy work; no explicit student exclusion, BUT the experience bar makes it impractical for someone currently in a degree program.",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. CAUTION: passes the letter of the no-student-exclusion rule (nothing explicitly bars students) but the 4+ years AI-policy-experience requirement is a de facto high bar - flag for owner's judgment on practical fit. Added 2026-06-30 (batch 2); source: https://www.aipolicyleaders.net/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. CAUTION: passes the letter of the no-student-exclusion rule (nothing explicitly bars students) but the 4+ years AI-policy-experience requirement is a de facto high bar - flag for owner's judgment on practical fit. Added 2026-06-30 (batch 2); source: https://www.aipolicyleaders.net/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "existential-risk-alliance-era-cambridge-eraai-fellowship",
@@ -1957,7 +2096,8 @@
     "eligibility": "Salary equivalent to GBP 34,125/year prorated, plus accommodation, meals, visa support, travel costs covered. Full-time but Type=Research Fellowships so not subject to the part-time rule.",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Formerly the CERI Fellowship. Hosted with University of Cambridge centers but does not require Cambridge enrollment. Source: erafellowship.org. Added 2026-06-30 (batch 2); source: https://erafellowship.org/fellowship. Imported from personal research tracker; verify all details before applying."
+    "notes": "Formerly the CERI Fellowship. Hosted with University of Cambridge centers but does not require Cambridge enrollment. Source: erafellowship.org. Added 2026-06-30 (batch 2); source: https://erafellowship.org/fellowship. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "ai-safety-camp-aisc-ai-safety-camp",
@@ -1971,7 +2111,8 @@
     "eligibility": "No cost to participate; no guaranteed stipend (small stipends historically only when grant-funded, prioritized for low-income-country participants); fully remote; 10 hrs/week minimum.",
     "area": "AI and Tech Policy",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Informally organized, volunteer-run (no single incorporated parent org). Source: aisafety.camp. Added 2026-06-30 (batch 2); source: https://www.aisafety.camp/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Informally organized, volunteer-run (no single incorporated parent org). Source: aisafety.camp. Added 2026-06-30 (batch 2); source: https://www.aisafety.camp/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "william-t-grant-foundation-research-grants-on-reducing",
@@ -1985,7 +2126,8 @@
     "eligibility": "Major Research Grants: $100,000-$600,000 over 2-3 years. Officers' Research Grants: $25,000-$50,000 over 1-2 years. Funds go to tax-exempt (501c3) organizations, not individuals directly.",
     "area": "Education Research",
     "flags": "",
-    "notes": "Distinct from William T. Grant Scholars Program and Institutional Challenge Grant already tracked. Source: wtgrantfoundation.org. Added 2026-06-30 (batch 2); source: https://wtgrantfoundation.org/funding/research-grants-on-reducing-inequality. Imported from personal research tracker; verify all details before applying."
+    "notes": "Distinct from William T. Grant Scholars Program and Institutional Challenge Grant already tracked. Source: wtgrantfoundation.org. Added 2026-06-30 (batch 2); source: https://wtgrantfoundation.org/funding/research-grants-on-reducing-inequality. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "institute-for-educational-leadership-iel-education-policy-fellowship",
@@ -1999,7 +2141,8 @@
     "eligibility": "Tuition $749 (fellow or employer pays); travel for the in-person seminar not included. National page doesn't explicitly require full-time employment/completed degree or bar students, but eligibility language centers on 'professionals' - recommend confirming directly before relying on student eligibility.",
     "area": "Education Research",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. Note: some state-affiliated EPFP chapters (e.g. CA) DO explicitly require full-time professional position - only the national IEL program was evaluated here. Source: iel.org. Added 2026-06-30 (batch 2); source: https://iel.org/our-work/epfp/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. Note: some state-affiliated EPFP chapters (e.g. CA) DO explicitly require full-time professional position - only the national IEL program was evaluated here. Source: iel.org. Added 2026-06-30 (batch 2); source: https://iel.org/our-work/epfp/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "national-council-of-teachers-of-english-ncte-research",
@@ -2013,7 +2156,8 @@
     "eligibility": "Up to $3,000. Must be a current full-time K-12 classroom teacher and NCTE member.",
     "area": "Education Research",
     "flags": "",
-    "notes": "LIKELY MISMATCH: requires being a current full-time K-12 classroom teacher, which doesn't match the tracker owner's actual career profile (AI policy/data engineering, not K-12 teaching) - flagging for likely strike despite passing the formal scope rules. Source: ncte.org. Added 2026-06-30 (batch 2); source: https://ncte.org/research/research-foundation-teacher-grant-program/. Imported from personal research tracker; verify all details before applying."
+    "notes": "LIKELY MISMATCH: requires being a current full-time K-12 classroom teacher, which doesn't match the tracker owner's actual career profile (AI policy/data engineering, not K-12 teaching) - flagging for likely strike despite passing the formal scope rules. Source: ncte.org. Added 2026-06-30 (batch 2); source: https://ncte.org/research/research-foundation-teacher-grant-program/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "nea-foundation-learning-leadership-grants",
@@ -2027,7 +2171,8 @@
     "eligibility": "Up to $5,000. Must be a current NEA member employed at a public school or public institution of higher education.",
     "area": "Education Research",
     "flags": "",
-    "notes": "LIKELY MISMATCH: requires current NEA membership + employment at a public school/higher-ed institution, which doesn't match the tracker owner's actual career profile - flagging for likely strike despite passing formal scope rules. Source: neafoundation.org. Added 2026-06-30 (batch 2); source: https://www.neafoundation.org/educator-grants-and-fellowships/learning-leadership-grants/. Imported from personal research tracker; verify all details before applying."
+    "notes": "LIKELY MISMATCH: requires current NEA membership + employment at a public school/higher-ed institution, which doesn't match the tracker owner's actual career profile - flagging for likely strike despite passing formal scope rules. Source: neafoundation.org. Added 2026-06-30 (batch 2); source: https://www.neafoundation.org/educator-grants-and-fellowships/learning-leadership-grants/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "the-harry-s-truman-scholarship-foundation-harry-s",
@@ -2041,7 +2186,8 @@
     "eligibility": "Up to $30,000 for graduate school; nominated by degree-granting institution (any accredited 4-yr US institution, not restricted to one school); US citizen/national; must be a college junior with public/community service record.",
     "area": "Public Policy and Government",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Distinct from Truman National Security Project's Truman Fellowship already tracked (different org). Source: truman.gov. Added 2026-06-30 (batch 2); source: https://www.truman.gov/apply. Imported from personal research tracker; verify all details before applying."
+    "notes": "Distinct from Truman National Security Project's Truman Fellowship already tracked (different org). Source: truman.gov. Added 2026-06-30 (batch 2); source: https://www.truman.gov/apply. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "public-policy-and-international-affairs-program-ppia-ppia",
@@ -2055,7 +2201,8 @@
     "eligibility": "Full tuition, housing/meals, course materials, GRE prep, $1,000-2,000 stipend depending on host site, travel reimbursement; applicant must be a current undergraduate junior graduating Dec 2026-Aug 2027 at any US institution.",
     "area": "Public Policy and Government",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Applicants apply nationally from any US college, not restricted to one institution. Source: ppiaprogram.org. Added 2026-06-30 (batch 2); source: https://www.ppiaprogram.org/JSI. Imported from personal research tracker; verify all details before applying."
+    "notes": "Applicants apply nationally from any US college, not restricted to one institution. Source: ppiaprogram.org. Added 2026-06-30 (batch 2); source: https://www.ppiaprogram.org/JSI. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "partnership-for-public-service-excellence-in-government-fellows",
@@ -2069,7 +2216,8 @@
     "eligibility": "$12,900 tuition typically paid by participant's federal agency; applicant must be a current federal employee (GS-14 to GS-15, high-performing GS-13s encouraged); requires supervisor letter/agency support.",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. CAUTION: eligibility built around current full-time federal employment, not academic status - doesn't technically exclude students but practically requires already being a federal employee. Source: ourpublicservice.org. Added 2026-06-30 (batch 2); source: https://ourpublicservice.org/course/excellence-in-government-fellows-program/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. CAUTION: eligibility built around current full-time federal employment, not academic status - doesn't technically exclude students but practically requires already being a federal employee. Source: ourpublicservice.org. Added 2026-06-30 (batch 2); source: https://ourpublicservice.org/course/excellence-in-government-fellows-program/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "google-llc-google-summer-of-code-gsoc",
@@ -2083,7 +2231,8 @@
     "eligibility": "18+, eligible to work in country of residence, not in a US-embargoed country. Stipend $750-$6,600 (PPP-adjusted), 45%/55% installments. Open to 'students or open source beginners' - not restricted to enrolled students.",
     "area": "Data Analysis",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Funds individuals directly via stipend, not employer-based. Source: summerofcode.withgoogle.com. Added 2026-06-30 (batch 2); source: https://summerofcode.withgoogle.com/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Funds individuals directly via stipend, not employer-based. Source: summerofcode.withgoogle.com. Added 2026-06-30 (batch 2); source: https://summerofcode.withgoogle.com/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "linux-foundation-lfx-lfx-mentorship",
@@ -2097,7 +2246,8 @@
     "eligibility": "18+ at term start, eligible to work in jurisdiction, no prior LF-hosted mentorship completed. Stipend $1,000-$6,600 (PPP-adjusted). Explicitly open to both students AND professionals/career-changers.",
     "area": "Data Analysis",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Source: mentorship.lfx.linuxfoundation.org. Added 2026-06-30 (batch 2); source: https://mentorship.lfx.linuxfoundation.org/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Source: mentorship.lfx.linuxfoundation.org. Added 2026-06-30 (batch 2); source: https://mentorship.lfx.linuxfoundation.org/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "sovereign-tech-agency-sprind-gmbh-german-federal-agency",
@@ -2111,7 +2261,8 @@
     "eligibility": "Open globally to individuals/teams/orgs, EU or not. Minimum total project cost must exceed EUR 50,000 (awards up to ~EUR 1M) - high bar for a solo small project. Code/docs must be OSI/FSF-approved license. Non-equity, non-recourse grant.",
     "area": "Data Analysis",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. Distinct from the same agency's separate 'Sovereign Tech Fellowship' (maintainer-in-residence, 2026 window closed) - this is the core rolling Fund grants. Source: sovereign.tech (403 on direct fetch, corroborated via cache). Added 2026-06-30 (batch 2); source: https://www.sovereign.tech/programs/fund. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. Distinct from the same agency's separate 'Sovereign Tech Fellowship' (maintainer-in-residence, 2026 window closed) - this is the core rolling Fund grants. Source: sovereign.tech (403 on direct fetch, corroborated via cache). Added 2026-06-30 (batch 2); source: https://www.sovereign.tech/programs/fund. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "numfocus-inc-small-development-grants",
@@ -2125,7 +2276,8 @@
     "eligibility": "Up to $10,000 per proposal, max 2 grants/project/year. Applicant's PROJECT must already hold NumFOCUS Fiscally Sponsored or Affiliated status - an unaffiliated individual can't apply directly.",
     "area": "Data Analysis",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. Structural barrier: requires an already-NumFOCUS-affiliated project, not just an individual applicant - flag for practical fit. Source: numfocus.org. Added 2026-06-30 (batch 2); source: https://numfocus.org/programs/small-development-grants. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. Structural barrier: requires an already-NumFOCUS-affiliated project, not just an individual applicant - flag for practical fit. Source: numfocus.org. Added 2026-06-30 (batch 2); source: https://numfocus.org/programs/small-development-grants. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "american-statistical-association-asa-gertrude-m-cox-scholarship",
@@ -2139,7 +2291,8 @@
     "eligibility": "Open to WOMEN who are US/Canadian citizens or permanent residents, admitted to full-time graduate statistics study by July 1 of award year; two $1,000 awards/year.",
     "area": "Data Analysis",
     "flags": "",
-    "notes": "GENDER-RESTRICTED (women only) - not covered by owner's existing exclusion rules, flagging for owner to judge personal eligibility. Not dissertation-specific, not postdoctoral. Source: amstat.org. Added 2026-06-30 (batch 2); source: https://www.amstat.org/your-career/awards/gertrude-m-cox-scholarship. Imported from personal research tracker; verify all details before applying."
+    "notes": "GENDER-RESTRICTED (women only) - not covered by owner's existing exclusion rules, flagging for owner to judge personal eligibility. Not dissertation-specific, not postdoctoral. Source: amstat.org. Added 2026-06-30 (batch 2); source: https://www.amstat.org/your-career/awards/gertrude-m-cox-scholarship. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "georgetown-university-center-for-security-and-emerging-technology",
@@ -2153,7 +2306,8 @@
     "eligibility": "Requires Master's, JD, or PhD OR 5+ years professional experience (doctorate not strictly required); US work authorization without sponsorship; full-time, hybrid; salary ~$100,000-$120,000.",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. CAUTION: functions more like ongoing research-staff hiring (a job) than a single dated fellowship cohort - flag for owner's judgment on whether this belongs in a fellowship tracker. Source: cset.georgetown.edu. Added 2026-06-30 (batch 2); source: https://cset.georgetown.edu/careers/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. CAUTION: functions more like ongoing research-staff hiring (a job) than a single dated fellowship cohort - flag for owner's judgment on whether this belongs in a fellowship tracker. Source: cset.georgetown.edu. Added 2026-06-30 (batch 2); source: https://cset.georgetown.edu/careers/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "federation-of-american-scientists-fas-with-aspen-institute",
@@ -2167,7 +2321,8 @@
     "eligibility": "Part-time, $5,000 stipend, 6 months; no published eligibility restrictions or student-exclusion language; no citizenship/work-authorization language published.",
     "area": "Public Policy and Government",
     "flags": "Open to undergraduate students, as well as graduate students/professionals, per source.",
-    "notes": "Distinct from FAS Impact Fellowship already tracked (that one is a full-time federal placement). Source: fas.org. Added 2026-06-30 (batch 2); source: https://fas.org/talent-hub/policy-entrepreneurship-fellowship/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Distinct from FAS Impact Fellowship already tracked (that one is a full-time federal placement). Source: fas.org. Added 2026-06-30 (batch 2); source: https://fas.org/talent-hub/policy-entrepreneurship-fellowship/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "afp-foundation-for-philanthropy-association-of-fundraising-professionals",
@@ -2181,7 +2336,8 @@
     "eligibility": "Guidelines specify up to $10,000/year per project, paid 50% on signing/50% on final report; 2025 average award was ~$5,900/project. No institution, degree-level, dissertation, or postdoctoral restriction found.",
     "area": "Nonprofit Governance",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. Amount/deadline figures conflict across sources - recommend confirming exact current-cycle deadline/cap directly on afpglobal.org. Added 2026-06-30 (batch 2); source: https://afpglobal.org/research-reports/afp-foundation-philanthropy-research-grants-initiatives. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. Amount/deadline figures conflict across sources - recommend confirming exact current-cycle deadline/cap directly on afpglobal.org. Added 2026-06-30 (batch 2); source: https://afpglobal.org/research-reports/afp-foundation-philanthropy-research-grants-initiatives. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "wk-kellogg-foundation-with-center-for-creative-leadership",
@@ -2195,7 +2351,8 @@
     "eligibility": "$20,000 taxable stipend; requires 5+ years relevant professional experience; must reside in contiguous US or bordering Tribal nations. No degree/enrollment-status language found, no explicit student exclusion.",
     "area": "Nonprofit Governance",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. Geographic eligibility is broad (multi-state + Tribal nations), not a single-institution restriction. Added 2026-06-30 (batch 2); source: https://wkkfcln.org/. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. Geographic eligibility is broad (multi-state + Tribal nations), not a single-institution restriction. Added 2026-06-30 (batch 2); source: https://wkkfcln.org/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "council-on-foundations-career-pathways",
@@ -2209,7 +2366,8 @@
     "eligibility": "Must be a current employee of a grantmaking organization/foundation/philanthropic institution with 5-7 years mid-to-senior-level experience, plus a recommendation from home institution. Pay-to-participate: $5,600-$7,550 members, $9,300 nonmembers; need-based scholarship can cover tuition.",
     "area": "Nonprofit Governance",
     "flags": "",
-    "notes": "Listed Funded=No because participants/employers pay a program fee rather than receiving a stipend, though scholarship aid is available. Added 2026-06-30 (batch 2); source: https://cof.org/career-pathways. Imported from personal research tracker; verify all details before applying."
+    "notes": "Listed Funded=No because participants/employers pay a program fee rather than receiving a stipend, though scholarship aid is available. Added 2026-06-30 (batch 2); source: https://cof.org/career-pathways. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "independent-sector-visiting-scholars-program",
@@ -2223,7 +2381,8 @@
     "eligibility": "No funding, compensation, or time-commitment details published. Past scholars include both doctorate-holders and at least one practitioner without a doctorate, indicating a completed doctorate is not a prerequisite.",
     "area": "Nonprofit Governance",
     "flags": "Nomination or invitation required — not an open application.",
-    "notes": "No public application form or eligibility criteria posted; past appointments appear invited rather than openly competed. Added 2026-06-30 (batch 2); source: https://independentsector.org/policy/visiting-scholars/. Imported from personal research tracker; verify all details before applying."
+    "notes": "No public application form or eligibility criteria posted; past appointments appear invited rather than openly competed. Added 2026-06-30 (batch 2); source: https://independentsector.org/policy/visiting-scholars/. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "association-for-research-on-nonprofit-organizations-and-voluntary-3",
@@ -2237,7 +2396,8 @@
     "eligibility": "",
     "area": "Nonprofit Governance",
     "flags": "",
-    "notes": "Eligibility unclear — verify on website. Resurrected from V1/V2 (pre-V7 redesign, did not carry forward); not re-verified since 2026-05-30 - dates may be stale, confirm current cycle before relying on this entry. Imported from personal research tracker; verify all details before applying."
+    "notes": "Eligibility unclear — verify on website. Resurrected from V1/V2 (pre-V7 redesign, did not carry forward); not re-verified since 2026-05-30 - dates may be stale, confirm current cycle before relying on this entry. Imported from personal research tracker; verify all details before applying.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "american-academy-in-rome-rome-prize",
@@ -2251,7 +2411,8 @@
     "eligibility": "US citizens; artists/designers with 3+ years professional practice in early/middle career stage; ABD graduate students in eligible humanities fields",
     "area": "Arts",
     "flags": "US citizens only",
-    "notes": "One of the most prestigious fellowships for artists and scholars in early-to-middle career stages; includes a fully funded residency at the American Academy in Rome."
+    "notes": "One of the most prestigious fellowships for artists and scholars in early-to-middle career stages; includes a fully funded residency at the American Academy in Rome.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "studio-museum-in-harlem-artist-in-residence",
@@ -2265,7 +2426,8 @@
     "eligibility": "Emerging visual artists of African or Afro-Latinx descent, 18+, not currently enrolled in a degree-granting program or overlapping residency",
     "area": "Arts",
     "flags": "Restricted to artists of African/Afro-Latinx descent",
-    "notes": "Influential year-long, fully funded studio residency for emerging Black and Afro-Latinx artists, culminating in a group exhibition at the Studio Museum."
+    "notes": "Influential year-long, fully funded studio residency for emerging Black and Afro-Latinx artists, culminating in a group exhibition at the Studio Museum.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "mfah-glassell-core-program",
@@ -2279,7 +2441,8 @@
     "eligibility": "Emerging visual artists and critical writers, post-MFA/early career",
     "area": "Arts",
     "flags": "",
-    "notes": "23-month, fully funded residency fellowship considered one of the most generous in the US for early-career visual artists and critics."
+    "notes": "23-month, fully funded residency fellowship considered one of the most generous in the US for early-career visual artists and critics.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "jerome-foundation-jerome-hill-artist-fellowship",
@@ -2293,7 +2456,8 @@
     "eligibility": "Early-career generative artists (2nd-10th year of practice) residing in Minnesota or NYC's five boroughs; work made while enrolled in a degree program not eligible",
     "area": "Arts",
     "flags": "Minnesota or NYC residents only",
-    "notes": "Multi-year unrestricted fellowship spanning dance, film, literature, music, theater, and visual arts for early-career generative artists."
+    "notes": "Multi-year unrestricted fellowship spanning dance, film, literature, music, theater, and visual arts for early-career generative artists.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "fine-arts-work-center-fellowship",
@@ -2307,7 +2471,8 @@
     "eligibility": "Emerging fiction writers, poets, and visual artists",
     "area": "Arts",
     "flags": "",
-    "notes": "Seven-month, fully funded fellowship awarded to 10 writers and 10 visual artists annually, running October through April."
+    "notes": "Seven-month, fully funded fellowship awarded to 10 writers and 10 visual artists annually, running October through April.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "poetry-foundation-ruth-lilly-rosenberg-fellowship",
@@ -2321,7 +2486,8 @@
     "eligibility": "US poets ages 21-31, US citizens or current US residents, limited prior institutional support prioritized",
     "area": "Arts",
     "flags": "Age 21-31 only",
-    "notes": "Five fellowships awarded annually to young poets; among the most prestigious early-career poetry fellowships in the US."
+    "notes": "Five fellowships awarded annually to young poets; among the most prestigious early-career poetry fellowships in the US.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "rattlestick-van-lier-new-voices-fellowship",
@@ -2335,7 +2501,8 @@
     "eligibility": "BIPOC playwrights ages 18-30 based in NYC (or within 30 miles) or Minnesota, not enrolled in a degree-granting program",
     "area": "Arts",
     "flags": "BIPOC applicants only; age 18-30; NYC or Minnesota residents",
-    "notes": "One-year funded playwriting fellowship for early-career BIPOC playwrights, supported by the Edward and Sally Van Lier Fund and administered by Rattlestick Theater."
+    "notes": "One-year funded playwriting fellowship for early-career BIPOC playwrights, supported by the Edward and Sally Van Lier Fund and administered by Rattlestick Theater.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "air-gallery-fellowship-program",
@@ -2349,7 +2516,8 @@
     "eligibility": "Emerging women and non-binary visual artists in NYC metro area/Hudson Valley, no solo NYC exhibition in past 10 years, not enrolled in a degree-granting program",
     "area": "Arts",
     "flags": "Women and non-binary artists only; NYC metro area residents",
-    "notes": "12-month fellowship (Sept-Aug) culminating in each fellow's first solo exhibition at A.I.R. Gallery, with ongoing mentorship and career support."
+    "notes": "12-month fellowship (Sept-Aug) culminating in each fellow's first solo exhibition at A.I.R. Gallery, with ongoing mentorship and career support.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "firelight-media-documentary-lab-fellowship",
@@ -2363,7 +2531,8 @@
     "eligibility": "Emerging documentary filmmakers of color directing their first or second feature-length documentary; student films not eligible",
     "area": "Arts",
     "flags": "Filmmakers of color only",
-    "notes": "12-month fellowship supporting early-career documentary filmmakers of color completing a first or second feature; administered by Firelight Media."
+    "notes": "12-month fellowship supporting early-career documentary filmmakers of color completing a first or second feature; administered by Firelight Media.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "loft-literary-center-mentor-series",
@@ -2377,7 +2546,8 @@
     "eligibility": "Early-career Minnesota writers in poetry and creative prose, not enrolled in a degree-granting program",
     "area": "Arts",
     "flags": "Minnesota-based writers only",
-    "notes": "One-year fellowship pairing twelve early-career Minnesota writers with eight nationally recognized mentor writers in poetry and prose."
+    "notes": "One-year fellowship pairing twelve early-career Minnesota writers with eight nationally recognized mentor writers in poetry and prose.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "microsoft-research-fellowship",
@@ -2391,7 +2561,8 @@
     "eligibility": "PhD students and postdocs at accredited US institutions in computer science, engineering, or related technical/research fields",
     "area": "STEM and Engineering",
     "flags": "",
-    "notes": "Restructured in 2025 into a single global program with region-based stipends; US and Canada fellows receive the top tier of funding."
+    "notes": "Restructured in 2025 into a single global program with region-based stipends; US and Canada fellows receive the top tier of funding.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "ibm-phd-fellowship-award",
@@ -2405,7 +2576,8 @@
     "eligibility": "PhD students nominated by a doctoral faculty member (no self-nomination), within two years of expected graduation",
     "area": "STEM and Engineering",
     "flags": "Faculty nomination required; students cannot apply directly",
-    "notes": "One-year award for PhD candidates in fields aligned with IBM Research, including CS, EE, physics, materials science, and mathematics."
+    "notes": "One-year award for PhD candidates in fields aligned with IBM Research, including CS, EE, physics, materials science, and mathematics.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "nvidia-graduate-fellowship",
@@ -2419,7 +2591,8 @@
     "eligibility": "PhD students who have completed their first year, in CS, computer engineering, systems architecture, EE, or related fields",
     "area": "STEM and Engineering",
     "flags": "",
-    "notes": "Funds stipend, tuition and mandatory fees (up to $60,000/year) for research in accelerated computing, AI, robotics, or autonomous systems."
+    "notes": "Funds stipend, tuition and mandatory fees (up to $60,000/year) for research in accelerated computing, AI, robotics, or autonomous systems.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "qualcomm-innovation-fellowship-north-america",
@@ -2433,7 +2606,8 @@
     "eligibility": "Full-time PhD (2-student team) at participating US universities proposing technical research",
     "area": "STEM and Engineering",
     "flags": "Limited to participating partner universities",
-    "notes": "Team-based fellowship rewarding innovative technical research proposals in wireless communications, AI/ML, hardware design, and security."
+    "notes": "Team-based fellowship rewarding innovative technical research proposals in wireless communications, AI/ML, hardware design, and security.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "simons-society-junior-fellows",
@@ -2447,7 +2621,8 @@
     "eligibility": "Outstanding early-career PhD scientists in math, physics, computer science, biology, and related fields, nominated by a NYC host institution",
     "area": "STEM and Engineering",
     "flags": "By institutional nomination only; must be hosted at a New York City institution",
-    "notes": "Highly selective postdoctoral program (under 10% of nominees selected) spanning the natural sciences, math, and computer science."
+    "notes": "Highly selective postdoctoral program (under 10% of nominees selected) spanning the natural sciences, math, and computer science.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "bwf-career-awards-scientific-interface",
@@ -2461,7 +2636,8 @@
     "eligibility": "PhDs in physics, chemistry, computer science, statistics, engineering, or math transitioning into biological/biomedical postdoctoral research (12-60 months postdoc experience)",
     "area": "STEM and Engineering",
     "flags": "",
-    "notes": "Targets physical scientists and engineers moving into interdisciplinary biomedical research; five-year award spans postdoc-to-faculty transition."
+    "notes": "Targets physical scientists and engineers moving into interdisciplinary biomedical research; five-year award spans postdoc-to-faculty transition.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "helen-hay-whitney-research-fellowship",
@@ -2475,7 +2651,8 @@
     "eligibility": "Early postdoctoral scientists (PhD within 2 years, or MD within 3 years; no more than 1 year of postdoc experience) in basic biomedical sciences",
     "area": "STEM and Engineering",
     "flags": "Foreign nationals must conduct research in a US lab; US citizens may go abroad",
-    "notes": "One of the longest-running private postdoctoral fellowship programs in basic biomedical sciences (established 1947)."
+    "notes": "One of the longest-running private postdoctoral fellowship programs in basic biomedical sciences (established 1947).",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "npsc-graduate-fellowships-stem-diversity",
@@ -2489,7 +2666,8 @@
     "eligibility": "US citizens/permanent residents entering graduate study in physical sciences, math, or engineering",
     "area": "STEM and Engineering",
     "flags": "",
-    "notes": "Formerly the National Physical Science Consortium; fellowships are renewable for 3-6 years and backed by federal agency and industry partners."
+    "notes": "Formerly the National Physical Science Consortium; fellowships are renewable for 3-6 years and backed by federal agency and industry partners.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "nist-nrc-research-associateship-postdoctoral",
@@ -2503,7 +2681,8 @@
     "eligibility": "US citizens with a PhD in a STEM field held for less than 5 years",
     "area": "STEM and Engineering",
     "flags": "US citizens only",
-    "notes": "Competitive postdoctoral research associateship placing scientists in NIST labs across physics, chemistry, materials science, AI, and engineering; administered jointly with the National Academies' Research Associateship Program."
+    "notes": "Competitive postdoctoral research associateship placing scientists in NIST labs across physics, chemistry, materials science, AI, and engineering; administered jointly with the National Academies' Research Associateship Program.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "noaa-climate-global-change-postdoctoral-fellowship",
@@ -2517,7 +2696,8 @@
     "eligibility": "PhD scientists (doctorate held ≤3 years) in climate, atmospheric, oceanic, or related earth sciences, hosted at a US university or research institution",
     "area": "STEM and Engineering",
     "flags": "",
-    "notes": "Two-year postdoctoral fellowship founded in 1990, administered by UCAR/CPAESS on behalf of NOAA Research's Climate Program Office."
+    "notes": "Two-year postdoctoral fellowship founded in 1990, administered by UCAR/CPAESS on behalf of NOAA Research's Climate Program Office.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "usda-nifa-afri-predoctoral-fellowship",
@@ -2531,7 +2711,8 @@
     "eligibility": "US citizens, nationals, or permanent residents who are doctoral students conducting dissertation research in food and agricultural sciences",
     "area": "STEM and Engineering",
     "flags": "US citizens/nationals/permanent residents only",
-    "notes": "Federal fellowship supporting up to 3 years of dissertation research in agriculture, food systems, and related environmental/biological sciences."
+    "notes": "Federal fellowship supporting up to 3 years of dissertation research in agriculture, food systems, and related environmental/biological sciences.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "cdc-epidemic-intelligence-service-fellowship",
@@ -2545,7 +2726,8 @@
     "eligibility": "US health professionals with a doctoral-level degree (MD, PhD, DVM, or equivalent) seeking applied epidemiology training",
     "area": "Health Sciences",
     "flags": "",
-    "notes": "Prestigious two-year applied epidemiology training program at CDC in which fellows investigate real disease outbreaks nationally and internationally."
+    "notes": "Prestigious two-year applied epidemiology training program at CDC in which fellows investigate real disease outbreaks nationally and internationally.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "jane-coffin-childs-postdoctoral-fellowship-med",
@@ -2559,7 +2741,8 @@
     "eligibility": "PhD (within 24 months of degree) or MD (within 3 years of degree), no more than 12 months of postdoctoral experience, training at a US institution outside their doctoral lab",
     "area": "Health Sciences",
     "flags": "",
-    "notes": "One of the oldest funds supporting basic biomedical postdoctoral research; awards roughly 25-30 three-year fellowships annually across fields relevant to human disease, including cancer."
+    "notes": "One of the oldest funds supporting basic biomedical postdoctoral research; awards roughly 25-30 three-year fellowships annually across fields relevant to human disease, including cancer.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "damon-runyon-fellowship-award-health",
@@ -2573,7 +2756,8 @@
     "eligibility": "Postdoctoral basic scientists (PhD, within 18 months of degree) or physician-scientists (MD/DO, board eligible) at US nonprofit research institutions",
     "area": "Health Sciences",
     "flags": "",
-    "notes": "Highly competitive four-year award for early-career cancer researchers with dedicated tracks for basic scientists and physician-scientists."
+    "notes": "Highly competitive four-year award for early-career cancer researchers with dedicated tracks for basic scientists and physician-scientists.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "american-cancer-society-postdoctoral-fellowship",
@@ -2587,7 +2771,8 @@
     "eligibility": "Postdoctoral researchers (terminal doctoral degree held 3 years or less) at US academic institutions or eligible nonprofits, without a faculty appointment",
     "area": "Health Sciences",
     "flags": "",
-    "notes": "Long-running national cancer research postdoctoral program with two annual deadlines and a notable paid family-leave benefit."
+    "notes": "Long-running national cancer research postdoctoral program with two annual deadlines and a notable paid family-leave benefit.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "aha-postdoctoral-fellowship",
@@ -2601,7 +2786,8 @@
     "eligibility": "Postdoctoral researchers with a doctoral degree (MD, DO, PhD, etc.) and no more than 5 years of research experience post-degree; must be an AHA Professional Member",
     "area": "Health Sciences",
     "flags": "",
-    "notes": "Major national cardiovascular and stroke research fellowship funding one to two years of mentored postdoctoral training, renewable up to four years."
+    "notes": "Major national cardiovascular and stroke research fellowship funding one to two years of mentored postdoctoral training, renewable up to four years.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "national-ms-society-postdoctoral-fellowship",
@@ -2615,7 +2801,8 @@
     "eligibility": "Candidates for or holders of an MD/PhD/equivalent with 0-36 months of prior postdoctoral training, training at a US institution (US citizenship not required)",
     "area": "Health Sciences",
     "flags": "",
-    "notes": "Three-year mentored fellowship for early-career MS researchers training at US institutions; explicitly open to international candidates as long as training occurs in the US."
+    "notes": "Three-year mentored fellowship for early-career MS researchers training at US institutions; explicitly open to international candidates as long as training occurs in the US.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "lsrf-postdoctoral-fellowship",
@@ -2629,7 +2816,8 @@
     "eligibility": "Recent PhD/MD recipients pursuing mentored postdoctoral research relevant to human health at a nonprofit US institution",
     "area": "Health Sciences",
     "flags": "",
-    "notes": "Highly selective postdoctoral fellowship supporting biomedically relevant basic research; non-US citizens must train at a US laboratory."
+    "notes": "Highly selective postdoctoral fellowship supporting biomedically relevant basic research; non-US citizens must train at a US laboratory.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "cff-postdoctoral-research-fellowship",
@@ -2643,7 +2831,8 @@
     "eligibility": "MD, PhD, or MD/PhD conducting basic research related to cystic fibrosis at a US institution",
     "area": "Health Sciences",
     "flags": "",
-    "notes": "Two-year fellowship supporting early-career researchers studying CFTR biology and cystic fibrosis-related basic science."
+    "notes": "Two-year fellowship supporting early-career researchers studying CFTR biology and cystic fibrosis-related basic science.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "crohns-colitis-foundation-research-fellowship-award",
@@ -2657,7 +2846,8 @@
     "eligibility": "Postdoctoral researchers employed by a US health-related institution developing basic or clinical research skills in inflammatory bowel disease (Crohn's disease or ulcerative colitis)",
     "area": "Health Sciences",
     "flags": "",
-    "notes": "1-3 year postdoctoral award preparing researchers for independent careers in IBD research; open regardless of citizenship provided work is based at a US institution."
+    "notes": "1-3 year postdoctoral award preparing researchers for independent careers in IBD research; open regardless of citizenship provided work is based at a US institution.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "alzheimers-association-research-fellowship-for-all",
@@ -2671,7 +2861,8 @@
     "eligibility": "Postdoctoral researchers with a doctoral degree, within 10 years of terminal degree, full-time position at a nonprofit academic/medical/research institution, not yet holding independent faculty appointment",
     "area": "Health Sciences",
     "flags": "",
-    "notes": "Broadened successor to the original AARF program; funds dementia and Alzheimer's-related research training for early-career scientists."
+    "notes": "Broadened successor to the original AARF program; funds dementia and Alzheimer's-related research training for early-career scientists.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "ada-postdoctoral-fellowship",
@@ -2685,7 +2876,8 @@
     "eligibility": "Postdoctoral researchers conducting diabetes-related research at US nonprofit institutions",
     "area": "Health Sciences",
     "flags": "",
-    "notes": "Supports up to three years of postdoctoral training focused on diabetes research."
+    "notes": "Supports up to three years of postdoctoral training focused on diabetes research.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "hartwell-foundation-postdoctoral-fellowship",
@@ -2699,7 +2891,8 @@
     "eligibility": "US citizens/permanent residents holding a PhD or equivalent in early-stage research career, nominated internally by one of the Foundation's Top Ten Centers for Biomedical Research",
     "area": "Health Sciences",
     "flags": "Institutional nomination required; only available at Hartwell-designated Top Ten Center institutions, not an open application",
-    "notes": "Funds applied, early-stage biomedical research intended to benefit children in the US, awarded through a competitive internal institutional nomination process rather than direct individual application."
+    "notes": "Funds applied, early-stage biomedical research intended to benefit children in the US, awarded through a competitive internal institutional nomination process rather than direct individual application.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "anrf-postdoctoral-physician-scientist-fellowship",
@@ -2713,7 +2906,8 @@
     "eligibility": "MD or MD/PhD enrolled in or having completed an ACGME-accredited rheumatology fellowship, within 5 years of doctoral degree, affiliated with a US nonprofit research institution",
     "area": "Health Sciences",
     "flags": "",
-    "notes": "Supports postdoctoral physician-scientists studying arthritis and related autoimmune diseases such as lupus, scleroderma, and psoriatic arthritis."
+    "notes": "Supports postdoctoral physician-scientists studying arthritis and related autoimmune diseases such as lupus, scleroderma, and psoriatic arthritis.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "glenn-afar-postdoctoral-fellowship-aging-research",
@@ -2727,7 +2921,8 @@
     "eligibility": "Postdoctoral fellows (MD/PhD or equivalent) conducting basic or translational aging research at a US nonprofit institution",
     "area": "Health Sciences",
     "flags": "",
-    "notes": "One-year award supporting up to 12 postdoctoral fellows annually researching the basic biology of aging and its translational/clinical applications."
+    "notes": "One-year award supporting up to 12 postdoctoral fellows annually researching the basic biology of aging and its translational/clinical applications.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "komen-career-transition-award",
@@ -2741,7 +2936,8 @@
     "eligibility": "Postdoctoral and clinical fellows in the final years of mentored training pursuing breast cancer research, based at a US nonprofit institution, transitioning to independent faculty positions",
     "area": "Health Sciences",
     "flags": "",
-    "notes": "Two-phase award bridging mentored postdoctoral research and early independent faculty research specifically in breast cancer; open regardless of citizenship provided the research is based at a US institution."
+    "notes": "Two-phase award bridging mentored postdoctoral research and early independent faculty research specifically in breast cancer; open regardless of citizenship provided the research is based at a US institution.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "dumbarton-oaks-junior-fellowship",
@@ -2755,7 +2951,8 @@
     "eligibility": "PhD candidates (ABD, all preliminary requirements completed) or recent PhDs, in Byzantine Studies, Garden and Landscape Studies, or Pre-Columbian Studies",
     "area": "Humanities",
     "flags": "",
-    "notes": "Harvard-administered residential fellowship spanning three distinct humanities fields, each with dedicated library and collections at the Dumbarton Oaks campus in Washington, DC; single application portal covers all three fields."
+    "notes": "Harvard-administered residential fellowship spanning three distinct humanities fields, each with dedicated library and collections at the Dumbarton Oaks campus in Washington, DC; single application portal covers all three fields.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "institute-for-advanced-study-school-of-historical-studies",
@@ -2769,7 +2966,8 @@
     "eligibility": "PhD in hand; early-career scholars specifically eligible via the dedicated Postdoctoral Fellowship (Medieval Studies; Europe and the World post-1800) and a Mellon Fellowship for current assistant professors, plus reduced reference requirements for PhDs earned in the last ~6 years",
     "area": "Humanities",
     "flags": "",
-    "notes": "General Membership is open to scholars at all career stages, but dedicated early-career sub-tracks (Postdoctoral Fellowship, Mellon Fellowship) specifically target recent PhDs and junior faculty."
+    "notes": "General Membership is open to scholars at all career stages, but dedicated early-career sub-tracks (Postdoctoral Fellowship, Mellon Fellowship) specifically target recent PhDs and junior faculty.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "newberry-library-short-term-fellowship",
@@ -2783,7 +2981,8 @@
     "eligibility": "ABD PhD candidates, postdoctoral scholars, faculty, and holders of terminal non-PhD degrees (MFA/MLIS/MSW/JD)",
     "area": "Humanities",
     "flags": "",
-    "notes": "Broad eligibility explicitly includes ABD graduate students; funds 1-2 month research visits to the Newberry's humanities collections in Chicago."
+    "notes": "Broad eligibility explicitly includes ABD graduate students; funds 1-2 month research visits to the Newberry's humanities collections in Chicago.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "newberry-library-long-term-fellowship",
@@ -2797,7 +2996,8 @@
     "eligibility": "PhD (or equivalent terminal degree) in hand; postdoctoral scholars (ABD not eligible)",
     "area": "Humanities",
     "flags": "",
-    "notes": "4-9 month residential fellowship for postdoctoral humanities scholars; a distinct, postdoc-only tier from the Newberry's ABD-eligible Short-Term Fellowship."
+    "notes": "4-9 month residential fellowship for postdoctoral humanities scholars; a distinct, postdoc-only tier from the Newberry's ABD-eligible Short-Term Fellowship.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "american-antiquarian-society-short-term-fellowship",
@@ -2811,7 +3011,8 @@
     "eligibility": "ABD doctoral candidates, postdoctoral scholars, independent scholars, and faculty",
     "area": "Humanities",
     "flags": "Cannot sponsor J-1 visas",
-    "notes": "Most of the 19 named short-term awards specifically target dissertation research by ABD graduate students in early American history and culture."
+    "notes": "Most of the 19 named short-term awards specifically target dissertation research by ABD graduate students in early American history and culture.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "american-antiquarian-society-hench-post-dissertation-fellowship",
@@ -2825,7 +3026,8 @@
     "eligibility": "Postdoctoral scholars within 3 years of receiving their PhD (ABD not eligible)",
     "area": "Humanities",
     "flags": "Cannot sponsor J-1 visas",
-    "notes": "12-month early-career postdoctoral fellowship; became the Society's only live long-term fellowship after its AAS-NEH Long-Term Fellowship was terminated in 2025 federal funding cuts."
+    "notes": "12-month early-career postdoctoral fellowship; became the Society's only live long-term fellowship after its AAS-NEH Long-Term Fellowship was terminated in 2025 federal funding cuts.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "louisville-institute-dissertation-fellowship",
@@ -2839,7 +3041,8 @@
     "eligibility": "ABD PhD/ThD candidates at accredited North American schools researching American religion, expecting to complete within ~2 years; US/Canada residency",
     "area": "Humanities",
     "flags": "Topic restricted to Christian faith/ministry/religious institutions or religion and social issues in North America",
-    "notes": "Funds the final dissertation-writing year for approximately 10 doctoral candidates per year studying American religious life."
+    "notes": "Funds the final dissertation-writing year for approximately 10 doctoral candidates per year studying American religious life.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "cornell-society-for-the-humanities-fellowship",
@@ -2853,7 +3056,8 @@
     "eligibility": "Postdoctoral scholars in any humanities field tied to the year's theme; PhD must be completed before the fellowship start date (no ABD); no citizenship restriction, visa-eligible internationals welcome",
     "area": "Humanities",
     "flags": "",
-    "notes": "One-year residential, thematic postdoctoral fellowship (2027-28 theme: 'PLAY'); interdisciplinary cohort organized around a single humanities theme each year."
+    "notes": "One-year residential, thematic postdoctoral fellowship (2027-28 theme: 'PLAY'); interdisciplinary cohort organized around a single humanities theme each year.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "national-endowment-for-the-humanities-fellowships",
@@ -2867,7 +3071,8 @@
     "eligibility": "Scholars who have completed all degree requirements for a doctorate except conferral of the degree, through senior scholars; not for currently enrolled degree-seeking students",
     "area": "Humanities",
     "flags": "2026 competition limited to projects on American history and culture or Western civilization; program underwent 2025 federal grant terminations later ruled unlawful in court and is being reinstated — verify current cycle status before applying",
-    "notes": "Flagship federal humanities fellowship funding 6-12 months of full-time research and writing for near-PhD and established scholars; experienced significant funding disruption in 2025-2026, so confirm active status before relying on it."
+    "notes": "Flagship federal humanities fellowship funding 6-12 months of full-time research and writing for near-PhD and established scholars; experienced significant funding disruption in 2025-2026, so confirm active status before relying on it.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "cgsm-consortium-mba-fellowship",
@@ -2881,7 +3086,8 @@
     "eligibility": "US citizens/permanent residents (some member schools also admit qualified international applicants) applying to full-time MBA programs at one of 20+ Consortium member business schools, with demonstrated commitment to advancing diversity and inclusion in business education and corporate leadership.",
     "area": "Business",
     "flags": "",
-    "notes": "One of the longest-running diversity-in-business MBA fellowship networks (est. 1966); over 400 full-tuition fellowships awarded annually across member schools, though not every admitted Consortium member receives fellowship funding."
+    "notes": "One of the longest-running diversity-in-business MBA fellowship networks (est. 1966); over 400 full-tuition fellowships awarded annually across member schools, though not every admitted Consortium member receives fellowship funding.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "forte-foundation-mba-fellows",
@@ -2895,7 +3101,8 @@
     "eligibility": "MBA degree candidates (full-time, part-time, executive, dual-degree, or online) admitted to a Forté member business school, showing leadership and a commitment to advancing women in business; open to all nationalities and gender identities.",
     "area": "Business",
     "flags": "Focused on advancing women in business (open to all gender identities)",
-    "notes": "Over $595 million awarded to roughly 24,000 Fellows since inception, confirmed on the official program page; individual award amounts are set independently by each of the 50+ partner business schools rather than paid directly by the Foundation."
+    "notes": "Over $595 million awarded to roughly 24,000 Fellows since inception, confirmed on the official program page; individual award amounts are set independently by each of the 50+ partner business schools rather than paid directly by the Foundation.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "reaching-out-mba-romba-fellowship",
@@ -2909,7 +3116,8 @@
     "eligibility": "MBA applicants admitted to a Reaching Out partner business school who demonstrate LGBTQ+ community leadership and/or allyship; each partner school independently selects its own Fellows.",
     "area": "Business",
     "flags": "LGBTQ+ (and demonstrated allies) focus",
-    "notes": "Fellows serve as campus ambassadors supporting LGBTQ+ initiatives and recruitment; the annual ROMBA Conference is the largest LGBTQ+ MBA gathering in the world."
+    "notes": "Fellows serve as campus ambassadors supporting LGBTQ+ initiatives and recruitment; the annual ROMBA Conference is the largest LGBTQ+ MBA gathering in the world.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "federal-reserve-board-dissertation-fellows",
@@ -2923,7 +3131,8 @@
     "eligibility": "PhD students in economics or finance, typically 4th- or 5th-year candidates, who are legally authorized to work in the US.",
     "area": "Business",
     "flags": "",
-    "notes": "Paid summer in-residence fellowship (roughly 12-17 awarded annually) for advanced PhD candidates in economics/finance to further dissertation research on-site at the Federal Reserve Board."
+    "notes": "Paid summer in-residence fellowship (roughly 12-17 awarded annually) for advanced PhD candidates in economics/finance to further dissertation research on-site at the Federal Reserve Board.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "naic-mba-fellowship-program",
@@ -2937,7 +3146,8 @@
     "eligibility": "Second-year MBA students focused on finance, from any US business school, aspiring to careers in alternative investments/private equity.",
     "area": "Business",
     "flags": "Second-year MBA students only; mostly remote with occasional required travel",
-    "notes": "Introduces diverse second-year MBA students to diverse-owned alternative investment firms via a paid, ~10-month, mostly-remote fellowship."
+    "notes": "Introduces diverse second-year MBA students to diverse-owned alternative investment firms via a paid, ~10-month, mostly-remote fellowship.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "impact-capital-managers-mosaic-fellowship",
@@ -2951,7 +3161,8 @@
     "eligibility": "Graduate students currently enrolled in any degree program (MBA not required); ICM actively welcomes applicants from underrepresented and diverse backgrounds.",
     "area": "Business",
     "flags": "Full-time 10-week summer commitment required (June-August); ~21 fellows selected per cycle across ~20 host funds",
-    "notes": "Flagship paid summer fellowship placing graduate students as Summer Associates at impact-investing/private capital funds; has supported 115+ fellows since 2019."
+    "notes": "Flagship paid summer fellowship placing graduate students as Summer Associates at impact-investing/private capital funds; has supported 115+ fellows since 2019.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "halcyon-us-health-accelerator",
@@ -2965,7 +3176,8 @@
     "eligibility": "Early-stage, US-based health-focused venture founders/CEOs with a working MVP, age 21+, English fluency.",
     "area": "Business",
     "flags": "US-based ventures only; health vertical only",
-    "notes": "Formerly the DC residential 'Halcyon Incubator' fellowship; the organization rebranded as Halcyon Accelerator and now runs vertical-specific cohort programs, of which the US Health Accelerator is the current cycle."
+    "notes": "Formerly the DC residential 'Halcyon Incubator' fellowship; the organization rebranded as Halcyon Accelerator and now runs vertical-specific cohort programs, of which the US Health Accelerator is the current cycle.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "camelback-ventures-fellowship",
@@ -2979,7 +3191,8 @@
     "eligibility": "Founder/Co-founder/CEO/Executive Director of an early-stage venture in education or conscious technology; must reside in the US or a US territory, age 18+.",
     "area": "Business",
     "flags": "Priority for entrepreneurs of color and women/non-binary leaders",
-    "notes": "16-week hybrid fellowship held twice a year; 94% of past Fellows identify as Black, Indigenous, or people of color, and 63% identify as women/non-binary."
+    "notes": "16-week hybrid fellowship held twice a year; 94% of past Fellows identify as Black, Indigenous, or people of color, and 63% identify as women/non-binary.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "mit-kuo-sharper-legatum-fellowship",
@@ -2993,7 +3206,8 @@
     "eligibility": "Current or incoming MIT graduate (and some undergraduate) students building ventures in emerging markets.",
     "area": "Business",
     "flags": "MIT students only",
-    "notes": "Originally the Legatum Center Fellowship; MIT Sloan's entrepreneurship center was renamed the Kuo Sharper Center and the fellowship continues under that name."
+    "notes": "Originally the Legatum Center Fellowship; MIT Sloan's entrepreneurship center was renamed the Kuo Sharper Center and the fellowship continues under that name.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "stanford-impact-founder-fellowship",
@@ -3007,7 +3221,8 @@
     "eligibility": "Graduating Stanford MBA/MSx students (Social Entrepreneurship track, GSB only) or graduating graduate students from any Stanford school (Ecopreneurship track).",
     "area": "Business",
     "flags": "Stanford graduate students only",
-    "notes": "One of the largest stipends among social entrepreneurship fellowships nationally, confirmed active via Stanford's own application portal."
+    "notes": "One of the largest stipends among social entrepreneurship fellowships nationally, confirmed active via Stanford's own application portal.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "hbs-social-entrepreneurship-fellowship",
@@ -3021,7 +3236,8 @@
     "eligibility": "Graduating HBS MBA students who are founders of a social enterprise (nonprofit, for-profit, or hybrid), committing full-time (35+ hrs/week) for 12+ months, venture must have raised under $1.5M.",
     "area": "Business",
     "flags": "Harvard MBA students only; one Fellow selected per year",
-    "notes": "Highly selective — only one student is chosen annually; funding is disbursed in two equal payments across the fellowship year."
+    "notes": "Highly selective — only one student is chosen annually; funding is disbursed in two equal payments across the fellowship year.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "northwestern-inqbation-lab-entrepreneurial-fellows",
@@ -3035,7 +3251,8 @@
     "eligibility": "Recent PhD or MBA graduates (degree earned within 5 years of program start); open to graduates of any university, requires a written endorsement letter from a Northwestern faculty PI-innovator prior to applying.",
     "area": "Business",
     "flags": "Requires securing a Northwestern faculty endorsement before applying; project must center on commercializing a specific Northwestern technology",
-    "notes": "One-year, salaried entrepreneurship fellowship for recent PhD/MBA grads who want to launch a startup around a Northwestern faculty innovation."
+    "notes": "One-year, salaried entrepreneurship fellowship for recent PhD/MBA grads who want to launch a startup around a Northwestern faculty innovation.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "aicpa-foundation-accounting-doctoral-fellowship",
@@ -3049,7 +3266,8 @@
     "eligibility": "Licensed CPAs who have applied to or matriculated in a full-time AACSB-accredited accounting PhD or DBA program in the US, intend to teach/research at a US university after graduation, and have at least one year remaining in their program.",
     "area": "Business",
     "flags": "Must be a licensed CPA; US citizens/permanent residents only",
-    "notes": "Administered by the AICPA Foundation to build the pipeline of accounting faculty; awards multiple $15,000 fellowships annually, renewable for up to three years with proof of program progress."
+    "notes": "Administered by the AICPA Foundation to build the pipeline of accounting faculty; awards multiple $15,000 fellowships annually, renewable for up to three years with proof of program progress.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "skadden-fellowship-foundation-skadden-fellowship",
@@ -3063,7 +3281,8 @@
     "eligibility": "Final-year law students, LL.M. candidates, current judicial clerks, or law grads within the prior two years, authorized to work in the US",
     "area": "Law",
     "flags": "",
-    "notes": "Long-running, well-known public interest law fellowship funding self-designed projects at nonprofit/public interest host organizations for two years."
+    "notes": "Long-running, well-known public interest law fellowship funding self-designed projects at nonprofit/public interest host organizations for two years.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "equal-justice-works-design-your-own-fellowship",
@@ -3077,7 +3296,8 @@
     "eligibility": "Law school graduates/JDs partnering with a US nonprofit host organization to co-design a two-year public interest legal project",
     "area": "Law",
     "flags": "",
-    "notes": "Major national public interest law fellowship program; current cycle (fellows starting fall 2027) is open now, window May 21-Sep 17, 2026."
+    "notes": "Major national public interest law fellowship program; current cycle (fellows starting fall 2027) is open now, window May 21-Sep 17, 2026.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "independence-foundation-phyllis-w-beck-public-interest-law-fellowships",
@@ -3091,7 +3311,8 @@
     "eligibility": "Law grads, outgoing judicial clerks, or attorneys within five years of law school graduation, with a sponsoring public interest legal organization",
     "area": "Law",
     "flags": "Sponsoring organization must be located in Philadelphia, Delaware, Montgomery, Bucks, or Chester County, Pennsylvania",
-    "notes": "One-year (renewable) fellowship funding direct legal representation of disadvantaged clients in the Philadelphia region."
+    "notes": "One-year (renewable) fellowship funding direct legal representation of disadvantaged clients in the Philadelphia region.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "justice-catalyst-fellowship",
@@ -3105,7 +3326,8 @@
     "eligibility": "Graduating law students or law graduates up to two years out of law school, matched with a nonprofit, union, government agency, or public-interest law firm host",
     "area": "Law",
     "flags": "",
-    "notes": "One-year, potentially renewable, project-based legal fellowship for innovative public interest work."
+    "notes": "One-year, potentially renewable, project-based legal fellowship for innovative public interest work.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "immigrant-justice-corps-justice-fellowship",
@@ -3119,7 +3341,8 @@
     "eligibility": "JD or LL.M. graduates within two years of law school graduation, authorized to work in the US for the full two-year term",
     "area": "Law",
     "flags": "Immigration law focus; requires US work authorization for full 2-year term",
-    "notes": "Two-year fellowship placing law graduates at immigration legal service organizations nationwide; over 90% of alumni continue in immigration law."
+    "notes": "Two-year fellowship placing law graduates at immigration legal service organizations nationwide; over 90% of alumni continue in immigration law.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "rcfp-media-litigation-fellowship",
@@ -3133,7 +3356,8 @@
     "eligibility": "Recent law graduates/early-career lawyers with First Amendment interest, admitted to at least one US bar",
     "area": "Law",
     "flags": "",
-    "notes": "Two-year litigation fellowship at RCFP's DC office; part of a family of RCFP legal fellowships including a 1-year Legal Fellowship and the Jack Nelson-Dow Jones Fellowship."
+    "notes": "Two-year litigation fellowship at RCFP's DC office; part of a family of RCFP legal fellowships including a 1-year Legal Fellowship and the Jack Nelson-Dow Jones Fellowship.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "eff-post-law-school-legal-fellowship",
@@ -3147,7 +3371,8 @@
     "eligibility": "Recent law graduates who will sit for/pass a bar exam and can secure at least $45,000 in external funding; US work authorization required",
     "area": "Law",
     "flags": "Requires applicant to secure own external funding source; must relocate to San Francisco",
-    "notes": "EFF hosts up to two post-law-school litigation fellows per year working on digital rights and civil liberties litigation."
+    "notes": "EFF hosts up to two post-law-school litigation fellows per year working on digital rights and civil liberties litigation.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "yale-law-isp-resident-fellowship",
@@ -3161,7 +3386,8 @@
     "eligibility": "Recent JD, PhD, or equivalent degree holders pursuing an academic career, with research aligned to ISP focus areas (currently AI and the digital public sphere)",
     "area": "Law",
     "flags": "",
-    "notes": "Tech-law academic fellowship; fellows must be in New Haven at least 3 days/week and produce at least two scholarly works annually."
+    "notes": "Tech-law academic fellowship; fellows must be in New Haven at least 3 days/week and produce at least two scholarly works annually.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "center-for-constitutional-rights-justice-fellowship",
@@ -3175,7 +3401,8 @@
     "eligibility": "J.D. or equivalent LL.M., early-career lawyers 0-2 years post-degree, committed to social justice litigation",
     "area": "Law",
     "flags": "",
-    "notes": "Formerly the Bertha Justice Fellowship; a 2-year salaried fellowship placing early-career lawyers in CCR's social-justice litigation and movement-lawyering work."
+    "notes": "Formerly the Bertha Justice Fellowship; a 2-year salaried fellowship placing early-career lawyers in CCR's social-justice litigation and movement-lawyering work.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "nijc-schreiber-legal-fellowship",
@@ -3189,7 +3416,8 @@
     "eligibility": "JD from an ABA-accredited law school; current 3Ls or attorneys who graduated within the last three years, bar member or sitting for the bar before start",
     "area": "Law",
     "flags": "",
-    "notes": "Two-year fellowship providing direct legal representation to immigrants, refugees, and asylum seekers; recurring program with prior cohorts."
+    "notes": "Two-year fellowship providing direct legal representation to immigrants, refugees, and asylum seekers; recurring program with prior cohorts.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "nwlc-ann-kolker-fellowship",
@@ -3203,7 +3431,8 @@
     "eligibility": "Early-career lawyer (JD required) interested in health equity, reproductive rights, and health policy work",
     "area": "Law",
     "flags": "One-year term-limited position, renewed based on funding availability each cycle",
-    "notes": "Recurring one-year fellowship honoring health advocate Ann Kolker; applications accepted on a rolling basis until filled."
+    "notes": "Recurring one-year fellowship honoring health advocate Ann Kolker; applications accepted on a rolling basis until filled.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "bazelon-center-mental-health-law-fellowship",
@@ -3217,7 +3446,8 @@
     "eligibility": "Georgetown University Law Center graduates or current students graduating by May of the fellowship's start year",
     "area": "Law",
     "flags": "Restricted to Georgetown University Law Center graduates/students only",
-    "notes": "Two-year, $60,000/year paid fellowship; fellow works on civil rights litigation and policy for people with mental disabilities."
+    "notes": "Two-year, $60,000/year paid fellowship; fellow works on civil rights litigation and policy for people with mental disabilities.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "lambda-legal-tyron-garner-memorial-fellowship",
@@ -3231,7 +3461,8 @@
     "eligibility": "Recent law graduates, current fellows/clerks, or early-career attorneys dedicated to LGBTQ+ issues within African American communities, bar-eligible",
     "area": "Law",
     "flags": "",
-    "notes": "Established 2015 in memory of the Lawrence v. Texas plaintiff; a 2-year commitment fellowship recruited periodically rather than on a fixed annual calendar."
+    "notes": "Established 2015 in memory of the Lawrence v. Texas plaintiff; a 2-year commitment fellowship recruited periodically rather than on a fixed annual calendar.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "acs-congressional-fellowship",
@@ -3245,7 +3476,8 @@
     "eligibility": "PhD chemists/chemical professionals (or equivalent experience), ACS members, US citizens",
     "area": "STEM and Engineering",
     "flags": "ACS membership required",
-    "notes": "One of the AAAS-network Science & Technology Policy Fellowships; places a PhD chemist as full-time staff in a congressional office or committee for one year."
+    "notes": "One of the AAAS-network Science & Technology Policy Fellowships; places a PhD chemist as full-time staff in a congressional office or committee for one year.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "aps-congressional-science-fellowship",
@@ -3259,7 +3491,8 @@
     "eligibility": "PhD in physics or related field (or master's plus 3 years' experience), APS member, US citizen",
     "area": "STEM and Engineering",
     "flags": "APS membership required",
-    "notes": "Places one APS member as a full-time science advisor in a congressional office or committee for one year; part of the AAAS Science & Technology Policy Fellowships network."
+    "notes": "Places one APS member as a full-time science advisor in a congressional office or committee for one year; part of the AAAS Science & Technology Policy Fellowships network.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "agu-congressional-science-fellowship",
@@ -3273,7 +3506,8 @@
     "eligibility": "PhD geoscientists/related fields, US citizens or permanent residents",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "Places a geoscientist with a doctoral degree in a congressional office or committee for one year to bring scientific expertise to policymaking."
+    "notes": "Places a geoscientist with a doctoral degree in a congressional office or committee for one year to bring scientific expertise to policymaking.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "ieee-usa-congressional-fellowship",
@@ -3287,7 +3521,8 @@
     "eligibility": "US citizen, IEEE member, PhD (or in final stages) or master's plus experience in an engineering/technical field, must reside in DC metro area",
     "area": "Public Policy and Government",
     "flags": "IEEE membership required",
-    "notes": "One-year placement of a technically trained IEEE member on Capitol Hill; includes a newer Congressional Electric Grid Policy Fellowship track."
+    "notes": "One-year placement of a technically trained IEEE member on Capitol Hill; includes a newer Congressional Electric Grid Policy Fellowship track.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "apa-congressional-fellowship",
@@ -3301,7 +3536,8 @@
     "eligibility": "Full APA members (PhD in psychology), US citizens",
     "area": "Social Science",
     "flags": "APA membership required",
-    "notes": "One-year placement of a psychologist as full-time staff to a member of Congress or a congressional committee."
+    "notes": "One-year placement of a psychologist as full-time staff to a member of Congress or a congressional committee.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "srcd-us-policy-fellowship-program",
@@ -3315,7 +3551,8 @@
     "eligibility": "Doctoral degree (PhD, EdD, MD) in a child-development-relevant field, SRCD member",
     "area": "Education Research",
     "flags": "SRCD membership required",
-    "notes": "One-year congressional or state-legislature placements applying child-development research to policy; federal executive-branch placements are currently paused, but congressional/state tracks remain active."
+    "notes": "One-year congressional or state-legislature placements applying child-development research to policy; federal executive-branch placements are currently paused, but congressional/state tracks remain active.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "commonwealth-fund-fellowship-minority-health-policy-harvard",
@@ -3329,7 +3566,8 @@
     "eligibility": "Physicians (MD) early in career committed to addressing health disparities",
     "area": "Health Sciences",
     "flags": "Physicians (MD) only",
-    "notes": "One-year, degree-granting fellowship at Harvard preparing physicians to become health-equity policy leaders."
+    "notes": "One-year, degree-granting fellowship at Harvard preparing physicians to become health-equity policy leaders.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "rotary-peace-fellowship",
@@ -3343,7 +3581,8 @@
     "eligibility": "Bachelor's degree; 3+ years relevant work experience (master's track) or 5+ years (certificate track); not currently enrolled in a degree program",
     "area": "Open Field",
     "flags": "",
-    "notes": "Funds a master's degree or professional certificate in peace and conflict studies at one of Rotary's Peace Centers worldwide; open to US and international applicants."
+    "notes": "Funds a master's degree or professional certificate in peace and conflict studies at one of Rotary's Peace Centers worldwide; open to US and international applicants.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "henry-luce-foundation-luce-scholars-program",
@@ -3357,7 +3596,8 @@
     "eligibility": "US citizens/permanent residents under 33, college seniors through young professionals, limited prior Asia experience",
     "area": "Open Field",
     "flags": "",
-    "notes": "13-month program placing young American professionals in individualized fellowships across Asia; not tied to a specific field of study."
+    "notes": "13-month program placing young American professionals in individualized fellowships across Asia; not tied to a specific field of study.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "robert-toigo-foundation-mba-fellowship",
@@ -3371,7 +3611,8 @@
     "eligibility": "Underrepresented-minority students entering/in a 2-year MBA (or JD/MBA, MSF) program pursuing finance careers; US citizens, permanent residents, or authorized to work in the US",
     "area": "Business",
     "flags": "Underrepresented minorities in finance",
-    "notes": "Combines a financial award with structured mentorship and a required post-graduation commitment to a finance career."
+    "notes": "Combines a financial award with structured mentorship and a required post-graduation commitment to a finance career.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "optica-mrs-congressional-science-and-engineering-fellowship",
@@ -3385,7 +3626,8 @@
     "eligibility": "PhD in optical science/technology or materials science by fellowship start, member of Optica or MRS, authorized to work in the US",
     "area": "Public Policy and Government",
     "flags": "Optica or MRS membership required",
-    "notes": "Co-sponsored one-year fellowship placing an optics/materials scientist as a legislative assistant for a member of Congress or a committee."
+    "notes": "Co-sponsored one-year fellowship placing an optics/materials scientist as a legislative assistant for a member of Congress or a committee.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "getty-postdoctoral-fellowship-history-of-art",
@@ -3399,7 +3641,8 @@
     "eligibility": "Received PhD within the past 5 years, working on an art-history-related research project",
     "area": "Arts",
     "flags": "",
-    "notes": "Year-long residential fellowship at the Getty in Los Angeles for early-career art historians to pursue original research."
+    "notes": "Year-long residential fellowship at the Getty in Los Angeles for early-career art historians to pursue original research.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "ans-glenn-seaborg-congressional-fellowship",
@@ -3413,7 +3656,8 @@
     "eligibility": "PhD in applicable science/engineering field with nuclear-related discipline and 1+ years' experience, or master's in engineering with 3 years' professional experience",
     "area": "Public Policy and Government",
     "flags": "",
-    "notes": "ANS sponsors up to two Fellows per year for one-year placements as full-time congressional staff bringing nuclear science expertise to policymaking."
+    "notes": "ANS sponsors up to two Fellows per year for one-year placements as full-time congressional staff bringing nuclear science expertise to policymaking.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "charles-hamilton-houston-institute-guinier-postdoctoral-fellowship",
@@ -3427,7 +3671,8 @@
     "eligibility": "Early-career scholars (JD/PhD) with research interests in racial representation, democracy, voting rights, or electoral reform",
     "area": "Law",
     "flags": "",
-    "notes": "One-year (renewable up to two additional years) postdoctoral fellowship at Harvard Law focused on voting rights and electoral reform scholarship."
+    "notes": "One-year (renewable up to two additional years) postdoctoral fellowship at Harvard Law focused on voting rights and electoral reform scholarship.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "aps-library-museum-short-term-research-fellowship",
@@ -3441,7 +3686,8 @@
     "eligibility": "PhD candidates (ABD), PhD holders, and degreed independent scholars in any field",
     "area": "Humanities",
     "flags": "",
-    "notes": "Short-term residential research fellowship supporting archival research at the APS Library & Museum in Philadelphia; open to doctoral candidates and beyond."
+    "notes": "Short-term residential research fellowship supporting archival research at the APS Library & Museum in Philadelphia; open to doctoral candidates and beyond.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "icma-local-government-management-fellowship",
@@ -3455,7 +3701,8 @@
     "eligibility": "Recent graduates or students completing an MPA/MPP or related master's degree from a NASPAA-accredited program by August 31 of the fellowship year; must be authorized to work in the US",
     "area": "Public Policy and Government",
     "flags": "Requires NASPAA-accredited master's degree; no prior local-government-management experience allowed",
-    "notes": "12-month paid fellowship placing recent MPA/MPP graduates in full-time local government management positions with a host city or county; over 425 fellows placed across 20 years, many advancing to senior local-government leadership."
+    "notes": "12-month paid fellowship placing recent MPA/MPP graduates in full-time local government management positions with a host city or county; over 425 fellows placed across 20 years, many advancing to senior local-government leadership.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "nys-senate-graduate-fellowship",
@@ -3469,7 +3716,8 @@
     "eligibility": "Completed graduate studies at an accredited university prior to the fellowship start",
     "area": "Public Policy and Government",
     "flags": "Albany, NY-based; fellows must secure their own housing; graduate degree must be completed before fellowship starts",
-    "notes": "Established in 1965, this nine-month, full-time legislative fellowship places graduate/postgraduate fellows directly in New York State Senate offices doing policy research, drafting, and constituent work."
+    "notes": "Established in 1965, this nine-month, full-time legislative fellowship places graduate/postgraduate fellows directly in New York State Senate offices doing policy research, drafting, and constituent work.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "boren-awards-boren-fellowship",
@@ -3483,7 +3731,8 @@
     "eligibility": "US citizen graduate students matriculated in or applying to a US graduate degree program, studying languages/regions critical to national security",
     "area": "Public Policy and Government",
     "flags": "US citizens only; requires approximately one-year federal service commitment after the fellowship",
-    "notes": "Funds graduate-level language study and research abroad in exchange for a commitment to work in the federal government, explicitly intended as a pipeline into US national security and policy careers."
+    "notes": "Funds graduate-level language study and research abroad in exchange for a commitment to work in the federal government, explicitly intended as a pipeline into US national security and policy careers.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "california-capital-fellows-executive-fellowship",
@@ -3497,7 +3746,8 @@
     "eligibility": "Bachelor's degree holders and early-career applicants (no advanced degree required); open nationally to US applicants willing to relocate to Sacramento",
     "area": "Public Policy and Government",
     "flags": "Must relocate to Sacramento, CA; placements are within California state government (Legislative, Executive, or Judicial branch)",
-    "notes": "Four nationally recognized tracks (Senate, Assembly, Executive, Judicial) placing fellows as full-time paid state government employees for 10-11 months; the Assembly Fellowship, established in 1957, is the nation's oldest legislative fellowship program."
+    "notes": "Four nationally recognized tracks (Senate, Assembly, Executive, Judicial) placing fellows as full-time paid state government employees for 10-11 months; the Assembly Fellowship, established in 1957, is the nation's oldest legislative fellowship program.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "lawai-summer-research-fellowship-us",
@@ -3511,7 +3761,8 @@
     "eligibility": "Law students, early-career researchers, and academics working on U.S. AI law and policy; must be able to work full-time remotely June-August with the in-person week",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Paid full-time summer research fellowship at the Institute for Law & AI (formerly housed under the Legal Priorities Project) focused on U.S. AI law and regulation; runs as a recurring annual seasonal program."
+    "notes": "Paid full-time summer research fellowship at the Institute for Law & AI (formerly housed under the Legal Priorities Project) focused on U.S. AI law and regulation; runs as a recurring annual seasonal program.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "iapp-westin-research-fellowship",
@@ -3525,7 +3776,8 @@
     "eligibility": "U.S. citizens, permanent residents, or those eligible for U.S. work authorization; undergraduate degree required, graduate degree in law or a related field preferred",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "One-year paid research fellowship pairing scholars with IAPP's Westin Research Center on privacy and AI governance research, publications, and policy initiatives; runs annually."
+    "notes": "One-year paid research fellowship pairing scholars with IAPP's Westin Research Center on privacy and AI governance research, publications, and policy initiatives; runs annually.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "data-society-postdoctoral-fellow-ai-scams",
@@ -3539,7 +3791,8 @@
     "eligibility": "PhD required (completed before September 2026) in communication, media studies, information studies, sociology, or related field; must be authorized to work in the U.S. without sponsorship",
     "area": "AI and Tech Policy",
     "flags": "Postdoctoral (PhD required); US work authorization required without sponsorship; single funded position rather than a recurring named program",
-    "notes": "Two-year (Sept 2026-May 2028) postdoctoral research fellowship in Data & Society's AI & Democracy program studying how AI is being used to supercharge scams, fraud, and hoaxes."
+    "notes": "Two-year (Sept 2026-May 2028) postdoctoral research fellowship in Data & Society's AI & Democracy program studying how AI is being used to supercharge scams, fraud, and hoaxes.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "el-pomar-foundation-fellowship",
@@ -3553,7 +3806,8 @@
     "eligibility": "Recent college graduates and early-career professionals willing to relocate to Colorado Springs, CO for a 2-year full-time commitment",
     "area": "Nonprofit Governance",
     "flags": "Colorado-focused; requires relocation to Colorado Springs",
-    "notes": "A 2-year, full-time paid fellowship at El Pomar Foundation combining hands-on grantmaking and program administration with a leadership-development curriculum for early-career professionals entering Colorado's philanthropic and nonprofit sector."
+    "notes": "A 2-year, full-time paid fellowship at El Pomar Foundation combining hands-on grantmaking and program administration with a leadership-development curriculum for early-career professionals entering Colorado's philanthropic and nonprofit sector.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "greenlining-institute-leadership-academy-fellowship",
@@ -3567,7 +3821,8 @@
     "eligibility": "Early-career professionals; if BA held, 1+ year related experience required (or 2+ years without a BA); must reside within commuting distance of Oakland, CA; no visa sponsorship offered",
     "area": "Nonprofit Governance",
     "flags": "Oakland/Bay Area-based; no visa sponsorship for international applicants",
-    "notes": "An 11-month, paid fellowship placing 4-6 early-career professionals per year on Greenlining Institute policy teams to build racial- and economic-equity leadership and nonprofit advocacy skills."
+    "notes": "An 11-month, paid fellowship placing 4-6 early-career professionals per year on Greenlining Institute policy teams to build racial- and economic-equity leadership and nonprofit advocacy skills.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "cfleads-fellowship-program",
@@ -3581,7 +3836,8 @@
     "eligibility": "Graduate-level students interested in community foundations and philanthropic leadership",
     "area": "Nonprofit Governance",
     "flags": "Part-time (up to 20 hrs/week); must be an enrolled graduate student",
-    "notes": "Part-time, paid fellowship placing graduate students inside CFLeads' network to build skills in community foundation leadership, strategy, and communications over three semesters."
+    "notes": "Part-time, paid fellowship placing graduate students inside CFLeads' network to build skills in community foundation leadership, strategy, and communications over three semesters.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "census-bureau-dissertation-fellowship",
@@ -3595,7 +3851,8 @@
     "eligibility": "Doctoral candidates (U.S. citizens) at accredited U.S. institutions researching statistical theory/methodology, survey measurement methodology, or data science methodology",
     "area": "Data Analysis",
     "flags": "US citizens only; nominated/submitted through applicant's university, not directly by individuals",
-    "notes": "Awards institutional contracts (covering tuition, research, travel, and salary) to fund doctoral dissertation research directly relevant to federal statistical data science and survey methodology."
+    "notes": "Awards institutional contracts (covering tuition, research, travel, and salary) to fund doctoral dissertation research directly relevant to federal statistical data science and survey methodology.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "frbsf-thomas-j-sargent-dissertation-fellowship",
@@ -3609,7 +3866,8 @@
     "eligibility": "PhD candidates researching macroeconomics, international trade, financial economics, urban economics, or labor economics using quantitative/statistical data analysis",
     "area": "Data Analysis",
     "flags": "PhD candidates in select economics subfields only",
-    "notes": "Six-week paid summer dissertation fellowship giving PhD students hands-on collaboration with SF Fed economists on data-driven economic research."
+    "notes": "Six-week paid summer dissertation fellowship giving PhD students hands-on collaboration with SF Fed economists on data-driven economic research.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "fda-cdrh-ai-ml-fellowship",
@@ -3623,7 +3881,8 @@
     "eligibility": "Master's or doctoral degree (or currently pursuing) in Computer Science, Engineering, Life/Health/Medical Sciences, Mathematics/Statistics, or Physics, received within the last 60 months; U.S. citizen or LPR",
     "area": "Data Analysis",
     "flags": "US citizen/LPR required; must have lived in U.S. 36 of past 60 months",
-    "notes": "One-year (renewable) ORISE fellowship analyzing large-scale medical device data to address AI/ML algorithm training, bias evaluation, and performance monitoring for FDA regulatory science."
+    "notes": "One-year (renewable) ORISE fellowship analyzing large-scale medical device data to address AI/ML algorithm training, bias evaluation, and performance monitoring for FDA regulatory science.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "uva-vest-predoctoral-fellowship",
@@ -3637,7 +3896,8 @@
     "eligibility": "US citizens/permanent residents already admitted to a PhD program at UVA in Education Policy, Applied Developmental Science, Psychology, Sociology, or Economics",
     "area": "Education Research",
     "flags": "Applicants must be admitted to/enrolled in a UVA doctoral program; US citizens/permanent residents only",
-    "notes": "One of IES/NCER's longest-running predoctoral training grants (current award cycle runs through Aug 2026), training PhD students in causal-inference methods for rigorous, policy-relevant education research."
+    "notes": "One of IES/NCER's longest-running predoctoral training grants (current award cycle runs through Aug 2026), training PhD students in causal-inference methods for rigorous, policy-relevant education research.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "university-of-iowa-ies-postdoctoral-fellowship",
@@ -3651,7 +3911,8 @@
     "eligibility": "Recent PhD/EdD holders in education leadership, education policy, or related fields with interest in culturally responsive, equity-oriented research",
     "area": "Education Research",
     "flags": "",
-    "notes": "IES/NCER-funded two-year postdoctoral fellowship (2022-2027 grant cycle, supporting 4 total fellows) focused on culturally responsive education leadership and school mental health research in rural and urban settings."
+    "notes": "IES/NCER-funded two-year postdoctoral fellowship (2022-2027 grant cycle, supporting 4 total fellows) focused on culturally responsive education leadership and school mental health research in rural and urban settings.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "ets-harold-gulliksen-psychometric-research-fellowship",
@@ -3665,7 +3926,8 @@
     "eligibility": "Doctoral students at the dissertation stage in educational measurement, psychometrics, or statistics",
     "area": "Education Research",
     "flags": "",
-    "notes": "Longstanding ETS fellowship supporting dissertation-stage research in psychometrics and educational measurement, paired with a mentored ETS summer internship in Princeton, NJ."
+    "notes": "Longstanding ETS fellowship supporting dissertation-stage research in psychometrics and educational measurement, paired with a mentored ETS summer internship in Princeton, NJ.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "weatherhead-center-scholars-postdoctoral-fellowship",
@@ -3679,7 +3941,8 @@
     "eligibility": "PhD in a social science discipline (political science, sociology, economics, history, international affairs, etc.) earned within the past 3 years, or dissertation defended by appointment start; open to scholars of all nationalities",
     "area": "Social Science",
     "flags": "",
-    "notes": "One-year residential postdoctoral fellowship at Harvard for early-career social scientists working on international, comparative, or transnational issues; highly competitive (about 5% acceptance), with 5-10 fellows selected annually."
+    "notes": "One-year residential postdoctoral fellowship at Harvard for early-career social scientists working on international, comparative, or transnational issues; highly competitive (about 5% acceptance), with 5-10 fellows selected annually.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "apa-minority-fellowship-program-mhsas-doc",
@@ -3693,7 +3956,8 @@
     "eligibility": "Full-time doctoral students in APA-accredited clinical, counseling, or school psychology programs committed to serving underserved communities; U.S. citizens, permanent residents, or noncitizen nationals",
     "area": "Social Science",
     "flags": "U.S. citizens/permanent residents/noncitizen nationals only; SAMHSA-funded with priority for behavioral-health focus on underserved populations",
-    "notes": "SAMHSA-funded doctoral fellowship for psychology students, renewable annually for up to 3 years; one program within APA's broader Minority Fellowship Program family."
+    "notes": "SAMHSA-funded doctoral fellowship for psychology students, renewable annually for up to 3 years; one program within APA's broader Minority Fellowship Program family.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "spssi-james-marshall-public-policy-fellowship",
@@ -3707,7 +3971,8 @@
     "eligibility": "Postdoctoral scientists (PhD/PsyD in hand) in fields relevant to the psychological study of social issues; SPSSI membership required",
     "area": "Social Science",
     "flags": "SPSSI membership required",
-    "notes": "One-year congressional placement (Sept 1-Aug 31) for early-career behavioral/social scientists to bridge psychological research and federal policymaking; a distinctly SPSSI-branded fellowship administered in coordination with AAAS."
+    "notes": "One-year congressional placement (Sept 1-Aug 31) for early-career behavioral/social scientists to bridge psychological research and federal policymaking; a distinctly SPSSI-branded fellowship administered in coordination with AAAS.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "jefferson-scholars-foundation-national-fellowship",
@@ -3721,7 +3986,8 @@
     "eligibility": "PhD candidates completing dissertations on U.S. politics, public policy, political economy, history, or sociology at leading institutions; open to non-U.S. citizens",
     "area": "Social Science",
     "flags": "",
-    "notes": "Dissertation-year fellowship (with possible second-year renewal) focused on U.S. politics and public policy research, pairing stipend support with mentorship from Miller Center-affiliated scholars."
+    "notes": "Dissertation-year fellowship (with possible second-year renewal) focused on U.S. politics and public policy research, pairing stipend support with mentorship from Miller Center-affiliated scholars.",
+    "last_verified": "2026-07-01"
   },
   {
     "id": "collective-intelligence-project-research-fellowship",
@@ -3735,6 +4001,7 @@
     "eligibility": "Researchers exploring AI, public values, and democratic governance",
     "area": "AI and Tech Policy",
     "flags": "",
-    "notes": "Remote research fellowship exploring AI, public values, and democratic governance. Sourced from the private Fellowship Tracker."
+    "notes": "Remote research fellowship exploring AI, public values, and democratic governance. Sourced from the private Fellowship Tracker.",
+    "last_verified": "2026-07-01"
   }
 ]
